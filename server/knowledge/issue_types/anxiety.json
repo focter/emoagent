@@ -1,0 +1,14 @@
+{
+  "id": "anxiety", "name": "焦虑 / 担心 / 紧张",
+  "description": "围绕现实或预期威胁的持续担心、警觉和身体紧张，不直接等同于焦虑障碍。",
+  "keywords": ["焦虑", "担心", "害怕", "紧张", "心慌", "不安", "最坏", "出事", "控制不了", "压力大"],
+  "user_expressions": ["我总担心会出问题", "还没发生我就开始害怕", "一想到这件事就心慌"],
+  "key_dimensions": ["担心对象与现实依据", "频率和可控性", "身体反应", "睡眠专注与回避"],
+  "first_followups": ["你现在最担心发生的具体事情是什么？", "这种担心对睡眠或日常活动影响到什么程度？"],
+  "enough_information_signals": ["说清担心内容", "描述身体或功能影响", "区分现实压力与反复预演"],
+  "common_mechanisms": ["stress_response", "cognitive_appraisal", "catastrophizing", "somatic_stress_response"],
+  "possible_interventions": ["grounding_breath", "worry_time_limit", "fact_vs_interpretation"],
+  "do_not_say": ["别想太多", "肯定不会出事", "这都是心理作用"],
+  "escalation_signals": ["长时间完全无法睡眠", "明显失控或无法保证安全"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

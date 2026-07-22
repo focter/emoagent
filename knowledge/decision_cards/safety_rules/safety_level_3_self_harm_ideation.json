@@ -1,0 +1,57 @@
+{
+  "id": "safety_level_3_self_harm_ideation",
+  "type": "safety_rule",
+  "name": "自伤自杀想法或模糊计划",
+  "description": "用户明确提到伤害自己或自杀，并可能有模糊计划但未说明完整时间地点时，应持续安全评估并升级现实支持。",
+  "match": {
+    "keywords": [
+      "想伤害自己",
+      "想过自杀",
+      "可能会做点什么"
+    ],
+    "signals": [
+      "明确自伤或自杀想法",
+      "计划模糊",
+      "即时性尚不明确"
+    ],
+    "exclude": [
+      "技术语境中的杀进程",
+      "没有现实意图的固定玩笑",
+      "正在实施"
+    ]
+  },
+  "evidence_refs": [
+    "ev_safety_risk_identification_001",
+    "ev_safety_plan_boundary_003",
+    "ev_safety_trusted_support_008"
+  ],
+  "applies_to": [
+    "self_harm_ideation",
+    "suicidal_ideation",
+    "crisis_response"
+  ],
+  "not_applies_to": [
+    "routine_support",
+    "active_suicide_attempt"
+  ],
+  "response_goals": [
+    "确认计划、手段和即时性",
+    "减少独处并联系现实支持",
+    "提供专业或热线转介"
+  ],
+  "allowed_actions": [
+    "询问计划、时间、地点和危险手段",
+    "建议联系身边可信任的人",
+    "建议联系心理援助热线或专业机构"
+  ],
+  "forbidden_actions": [
+    "不进行普通心理分析",
+    "不只给自助练习",
+    "不承诺保密",
+    "不淡化风险"
+  ],
+  "priority": "critical",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "cognitive_appraisal", "name": "认知评价",
+  "keywords": ["说明", "意味着", "肯定", "觉得", "认定", "是不是", "代表"],
+  "use_when": ["同一事实被赋予强烈威胁或自我否定含义", "用户把推测当成已确认事实"],
+  "do_not_use_when": ["威胁已有充分现实证据", "用户只需要被倾听且尚未表达自己的解释"],
+  "plain_explanation": "事件本身和我们对它的解释会一起影响感受；区分二者不是否定感受，而是看清哪些已确认、哪些仍是推测。",
+  "natural_response_examples": ["对方没有回复是目前能确认的事实，‘他不在乎我’是一个可以理解、但还需要证据的解释。"],
+  "safe_small_actions": ["各写一句事实和解释", "补写一个不粉饰也不最坏化的可能解释"],
+  "avoid": ["把情绪说成想法错误", "强迫积极思考"],
+  "related_issue_types": ["anxiety", "interpersonal", "romantic_relationship", "rumination"],
+  "related_interventions": ["fact_vs_interpretation", "thought_record_light"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

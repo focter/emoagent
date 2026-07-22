@@ -1,0 +1,64 @@
+{
+  "id": "mechanism_catastrophizing",
+  "type": "mechanism",
+  "name": "灾难化推演",
+  "description": "注意力快速跳到最坏结果，并把可能性体验成确定性。",
+  "match": {
+    "keywords": [
+      "肯定完了",
+      "一定会失败",
+      "最糟糕的是"
+    ],
+    "signals": [
+      "聚焦最坏结果",
+      "高估发生概率",
+      "低估应对能力"
+    ],
+    "exclude": [
+      "客观存在的即时危险",
+      "已有事实确认的严重后果"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_common_anxiety_boundary_002"
+  ],
+  "applies_to": [
+    "anxiety",
+    "academic_stress",
+    "relationship_conflict"
+  ],
+  "not_applies_to": [
+    "imminent_danger",
+    "factual_risk_dismissal"
+  ],
+  "response_goals": [
+    "把预测与事实分开",
+    "恢复对概率和应对资源的观察"
+  ],
+  "allowed_actions": [
+    "使用可能性语言",
+    "询问支持和反例",
+    "承认真实风险"
+  ],
+  "forbidden_actions": [
+    "不把现实危险说成想太多",
+    "不强迫积极思考"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "explain_to_user": "这可能像是大脑在压力下先跳到了最坏结果，并把一种可能体验成了必然。",
+  "linked_issue_types": [
+    "issue_anxiety",
+    "issue_academic_stress",
+    "issue_relationship_conflict",
+    "issue_emotion_overload"
+  ],
+  "suitable_interventions": [
+    "intervention_problem_split",
+    "intervention_thought_defusion",
+    "intervention_grounding_54321"
+  ]
+}

@@ -1,0 +1,446 @@
+[
+  {
+    "source_id": "who_safety_planning",
+    "title": "Safety planning guidance（待核实具体版本）",
+    "organization": "World Health Organization",
+    "year": "",
+    "language": "en",
+    "type": "guideline",
+    "topic_tags": [
+      "safety",
+      "safety_planning",
+      "suicide_prevention"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "safety"
+    ],
+    "limitations": "需核实具体文件版本、适用地区和危机资源；不能替代当地紧急服务",
+    "url": "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre/self-harm-and-suicide/safety-planning-interventions",
+    "file_path": "knowledge_sources/raw/safety/who_safety_planning.html",
+    "status": "summarized",
+    "access_date": "2026-06-21",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "who_mhgap_self_harm_suicide",
+    "title": "mhGAP Intervention Guide: Self-harm / Suicide module",
+    "organization": "World Health Organization",
+    "year": "2016",
+    "language": "en",
+    "type": "clinical_guideline",
+    "topic_tags": [
+      "safety",
+      "self_harm",
+      "suicide_prevention"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "safety"
+    ],
+    "limitations": "面向非专科卫生服务；使用时需核实版本并适配当地转介资源",
+    "url": "https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre/self-harm-and-suicide",
+    "file_path": "knowledge_sources/raw/safety/who_mhgap_self_harm_suicide.html",
+    "status": "summarized",
+    "access_date": "2026-06-21",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "nhc_hotline_guide",
+    "title": "心理援助热线工作指南（待核实正式名称）",
+    "organization": "National Health Commission of the PRC",
+    "year": "",
+    "language": "zh-CN",
+    "type": "policy_guidance",
+    "topic_tags": [
+      "safety",
+      "crisis_hotline",
+      "china"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "safety"
+    ],
+    "limitations": "需核实正式文件名称、版本、适用范围和现行有效性",
+    "url": "https://www.nhc.gov.cn/wjw/c100175/202101/ce4756ac40e742a48b00ff32d3807825.shtml",
+    "file_path": "knowledge_sources/raw/safety/nhc_hotline_guide.html",
+    "status": "summarized",
+    "access_date": "2026-06-22",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "nhc_12356",
+    "title": "全国统一心理援助热线 12356 相关公开资料",
+    "organization": "National Health Commission of the PRC",
+    "year": "2025",
+    "language": "zh-CN",
+    "type": "public_service_information",
+    "topic_tags": [
+      "safety",
+      "crisis_hotline",
+      "china"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "safety"
+    ],
+    "limitations": "服务覆盖、接通方式和地区资源可能变化，需在使用前复核",
+    "url": "https://www.nhc.gov.cn/yzygj/c100068/202412/49a1a65386cd4be582d4702fd0926ee8.shtml",
+    "file_path": "knowledge_sources/raw/safety/nhc_12356.html",
+    "status": "summarized",
+    "access_date": "2026-06-22",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "who_self_help_interventions",
+    "title": "WHO low-intensity self-help interventions（待核实具体资料）",
+    "organization": "World Health Organization",
+    "year": "",
+    "language": "en",
+    "type": "guidance",
+    "topic_tags": [
+      "self_help",
+      "low_intensity_intervention"
+    ],
+    "priority": "P1",
+    "used_for": [
+      "self_help"
+    ],
+    "limitations": "需核实具体目标人群、实施条件和是否要求专业人员支持",
+    "url": "https://www.who.int/news/item/01-06-2026-who-launches-new-guide-to-help-scale-psychological-self-help",
+    "file_path": "knowledge_sources/raw/self_help/who_self_help_interventions.html",
+    "status": "summarized",
+    "access_date": "2026-06-21",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "who_doing_what_matters",
+    "title": "Doing What Matters in Times of Stress: An Illustrated Guide",
+    "organization": "World Health Organization",
+    "year": "2020",
+    "language": "en",
+    "type": "self_help_guide",
+    "topic_tags": [
+      "self_help",
+      "stress_management",
+      "grounding"
+    ],
+    "priority": "P1",
+    "used_for": [
+      "self_help"
+    ],
+    "limitations": "通用压力管理资料，不替代评估或治疗；需要考虑语言和文化适配",
+    "url": "https://www.who.int/publications/i/item/9789240003927",
+    "file_path": "knowledge_sources/raw/self_help/who_doing_what_matters.html",
+    "status": "summarized",
+    "access_date": "2026-06-21",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "nimh_self_care",
+    "title": "Caring for Your Mental Health",
+    "organization": "National Institute of Mental Health",
+    "year": "",
+    "language": "en",
+    "type": "public_education",
+    "topic_tags": [
+      "self_help",
+      "self_care",
+      "help_seeking"
+    ],
+    "priority": "P1",
+    "used_for": [
+      "self_help"
+    ],
+    "limitations": "公共教育内容较概括，不用于个体诊断、治疗选择或危机处置",
+    "url": "https://www.nimh.nih.gov/health/topics/caring-for-your-mental-health",
+    "file_path": "knowledge_sources/raw/self_help/nimh_self_care.html",
+    "status": "summarized",
+    "access_date": "2026-06-21",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "nhs_guided_self_help",
+    "title": "Guided self-help",
+    "organization": "National Health Service",
+    "year": "",
+    "language": "en",
+    "type": "public_education",
+    "topic_tags": [
+      "self_help",
+      "guided_self_help",
+      "low_intensity_intervention"
+    ],
+    "priority": "P1",
+    "used_for": [
+      "self_help"
+    ],
+    "limitations": "基于英国 NHS 服务语境，不能直接视为其他地区的服务建议",
+    "url": "https://www.england.nhs.uk/mental-health/adults/nhs-talking-therapies/",
+    "file_path": "knowledge_sources/raw/self_help/nhs_guided_self_help.html",
+    "status": "summarized",
+    "access_date": "2026-06-21",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "nice_depression_ng222",
+    "title": "Depression in adults: treatment and management (NG222)",
+    "organization": "National Institute for Health and Care Excellence",
+    "year": "2022",
+    "language": "en",
+    "type": "clinical_guideline",
+    "topic_tags": [
+      "common_issues",
+      "depression",
+      "adult_mental_health"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "common_issues"
+    ],
+    "limitations": "成人临床指南且基于英国服务体系，不可直接改写为诊断或自助治疗方案",
+    "url": "https://www.nice.org.uk/guidance/ng222",
+    "file_path": "knowledge_sources/raw/common_issues/nice_depression_ng222.html",
+    "status": "summarized",
+    "access_date": "2026-06-22",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "nice_anxiety_cg113",
+    "title": "Generalised anxiety disorder and panic disorder in adults: management (CG113)",
+    "organization": "National Institute for Health and Care Excellence",
+    "year": "2011",
+    "language": "en",
+    "type": "clinical_guideline",
+    "topic_tags": [
+      "common_issues",
+      "anxiety",
+      "panic",
+      "adult_mental_health"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "common_issues"
+    ],
+    "limitations": "成人临床指南且基于英国服务体系，需核实更新状态和适用边界",
+    "url": "https://www.nice.org.uk/guidance/cg113",
+    "file_path": "knowledge_sources/raw/common_issues/nice_anxiety_cg113.html",
+    "status": "summarized",
+    "access_date": "2026-06-22",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "nhs_cbt",
+    "title": "Cognitive behavioural therapy (CBT)",
+    "organization": "National Health Service",
+    "year": "",
+    "language": "en",
+    "type": "public_education",
+    "topic_tags": [
+      "methods",
+      "cbt",
+      "psychological_therapy"
+    ],
+    "priority": "P1",
+    "used_for": [
+      "methods"
+    ],
+    "limitations": "仅用于理解方法框架，不能据此让 Demo 提供 CBT 治疗",
+    "url": "https://www.nhs.uk/tests-and-treatments/cognitive-behavioural-therapy-cbt/",
+    "file_path": "knowledge_sources/raw/methods/nhs_cbt.html",
+    "status": "summarized",
+    "access_date": "2026-06-21",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "nimh_psychotherapies",
+    "title": "Psychotherapies",
+    "organization": "National Institute of Mental Health",
+    "year": "",
+    "language": "en",
+    "type": "public_education",
+    "topic_tags": [
+      "methods",
+      "psychotherapy",
+      "treatment_overview"
+    ],
+    "priority": "P1",
+    "used_for": [
+      "methods"
+    ],
+    "limitations": "治疗方法概览，不用于推荐具体疗法、诊断或替代专业人员",
+    "url": "https://www.nimh.nih.gov/health/topics/psychotherapies",
+    "file_path": "knowledge_sources/raw/methods/nimh_psychotherapies.html",
+    "status": "summarized",
+    "access_date": "2026-06-21",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "moe_student_mental_health_2023_2025",
+    "title": "全面加强和改进新时代学生心理健康工作专项行动计划（2023—2025年）",
+    "organization": "Ministry of Education of the PRC",
+    "year": "2023",
+    "language": "zh-CN",
+    "type": "policy",
+    "topic_tags": [
+      "student_mental_health",
+      "school",
+      "policy",
+      "china"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "student_mental_health"
+    ],
+    "limitations": "政策文件不等同于临床指南；后续需核实现行状态和学校实施语境",
+    "url": "https://www.moe.gov.cn/srcsite/A17/moe_943/moe_946/202305/t20230511_1059219.html",
+    "file_path": "knowledge_sources/raw/student_mental_health/moe_student_mental_health_2023_2025.html",
+    "status": "summarized",
+    "access_date": "2026-06-22",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "who_ai_health_ethics",
+    "title": "Ethics and governance of artificial intelligence for health",
+    "organization": "World Health Organization",
+    "year": "2021",
+    "language": "en",
+    "type": "ethics_guidance",
+    "topic_tags": [
+      "ai_ethics_privacy",
+      "health_ai",
+      "governance",
+      "human_rights"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "ai_ethics_privacy"
+    ],
+    "limitations": "高层伦理治理指南，需结合本地法律、产品场景和后续更新使用",
+    "url": "https://www.who.int/publications/i/item/9789240029200",
+    "file_path": "knowledge_sources/raw/ai_ethics_privacy/who_ai_health_ethics.html",
+    "status": "summarized",
+    "access_date": "2026-06-21",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "apa_app_evaluation_model",
+    "title": "App Evaluation Model",
+    "organization": "American Psychiatric Association",
+    "year": "",
+    "language": "en",
+    "type": "evaluation_framework",
+    "topic_tags": [
+      "ai_ethics_privacy",
+      "mental_health_apps",
+      "privacy",
+      "evaluation"
+    ],
+    "priority": "P1",
+    "used_for": [
+      "ai_ethics_privacy"
+    ],
+    "limitations": "主要面向心理健康应用评估，并非专门针对生成式 AI 或本地法律合规",
+    "url": "https://www.psychiatry.org/psychiatrists/practice/mental-health-apps/the-app-evaluation-model",
+    "file_path": "knowledge_sources/raw/ai_ethics_privacy/apa_app_evaluation_model.html",
+    "status": "summarized",
+    "access_date": "2026-06-22",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "who_mental_health_at_work_guideline",
+    "title": "Guidelines on mental health at work",
+    "organization": "World Health Organization",
+    "year": "2022",
+    "language": "en",
+    "type": "clinical_guideline",
+    "topic_tags": [
+      "workplace_mental_health",
+      "work_stress",
+      "organizational_interventions"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "workplace_mental_health",
+      "common_issues"
+    ],
+    "limitations": "面向工作场所政策与专业实践；不能把组织层建议简化为由个体独自承担的自助任务",
+    "url": "https://www.who.int/publications/i/item/9789240053052",
+    "file_path": "knowledge_sources/raw/workplace_mental_health/who_mental_health_at_work_guideline.html",
+    "status": "summarized",
+    "access_date": "2026-07-15",
+    "notes_done": "yes"
+  },
+  {
+    "source_id": "nice_workplace_wellbeing_ng212",
+    "title": "Mental wellbeing at work (NG212)",
+    "organization": "National Institute for Health and Care Excellence",
+    "year": "2022",
+    "language": "en",
+    "type": "guideline",
+    "topic_tags": [
+      "workplace_mental_health",
+      "work_stress",
+      "supportive_workplace"
+    ],
+    "priority": "P0",
+    "used_for": [
+      "workplace_mental_health",
+      "common_issues"
+    ],
+    "limitations": "主要针对英国工作场所；组织责任和服务路径不能直接套用于其他地区或具体雇主",
+    "url": "https://www.nice.org.uk/guidance/ng212/resources/mental-wellbeing-at-work-pdf-66143771841733",
+    "file_path": "knowledge_sources/raw/workplace_mental_health/nice_workplace_wellbeing_ng212.pdf",
+    "status": "todo",
+    "access_date": "",
+    "notes_done": "no"
+  },
+  {
+    "source_id": "nice_social_anxiety_cg159",
+    "title": "Social anxiety disorder: recognition, assessment and treatment (CG159)",
+    "organization": "National Institute for Health and Care Excellence",
+    "year": "2013",
+    "language": "en",
+    "type": "clinical_guideline",
+    "topic_tags": [
+      "common_issues",
+      "social_anxiety",
+      "avoidance"
+    ],
+    "priority": "P1",
+    "used_for": [
+      "common_issues"
+    ],
+    "limitations": "临床指南中的诊断与治疗建议只能由合格专业人员使用；产品仅抽取识别维度和求助边界",
+    "url": "https://www.nice.org.uk/guidance/cg159/resources/social-anxiety-disorder-recognition-assessment-and-treatment-pdf-35109639699397",
+    "file_path": "knowledge_sources/raw/common_issues/nice_social_anxiety_cg159.pdf",
+    "status": "todo",
+    "access_date": "",
+    "notes_done": "no"
+  },
+  {
+    "source_id": "nhs_grief_bereavement_loss",
+    "title": "Grief after bereavement or loss",
+    "organization": "National Health Service",
+    "year": "",
+    "language": "en",
+    "type": "public_education",
+    "topic_tags": [
+      "common_issues",
+      "grief",
+      "bereavement",
+      "loss"
+    ],
+    "priority": "P1",
+    "used_for": [
+      "common_issues",
+      "self_help"
+    ],
+    "limitations": "公众教育资料不能用于诊断复杂性哀伤；持续功能受损或安全风险需要专业评估",
+    "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/grief-bereavement-loss/",
+    "file_path": "knowledge_sources/raw/common_issues/nhs_grief_bereavement_loss.html",
+    "status": "summarized",
+    "access_date": "2026-07-15",
+    "notes_done": "yes"
+  }
+]

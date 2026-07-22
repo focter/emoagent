@@ -1,0 +1,14 @@
+{
+  "id": "sleep_disturbance", "name": "睡眠困扰",
+  "description": "入睡、维持睡眠、早醒或作息紊乱，并与情绪、压力、身体状况及白天功能相互影响。",
+  "keywords": ["失眠", "睡不着", "早醒", "夜里醒", "睡不好", "熬夜", "噩梦", "困", "睡眠"],
+  "user_expressions": ["我每天躺很久都睡不着", "最近总是半夜醒", "晚上脑子停不下来"],
+  "key_dimensions": ["睡眠模式与持续时间", "白天功能", "作息和刺激物", "情绪身体变化"],
+  "first_followups": ["主要是难入睡、容易醒，还是醒得太早？", "这种变化持续多久，对白天影响怎样？"],
+  "enough_information_signals": ["说明睡眠类型和持续时间", "说明白天影响", "说明可能诱因或伴随状态"],
+  "common_mechanisms": ["sleep_emotion_loop", "stress_response", "rumination"],
+  "possible_interventions": ["sleep_wind_down", "worry_time_limit", "grounding_breath"],
+  "do_not_say": ["少玩手机就一定好", "吃点药就行", "失眠都是焦虑造成的"],
+  "escalation_signals": ["多日几乎不睡且异常兴奋或失控", "困倦已影响驾驶或操作安全"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

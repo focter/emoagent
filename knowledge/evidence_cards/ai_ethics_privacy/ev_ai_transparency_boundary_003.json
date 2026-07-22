@@ -1,0 +1,21 @@
+{
+  "id": "ev_ai_transparency_boundary_003",
+  "title": "透明说明产品身份与能力边界",
+  "claim": "心理健康 AI 产品应透明说明所有权、目的、证据、AI 用法及能力限制。",
+  "summary": "WHO 强调健康 AI 的问责，APA 模型要求应用披露来源、资金冲突、用途、更新、临床基础和 AI 使用方式。透明说明是知情选择前提，不等于证明产品有效。",
+  "source_ids": ["who_ai_health_ethics", "apa_app_evaluation_model"],
+  "source_note_refs": [
+    "knowledge_sources/notes/ai_ethics_notes.md#who_ai_health_ethics",
+    "knowledge_sources/notes/ai_ethics_notes.md#apa_app_evaluation_model"
+  ],
+  "category": "ai_ethics_privacy",
+  "applies_to": ["digital_mental_health", "product_transparency", "informed_choice"],
+  "not_applies_to": ["clinical_approval_claim", "legal_compliance_conclusion", "treatment_claim"],
+  "allowed_claims": ["应说明这是 AI 产品而非专业治疗者", "应披露证据和能力限制"],
+  "forbidden_claims": ["无需告知用户正在使用 AI", "公开边界就代表临床有效", "产品可以隐瞒关键限制"],
+  "product_use": ["product_disclaimer", "privacy_notice"],
+  "evidence_level": "product_ethics_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

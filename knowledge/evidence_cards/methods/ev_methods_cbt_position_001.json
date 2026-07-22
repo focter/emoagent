@@ -1,0 +1,18 @@
+{
+  "id": "ev_methods_cbt_position_001",
+  "title": "CBT 是由专业人员实施的谈话治疗",
+  "claim": "认知行为治疗由治疗师协助识别并改变困扰性的思考和行动模式。",
+  "summary": "NHS 将 CBT 介绍为一种谈话治疗，可采用个体、小组或引导式自助形式。治疗前需评估，具体形式和疗程取决于问题及个人需要。",
+  "source_ids": ["nhs_cbt"],
+  "source_note_refs": ["knowledge_sources/notes/methods_notes.md#nhs_cbt"],
+  "category": "methods",
+  "applies_to": ["cbt_psychoeducation", "method_explanation", "professional_care"],
+  "not_applies_to": ["self_diagnosis", "unsupervised_treatment", "treatment_claim"],
+  "allowed_claims": ["可以介绍 CBT 的基本思路", "正式 CBT 通常需要评估和专业支持"],
+  "forbidden_claims": ["系统正在提供 CBT 治疗", "任何困扰都适合 CBT", "无需评估即可确定疗程"],
+  "product_use": ["issue_explanation", "product_disclaimer"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

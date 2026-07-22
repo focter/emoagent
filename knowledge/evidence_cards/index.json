@@ -1,0 +1,350 @@
+{
+  "version": "0.1.0",
+  "generated_from": "knowledge_sources/notes",
+  "review_status": "machine_draft",
+  "cards": [
+    {
+      "id": "ev_ai_app_evaluation_004",
+      "path": "knowledge/evidence_cards/ai_ethics_privacy/ev_ai_app_evaluation_004.json",
+      "category": "ai_ethics_privacy",
+      "source_ids": [
+        "apa_app_evaluation_model"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_ai_health_risk_001",
+      "path": "knowledge/evidence_cards/ai_ethics_privacy/ev_ai_health_risk_001.json",
+      "category": "ai_ethics_privacy",
+      "source_ids": [
+        "who_ai_health_ethics"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_ai_privacy_security_002",
+      "path": "knowledge/evidence_cards/ai_ethics_privacy/ev_ai_privacy_security_002.json",
+      "category": "ai_ethics_privacy",
+      "source_ids": [
+        "apa_app_evaluation_model"
+      ],
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_ai_transparency_boundary_003",
+      "path": "knowledge/evidence_cards/ai_ethics_privacy/ev_ai_transparency_boundary_003.json",
+      "category": "ai_ethics_privacy",
+      "source_ids": [
+        "who_ai_health_ethics",
+        "apa_app_evaluation_model"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_common_anxiety_boundary_002",
+      "path": "knowledge/evidence_cards/common_issues/ev_common_anxiety_boundary_002.json",
+      "category": "common_issues",
+      "source_ids": [
+        "nice_anxiety_cg113"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_common_low_mood_boundary_001",
+      "path": "knowledge/evidence_cards/common_issues/ev_common_low_mood_boundary_001.json",
+      "category": "common_issues",
+      "source_ids": [
+        "nice_depression_ng222"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_common_no_system_diagnosis_003",
+      "path": "knowledge/evidence_cards/common_issues/ev_common_no_system_diagnosis_003.json",
+      "category": "common_issues",
+      "source_ids": [
+        "nice_depression_ng222",
+        "nice_anxiety_cg113"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_common_professional_help_004",
+      "path": "knowledge/evidence_cards/common_issues/ev_common_professional_help_004.json",
+      "category": "common_issues",
+      "source_ids": [
+        "nimh_self_care"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_common_psychoeducation_limit_005",
+      "path": "knowledge/evidence_cards/common_issues/ev_common_psychoeducation_limit_005.json",
+      "category": "common_issues",
+      "source_ids": [
+        "nice_depression_ng222",
+        "nice_anxiety_cg113"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_methods_avoid_crisis_006",
+      "path": "knowledge/evidence_cards/methods/ev_methods_avoid_crisis_006.json",
+      "category": "methods",
+      "source_ids": [
+        "nimh_psychotherapies",
+        "nhc_hotline_guide"
+      ],
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_methods_cbt_position_001",
+      "path": "knowledge/evidence_cards/methods/ev_methods_cbt_position_001.json",
+      "category": "methods",
+      "source_ids": [
+        "nhs_cbt"
+      ],
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_methods_no_effect_promise_005",
+      "path": "knowledge/evidence_cards/methods/ev_methods_no_effect_promise_005.json",
+      "category": "methods",
+      "source_ids": [
+        "nhs_cbt",
+        "nimh_psychotherapies"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_methods_relaxation_boundary_003",
+      "path": "knowledge/evidence_cards/methods/ev_methods_relaxation_boundary_003.json",
+      "category": "methods",
+      "source_ids": [
+        "nimh_psychotherapies"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_methods_therapy_vs_self_help_004",
+      "path": "knowledge/evidence_cards/methods/ev_methods_therapy_vs_self_help_004.json",
+      "category": "methods",
+      "source_ids": [
+        "nimh_psychotherapies",
+        "nhs_cbt"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_methods_thought_emotion_behavior_002",
+      "path": "knowledge/evidence_cards/methods/ev_methods_thought_emotion_behavior_002.json",
+      "category": "methods",
+      "source_ids": [
+        "nhs_cbt"
+      ],
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_safety_12356_referral_005",
+      "path": "knowledge/evidence_cards/safety/ev_safety_12356_referral_005.json",
+      "category": "safety",
+      "source_ids": [
+        "nhc_12356"
+      ],
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_safety_confidentiality_boundary_007",
+      "path": "knowledge/evidence_cards/safety/ev_safety_confidentiality_boundary_007.json",
+      "category": "safety",
+      "source_ids": [
+        "nhc_hotline_guide"
+      ],
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_safety_hotline_role_004",
+      "path": "knowledge/evidence_cards/safety/ev_safety_hotline_role_004.json",
+      "category": "safety",
+      "source_ids": [
+        "nhc_hotline_guide"
+      ],
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_safety_imminent_escalation_002",
+      "path": "knowledge/evidence_cards/safety/ev_safety_imminent_escalation_002.json",
+      "category": "safety",
+      "source_ids": [
+        "who_mhgap_self_harm_suicide",
+        "nhc_hotline_guide"
+      ],
+      "risk_level": "critical",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_safety_no_routine_self_help_006",
+      "path": "knowledge/evidence_cards/safety/ev_safety_no_routine_self_help_006.json",
+      "category": "safety",
+      "source_ids": [
+        "who_mhgap_self_harm_suicide",
+        "nhc_hotline_guide"
+      ],
+      "risk_level": "critical",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_safety_plan_boundary_003",
+      "path": "knowledge/evidence_cards/safety/ev_safety_plan_boundary_003.json",
+      "category": "safety",
+      "source_ids": [
+        "who_safety_planning"
+      ],
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_safety_risk_identification_001",
+      "path": "knowledge/evidence_cards/safety/ev_safety_risk_identification_001.json",
+      "category": "safety",
+      "source_ids": [
+        "who_mhgap_self_harm_suicide",
+        "nhc_hotline_guide"
+      ],
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_safety_trusted_support_008",
+      "path": "knowledge/evidence_cards/safety/ev_safety_trusted_support_008.json",
+      "category": "safety",
+      "source_ids": [
+        "who_mhgap_self_harm_suicide",
+        "nhc_hotline_guide",
+        "nhc_12356"
+      ],
+      "risk_level": "critical",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_self_help_guided_position_003",
+      "path": "knowledge/evidence_cards/self_help/ev_self_help_guided_position_003.json",
+      "category": "self_help",
+      "source_ids": [
+        "who_self_help_interventions",
+        "nhs_guided_self_help"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_self_help_low_intensity_boundary_001",
+      "path": "knowledge/evidence_cards/self_help/ev_self_help_low_intensity_boundary_001.json",
+      "category": "self_help",
+      "source_ids": [
+        "who_self_help_interventions"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_self_help_not_replacement_005",
+      "path": "knowledge/evidence_cards/self_help/ev_self_help_not_replacement_005.json",
+      "category": "self_help",
+      "source_ids": [
+        "nimh_self_care",
+        "nhs_guided_self_help"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_self_help_self_care_scope_002",
+      "path": "knowledge/evidence_cards/self_help/ev_self_help_self_care_scope_002.json",
+      "category": "self_help",
+      "source_ids": [
+        "nimh_self_care"
+      ],
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_self_help_stress_practice_004",
+      "path": "knowledge/evidence_cards/self_help/ev_self_help_stress_practice_004.json",
+      "category": "self_help",
+      "source_ids": [
+        "who_doing_what_matters"
+      ],
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_student_scenarios_support_002",
+      "path": "knowledge/evidence_cards/student_mental_health/ev_student_scenarios_support_002.json",
+      "category": "student_mental_health",
+      "source_ids": [
+        "moe_student_mental_health_2023_2025"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_student_system_context_001",
+      "path": "knowledge/evidence_cards/student_mental_health/ev_student_system_context_001.json",
+      "category": "student_mental_health",
+      "source_ids": [
+        "moe_student_mental_health_2023_2025"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_common_work_context_006",
+      "path": "knowledge/evidence_cards/common_issues/ev_common_work_context_006.json",
+      "category": "common_issues",
+      "source_ids": [
+        "who_mental_health_at_work_guideline"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_common_grief_variability_007",
+      "path": "knowledge/evidence_cards/common_issues/ev_common_grief_variability_007.json",
+      "category": "common_issues",
+      "source_ids": [
+        "nhs_grief_bereavement_loss"
+      ],
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "ev_common_grief_help_boundary_008",
+      "path": "knowledge/evidence_cards/common_issues/ev_common_grief_help_boundary_008.json",
+      "category": "common_issues",
+      "source_ids": [
+        "nhs_grief_bereavement_loss"
+      ],
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    }
+  ]
+}

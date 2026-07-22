@@ -1,0 +1,18 @@
+{
+  "id": "ev_common_low_mood_boundary_001",
+  "title": "低落情绪回应的专业边界",
+  "claim": "低落相关支持需要关注严重程度、持续时间、功能影响和复发情况。",
+  "summary": "NICE 成人抑郁指南区分不同严重程度、病程和复杂情形，并要求专业决策结合个人需要、偏好与价值。系统只能用于一般识别和心理教育。",
+  "source_ids": ["nice_depression_ng222"],
+  "source_note_refs": ["knowledge_sources/notes/common_issues_notes.md#nice_depression_ng222"],
+  "category": "common_issues",
+  "applies_to": ["low_mood", "loss_of_interest", "functional_impairment"],
+  "not_applies_to": ["diagnosis", "treatment_selection", "psychotic_depression"],
+  "allowed_claims": ["可以询问持续时间和日常功能影响", "复杂或严重情形需要专业评估"],
+  "forbidden_claims": ["可以根据对话诊断抑郁症", "可以决定临床治疗方案", "低落只有一种原因"],
+  "product_use": ["issue_explanation", "product_disclaimer"],
+  "evidence_level": "clinical_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

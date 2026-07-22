@@ -1,0 +1,13 @@
+{
+  "id": "somatic_stress_response", "name": "身体化压力反应",
+  "keywords": ["心慌", "胸闷", "胃痛", "胃口", "头疼", "发抖", "出汗", "肌肉紧", "呼吸急"],
+  "use_when": ["身体反应与压力情境同步出现", "用户在高负荷下持续紧绷"],
+  "do_not_use_when": ["出现急性胸痛、呼吸困难、昏厥等医疗警讯", "身体原因尚未排查却准备下心理结论"],
+  "plain_explanation": "压力可能通过心跳、呼吸、肌肉和消化表现出来，但相似症状也可能有身体原因，需要保留医学判断空间。",
+  "natural_response_examples": ["这些身体反应可能与紧张同时出现，但不能仅凭对话认定都是心理造成的。"],
+  "safe_small_actions": ["记录症状、情境和持续时间", "短暂延长呼气并观察是否变化"],
+  "avoid": ["把症状全部心理化", "延误紧急医疗帮助"],
+  "related_issue_types": ["anxiety", "academic_stress", "work_stress", "sleep_disturbance"],
+  "related_interventions": ["grounding_breath", "emotion_labeling"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

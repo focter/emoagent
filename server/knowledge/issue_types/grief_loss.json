@@ -1,0 +1,17 @@
+{
+  "id": "grief_loss",
+  "name": "丧失 / 哀伤",
+  "description": "因死亡、关系结束、失去工作或住所等重要丧失出现的悲伤、麻木、愤怒、内疚或生活失衡，不直接等同于心理障碍。",
+  "keywords": ["亲人去世", "去世了", "离世", "过世", "丧亲", "哀伤", "悲痛", "分手后", "失恋", "被裁员", "失去工作"],
+  "user_expressions": ["亲人离世后我一直缓不过来", "分手以后我有时麻木有时又很难受", "失去这份工作后我像失去了一部分生活"],
+  "key_dimensions": ["丧失事件和发生时间", "当前主要情绪与变化节奏", "睡眠、饮食和日常功能", "现实支持与安全状态"],
+  "first_followups": ["这件事发生后，现在最难承受的是哪一部分？", "最近的睡眠、日常生活和身边支持大概是什么情况？"],
+  "enough_information_signals": ["说明了丧失事件", "描述了当前情绪", "说明了生活影响或现实支持"],
+  "common_mechanisms": ["self_blame_loop", "emotional_suppression", "rumination"],
+  "possible_interventions": ["emotion_labeling", "help_seeking_script"],
+  "do_not_say": ["想开点", "时间会治愈一切", "你应该已经走出来了"],
+  "escalation_signals": ["出现自伤、自杀或不想活的想法", "长期无法恢复基本生活", "现实暴力或即时人身危险"],
+  "source_refs": ["nhs_grief_bereavement_loss"],
+  "source_level": "L3_contextual_psychoeducation",
+  "review_status": "pending_clinical_review"
+}

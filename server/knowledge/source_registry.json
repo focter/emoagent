@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "sources": [
+    {
+      "id": "who_mhgap", "title": "WHO mhGAP Intervention Guide, Version 2.0",
+      "source_type": "clinical_guideline", "url": "https://www.who.int/publications/i/item/9789241549790",
+      "usage_note": "用于边界、安全识别和非专科心理健康支持原则的上位参考；不复制正文，不据此让 Demo 提供诊断或治疗。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "nice_depression_adults", "title": "NICE Depression in adults: treatment and management (NG222)",
+      "source_type": "clinical_guideline", "url": "https://www.nice.org.uk/guidance/ng222",
+      "usage_note": "用于成人低落、功能影响、风险询问和分级支持的审校参考；不将临床治疗建议直接转为产品自助建议。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "apa_depression_cpg", "title": "APA Clinical Practice Guideline for the Treatment of Depression Across Three Age Cohorts",
+      "source_type": "clinical_guideline", "url": "https://www.apa.org/depression-guideline/guideline.pdf",
+      "usage_note": "用于抑郁相关心理教育边界及循证干预概念审校；Demo 不执行诊断、治疗选择或临床处方。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "samhsa_988_safety_plan", "title": "SAMHSA 988 Safety Plan",
+      "source_type": "crisis_safety_resource", "url": "https://www.samhsa.gov/resource/988/safety-plan",
+      "usage_note": "用于现实支持、环境安全和紧急升级原则；本地模板不替代完整安全计划或危机服务。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "product_internal_rule", "title": "AI 心理健康觉察 Demo 产品内部安全与表达规则",
+      "source_type": "product_policy", "url": "",
+      "usage_note": "记录产品边界、风险优先级、禁用表达和 prompt 注入限制；需要持续进行临床、安全与法律复核。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "who_mental_health_at_work_guideline", "title": "WHO Guidelines on mental health at work",
+      "source_type": "clinical_guideline", "url": "https://www.who.int/publications/i/item/9789240053052",
+      "usage_note": "用于工作压力的组织与个人多层情境边界；不把组织层建议转写为个体必须完成的自助任务。",
+      "last_checked": "2026-07-15"
+    },
+    {
+      "id": "nhs_grief_bereavement_loss", "title": "NHS Grief after bereavement or loss",
+      "source_type": "public_health_guidance", "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/grief-bereavement-loss/",
+      "usage_note": "用于哀伤体验差异、日常功能和求助边界；不根据阶段或时长诊断哀伤障碍。",
+      "last_checked": "2026-07-15"
+    }
+  ]
+}

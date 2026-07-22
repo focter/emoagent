@@ -1,0 +1,14 @@
+{
+  "id": "interpersonal", "name": "人际关系困扰",
+  "description": "朋友、同学、同事或室友关系中的冲突、排斥、误解、边界和表达困难。",
+  "keywords": ["朋友", "同学", "同事", "室友", "人际", "社交", "孤立", "排挤", "误会", "冲突", "被忽视"],
+  "user_expressions": ["我感觉被大家排除在外", "和同事吵架后一直在想", "我怕别人不喜欢我"],
+  "key_dimensions": ["具体互动事实", "对他人意图的解释", "自己的需要与表达", "权力和安全风险"],
+  "first_followups": ["具体发生了什么，对方有哪些可确认的行为？", "你最希望这段关系里改变什么？"],
+  "enough_information_signals": ["说明具体互动", "区分事实和推测", "说明需要或边界"],
+  "common_mechanisms": ["people_pleasing_boundaries", "cognitive_appraisal", "rumination", "social_comparison_self_worth"],
+  "possible_interventions": ["fact_vs_interpretation", "boundary_sentence", "relationship_clarification"],
+  "do_not_say": ["都是对方的错", "立刻绝交", "你太敏感了"],
+  "escalation_signals": ["持续欺凌、跟踪或威胁", "现实人身安全风险"],
+  "source_level": "L3_contextual_psychoeducation", "review_status": "pending_clinical_review"
+}

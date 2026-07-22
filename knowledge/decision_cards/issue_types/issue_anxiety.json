@@ -1,0 +1,67 @@
+{
+  "id": "issue_anxiety",
+  "type": "issue_type",
+  "name": "焦虑与紧张",
+  "description": "持续担忧、紧张、惊恐体验、身体不适或回避等焦虑相关困扰。",
+  "match": {
+    "keywords": [
+      "焦虑",
+      "担心",
+      "紧张",
+      "心慌",
+      "害怕",
+      "惊恐"
+    ],
+    "signals": [
+      "反复预想风险",
+      "身体唤醒",
+      "回避情境",
+      "影响日常功能"
+    ],
+    "exclude": [
+      "明确医疗急症",
+      "单次正常紧张且无困扰"
+    ]
+  },
+  "evidence_refs": [
+    "ev_common_anxiety_boundary_002",
+    "ev_common_no_system_diagnosis_003"
+  ],
+  "applies_to": [
+    "anxiety",
+    "panic",
+    "avoidance"
+  ],
+  "not_applies_to": [
+    "diagnosis",
+    "medication_advice"
+  ],
+  "response_goals": [
+    "区分担忧、惊恐和回避模式",
+    "了解持续时间与功能影响",
+    "提供非诊断性支持"
+  ],
+  "allowed_actions": [
+    "询问焦虑发生的情境",
+    "提供短时稳定练习",
+    "影响持续时建议专业帮助"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_catastrophizing",
+    "mechanism_avoidance",
+    "mechanism_uncertainty_intolerance"
+  ],
+  "recommended_interventions": [
+    "intervention_breathing_60s",
+    "intervention_grounding_54321",
+    "intervention_problem_split"
+  ]
+}

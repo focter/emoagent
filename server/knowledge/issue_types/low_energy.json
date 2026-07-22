@@ -1,0 +1,14 @@
+{
+  "id": "low_energy", "name": "低能量 / 提不起劲",
+  "description": "持续感到精力不足、启动困难或兴趣下降；需同时留意作息、身体状况、现实负荷和安全风险。",
+  "keywords": ["没劲", "提不起劲", "不想动", "什么都不想", "很累", "疲惫", "没精神", "没动力", "起不来"],
+  "user_expressions": ["我什么都不想做", "最近总觉得很累", "明明有事但就是动不了"],
+  "key_dimensions": ["持续时间与频率", "睡眠食欲和身体状态", "学习工作与基本生活影响", "近期压力或疾病"],
+  "first_followups": ["这种状态大概持续多久了？", "最近睡眠、食欲或日常生活有没有明显变化？"],
+  "enough_information_signals": ["说明了持续时间", "说明了生活功能影响", "说明了诱因或身体变化"],
+  "common_mechanisms": ["behavioral_activation", "stress_response", "sleep_emotion_loop"],
+  "possible_interventions": ["small_step_activation", "emotion_labeling"],
+  "do_not_say": ["你就是懒", "多运动就好了", "你一定是抑郁症"],
+  "escalation_signals": ["无法维持进食饮水或基本生活", "强烈绝望、自伤或自杀想法"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

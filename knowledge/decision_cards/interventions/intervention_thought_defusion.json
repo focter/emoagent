@@ -1,0 +1,64 @@
+{
+  "id": "intervention_thought_defusion",
+  "type": "intervention",
+  "name": "与想法拉开一点距离",
+  "description": "把反复出现的内容表述为“我注意到自己有一个想法”，而不是立即把它当成事实。",
+  "match": {
+    "keywords": [
+      "一直想",
+      "肯定会这样",
+      "脑子停不下来"
+    ],
+    "signals": [
+      "想法与事实混合",
+      "反刍循环",
+      "用户愿意尝试换一种表述"
+    ],
+    "exclude": [
+      "需要立即响应的现实危险",
+      "用练习否认真实事件"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_self_help_stress_practice_004"
+  ],
+  "applies_to": [
+    "rumination",
+    "self_doubt",
+    "anxiety"
+  ],
+  "not_applies_to": [
+    "imminent_danger",
+    "factual_risk_dismissal"
+  ],
+  "response_goals": [
+    "区分想法与事实",
+    "减少立即跟随想法行动",
+    "恢复选择空间"
+  ],
+  "allowed_actions": [
+    "使用非争辩式语言",
+    "承认想法带来的感受",
+    "练习后回到现实行动"
+  ],
+  "forbidden_actions": [
+    "不用于高风险危机场景的唯一回应",
+    "不承诺治疗效果"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "steps": [
+    "写下或说出当前反复出现的一句话",
+    "在前面加上“我注意到自己有一个想法”",
+    "观察这种表述是否带来一点距离"
+  ],
+  "max_duration_minutes": 5,
+  "unsuitable_when": [
+    "需要立即处理现实危险",
+    "用户正处于严重混乱或无法安全参与",
+    "高风险危机尚未处理"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "people_pleasing_boundaries", "name": "讨好与边界",
+  "keywords": ["不敢拒绝", "怕他生气", "讨好", "委屈", "迁就", "都答应", "边界", "怕别人不喜欢"],
+  "use_when": ["为避免冲突长期压下需要", "答应后疲惫委屈却仍不敢表达"],
+  "do_not_use_when": ["拒绝可能引发暴力或现实报复", "用户正在策略性配合以保障安全"],
+  "plain_explanation": "优先不让别人失望能暂时维持平静，但自己的需要长期没有位置，容易累积成疲惫、委屈或爆发。",
+  "natural_response_examples": ["在这段关系里，你似乎一直在照顾对方会不会不高兴，却很少有空间确认自己愿不愿意。"],
+  "safe_small_actions": ["先说需要考虑后再回复", "区分愿意、勉强和不能接受"],
+  "avoid": ["把讨好贴成人格标签", "忽略权力与安全差异"],
+  "related_issue_types": ["interpersonal", "romantic_relationship", "family_pressure", "work_stress"],
+  "related_interventions": ["boundary_sentence", "relationship_clarification"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

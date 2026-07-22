@@ -1,0 +1,62 @@
+{
+  "id": "mechanism_perfectionism",
+  "type": "mechanism",
+  "name": "完美要求",
+  "description": "把可接受标准抬高到难以开始或完成，并将不完美视为失败。",
+  "match": {
+    "keywords": [
+      "必须完美",
+      "做不好不如不做",
+      "还不够好"
+    ],
+    "signals": [
+      "标准僵硬",
+      "启动延迟",
+      "反复修改",
+      "结果与自我价值绑定"
+    ],
+    "exclude": [
+      "合理质量要求",
+      "高风险专业任务的必要规范"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_methods_no_effect_promise_005"
+  ],
+  "applies_to": [
+    "procrastination",
+    "academic_stress",
+    "burnout"
+  ],
+  "not_applies_to": [
+    "safety_critical_quality_requirement",
+    "diagnosis"
+  ],
+  "response_goals": [
+    "区分必要标准与额外要求",
+    "允许可修改的初稿"
+  ],
+  "allowed_actions": [
+    "询问最低可接受版本",
+    "缩小当前交付范围"
+  ],
+  "forbidden_actions": [
+    "不否定用户对质量的重视",
+    "不要求彻底放弃标准"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "explain_to_user": "看起来像是标准高到让开始变得很难，这可能不是不努力，而是“不够好就等于失败”的压力。",
+  "linked_issue_types": [
+    "issue_procrastination",
+    "issue_academic_stress",
+    "issue_burnout"
+  ],
+  "suitable_interventions": [
+    "intervention_tiny_next_step",
+    "intervention_problem_split"
+  ]
+}

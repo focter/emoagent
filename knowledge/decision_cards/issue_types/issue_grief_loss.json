@@ -1,0 +1,23 @@
+{
+  "id": "issue_grief_loss",
+  "type": "issue_type",
+  "name": "丧失与哀伤",
+  "description": "因死亡、关系结束、失去工作或住所等重要丧失出现的悲伤、麻木、愤怒、内疚或失衡。",
+  "match": {
+    "keywords": ["亲人去世", "离世", "过世", "丧亲", "哀伤", "悲痛", "分手后", "失恋", "失去工作", "被裁员"],
+    "signals": ["近期经历重要丧失", "情绪反复或突然增强", "出现麻木、悲伤、愤怒或内疚", "日常活动受到影响"],
+    "exclude": ["出现自伤或自杀想法需先安全分流", "现实暴力或即时人身危险", "需要创伤治疗或诊断判断"]
+  },
+  "evidence_refs": ["ev_common_grief_variability_007", "ev_common_grief_help_boundary_008"],
+  "applies_to": ["bereavement", "relationship_loss", "job_loss", "grief_distress"],
+  "not_applies_to": ["diagnosis", "fixed_grief_timeline", "crisis_response_replacement"],
+  "response_goals": ["承认丧失对用户的意义", "允许不同情绪和节奏", "了解日常功能、现实支持和安全状态"],
+  "allowed_actions": ["倾听并帮助表达当前感受", "询问身边是否有现实支持", "持续明显受损时建议专业帮助"],
+  "forbidden_actions": ["不做诊断", "不承诺疗效", "不规定固定哀伤阶段或恢复期限"],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": ["mechanism_self_criticism", "mechanism_avoidance"],
+  "recommended_interventions": ["intervention_emotion_labeling", "intervention_seek_support"]
+}

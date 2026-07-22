@@ -1,0 +1,25 @@
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+blob-report/
+.vite/
+
+.env
+.env.*
+!.env.example
+
+*.log
+.DS_Store
+Thumbs.db
+
+tmp-*.json
+.agents/
+.codex/
+
+# Official-site snapshots are local research inputs. Keep only directory markers;
+# do not redistribute downloaded HTML/assets without checking source terms.
+knowledge_sources/raw/**
+!knowledge_sources/raw/**/
+!knowledge_sources/raw/**/.gitkeep

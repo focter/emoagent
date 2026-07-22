@@ -1,0 +1,65 @@
+{
+  "id": "issue_rumination",
+  "type": "issue_type",
+  "name": "反复思考与反刍",
+  "description": "围绕过去、错误或担忧反复思考，却难以形成新信息或行动。",
+  "match": {
+    "keywords": [
+      "停不下来",
+      "一直想",
+      "反复回想",
+      "脑子转个不停"
+    ],
+    "signals": [
+      "同一内容循环",
+      "越想越痛苦",
+      "难以转向行动",
+      "影响睡眠或专注"
+    ],
+    "exclude": [
+      "有明确目标的正常问题解决",
+      "精神病性症状判断"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_methods_no_effect_promise_005"
+  ],
+  "applies_to": [
+    "rumination",
+    "anxiety",
+    "low_mood"
+  ],
+  "not_applies_to": [
+    "diagnosis",
+    "thought_suppression_claim"
+  ],
+  "response_goals": [
+    "帮助识别循环",
+    "区分思考与可执行问题",
+    "温和转向当下"
+  ],
+  "allowed_actions": [
+    "询问这轮思考是否带来新信息",
+    "尝试短时落地练习",
+    "选择一个可行动的小问题"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_rumination_loop",
+    "mechanism_self_criticism",
+    "mechanism_uncertainty_intolerance"
+  ],
+  "recommended_interventions": [
+    "intervention_thought_defusion",
+    "intervention_grounding_54321",
+    "intervention_problem_split"
+  ]
+}

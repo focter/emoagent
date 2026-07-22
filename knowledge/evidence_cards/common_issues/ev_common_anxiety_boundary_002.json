@@ -1,0 +1,18 @@
+{
+  "id": "ev_common_anxiety_boundary_002",
+  "title": "焦虑回应的专业边界",
+  "claim": "焦虑相关支持应区分持续担忧、惊恐体验、回避和功能影响。",
+  "summary": "NICE 指南分别讨论广泛性焦虑和惊恐障碍，并采用分级照护。系统可帮助梳理体验与影响，但不能把笼统紧张直接归为临床障碍。",
+  "source_ids": ["nice_anxiety_cg113"],
+  "source_note_refs": ["knowledge_sources/notes/common_issues_notes.md#nice_anxiety_cg113"],
+  "category": "common_issues",
+  "applies_to": ["anxiety", "panic", "avoidance", "functional_impairment"],
+  "not_applies_to": ["diagnosis", "medication_advice", "treatment_selection"],
+  "allowed_claims": ["可以询问担忧、惊恐和回避的具体模式", "可以根据影响程度建议进一步求助"],
+  "forbidden_claims": ["可以诊断焦虑障碍", "可以推荐处方药", "所有焦虑都应采用同一方法"],
+  "product_use": ["issue_explanation", "product_disclaimer"],
+  "evidence_level": "clinical_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

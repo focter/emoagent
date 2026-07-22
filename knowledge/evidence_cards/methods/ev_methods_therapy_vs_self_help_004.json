@@ -1,0 +1,21 @@
+{
+  "id": "ev_methods_therapy_vs_self_help_004",
+  "title": "心理治疗不同于一般自助支持",
+  "claim": "心理治疗由合格专业人员按具体问题和个人需要开展，一般自助不能冒充治疗。",
+  "summary": "NIMH 将心理治疗定义为由持证专业人员开展的一组治疗方式，并强调方法、目标、保密和进展评估；NHS 也要求 CBT 前进行评估并匹配形式。",
+  "source_ids": ["nimh_psychotherapies", "nhs_cbt"],
+  "source_note_refs": [
+    "knowledge_sources/notes/methods_notes.md#nimh_psychotherapies",
+    "knowledge_sources/notes/methods_notes.md#nhs_cbt"
+  ],
+  "category": "methods",
+  "applies_to": ["method_explanation", "self_help_boundary", "professional_care"],
+  "not_applies_to": ["replacement_for_professional_care", "diagnosis", "treatment_plan"],
+  "allowed_claims": ["可以区分心理教育、自助和正式心理治疗", "正式治疗需要专业资质和个体评估"],
+  "forbidden_claims": ["系统就是你的治疗师", "微干预等同于心理治疗", "自助对话可替代持证专业人员"],
+  "product_use": ["product_disclaimer", "self_help_boundary"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

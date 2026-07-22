@@ -1,0 +1,14 @@
+{
+  "id": "procrastination", "name": "拖延 / 行动困难",
+  "description": "明知任务重要却难以启动或持续，常与压力、回避、完美标准、低能量或注意力负荷有关。",
+  "keywords": ["拖延", "拖到", "不开始", "行动不了", "启动不了", "一直刷手机", "来不及", "不敢打开", "完不成"],
+  "user_expressions": ["我知道要做但就是开始不了", "越拖越害怕", "总要到最后一刻才动"],
+  "key_dimensions": ["具体任务与时间压力", "开始前的想法和感受", "回避后的短期结果", "精力与执行环境"],
+  "first_followups": ["每次准备开始时，最先出现的想法或感觉是什么？", "你通常会转去做什么，之后压力怎样变化？"],
+  "enough_information_signals": ["描述任务和截止时间", "描述启动前体验", "描述重复的回避结果"],
+  "common_mechanisms": ["avoidance_loop", "perfectionism_procrastination", "behavioral_activation", "self_blame_loop"],
+  "possible_interventions": ["small_step_activation", "thought_record_light"],
+  "do_not_say": ["你就是自制力差", "逼自己一次做完", "拖延症没救了"],
+  "escalation_signals": ["基本生活长期无法启动", "伴随强烈绝望或自伤想法"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "small_step_activation", "name": "小步行为激活",
+  "keywords": ["开始不了", "没动力", "拖延", "不想动", "行动困难", "卡住"],
+  "suitable_for": ["低能量或回避导致启动困难", "能尝试两到十分钟的小动作"],
+  "not_suitable_for": ["明显耗竭需要休息或医疗评估", "无法维持基本生活或有即时危险"],
+  "instruction": ["选一个十分钟内能开始的动作", "把目标设为接触而非完成", "结束后只观察能量变化"],
+  "natural_prompt": "如果你想试一个很小的动作，可以只把文件打开并写一个标题，五分钟后就允许停。",
+  "example": "不是完成论文，而是打开文档、写下一个小标题。",
+  "avoid": ["一次给很多任务", "把未完成解释为不努力"],
+  "safety_notes": ["这是可选自助建议，不是治疗，也不保证改善", "行动不应替代必要休息、医疗评估或现实支持"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

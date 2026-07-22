@@ -1,0 +1,12 @@
+{
+  "id": "emotion_labeling", "name": "情绪命名",
+  "keywords": ["说不清", "压抑", "麻木", "烦", "难受", "委屈", "生气", "害怕"],
+  "suitable_for": ["情绪混在一起难以描述", "长期压住感受或身体紧绷"],
+  "not_suitable_for": ["命名会明显加剧失控", "当前需要先处理医疗或人身安全"],
+  "instruction": ["从焦虑、难过、委屈、生气、麻木中选一到两个近似词", "用0到10表示强度", "不要求解释原因"],
+  "natural_prompt": "先不用把原因讲清楚；如果选一两个词，现在更接近紧张、委屈、生气、难过，还是麻木？",
+  "example": "我现在更接近委屈7分、害怕4分。",
+  "avoid": ["替用户决定情绪", "要求精确或完整"],
+  "safety_notes": ["仅用于自我觉察，不承诺减轻症状", "若情绪伴随自伤或伤人冲动，应进入安全回应"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

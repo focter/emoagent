@@ -1,0 +1,24 @@
+{
+  "id": "intervention_example_step",
+  "type": "intervention",
+  "name": "示例决策卡",
+  "description": "说明该规则或策略在产品决策层中的用途。",
+  "match": {
+    "keywords": ["示例关键词"],
+    "signals": ["示例信号"],
+    "exclude": ["排除场景"]
+  },
+  "evidence_refs": ["ev_existing_evidence_card_001"],
+  "applies_to": ["mild_distress"],
+  "not_applies_to": ["imminent_danger"],
+  "response_goals": ["明确回应目标"],
+  "allowed_actions": ["允许执行的动作"],
+  "forbidden_actions": ["不用于高风险危机场景的唯一回应", "不承诺治疗效果"],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "steps": ["步骤一", "步骤二"],
+  "max_duration_minutes": 5,
+  "unsuitable_when": ["高风险危机尚未处理"]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "intervention_grounding_54321",
+  "type": "intervention",
+  "name": "5-4-3-2-1 感官落地",
+  "description": "把注意力依次带回可见、可触、可听、可闻和可尝的当下感官信息。",
+  "match": {
+    "keywords": [
+      "脑子停不下来",
+      "很慌",
+      "不在状态",
+      "需要落地"
+    ],
+    "signals": [
+      "轻中度情绪过载",
+      "注意力被担忧占据",
+      "用户愿意做感官练习"
+    ],
+    "exclude": [
+      "正在实施自伤",
+      "感官练习会加重不适",
+      "无法保证安全"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_relaxation_boundary_003",
+    "ev_self_help_stress_practice_004"
+  ],
+  "applies_to": [
+    "mild_distress",
+    "emotion_overload",
+    "rumination"
+  ],
+  "not_applies_to": [
+    "imminent_danger",
+    "active_suicide_attempt"
+  ],
+  "response_goals": [
+    "短时转向当下",
+    "降低信息负荷",
+    "为下一步留出空间"
+  ],
+  "allowed_actions": [
+    "征得同意后提供练习",
+    "允许跳过不舒服的感官",
+    "练习后询问感受"
+  ],
+  "forbidden_actions": [
+    "不用于高风险危机场景的唯一回应",
+    "不承诺治疗效果"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "steps": [
+    "说出 5 个看到的事物",
+    "感受 4 个能触碰到的事物",
+    "注意 3 个听到的声音",
+    "辨认 2 种气味",
+    "注意 1 种味道或口腔感受"
+  ],
+  "max_duration_minutes": 5,
+  "unsuitable_when": [
+    "正在实施自伤或自杀行为",
+    "无法保证安全",
+    "感官聚焦明显加重创伤或解离体验"
+  ]
+}

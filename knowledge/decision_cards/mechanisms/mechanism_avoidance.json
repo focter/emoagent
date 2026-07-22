@@ -1,0 +1,66 @@
+{
+  "id": "mechanism_avoidance",
+  "type": "mechanism",
+  "name": "回避循环",
+  "description": "暂时避开困难可降低当下不适，却可能让任务、担忧或孤立继续累积。",
+  "match": {
+    "keywords": [
+      "先不管了",
+      "不敢开始",
+      "一直躲着",
+      "不想面对"
+    ],
+    "signals": [
+      "回避后短暂轻松",
+      "长期压力增加",
+      "行动范围缩小"
+    ],
+    "exclude": [
+      "合理远离危险",
+      "必要休息",
+      "明确边界保护"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_self_help_self_care_scope_002"
+  ],
+  "applies_to": [
+    "procrastination",
+    "anxiety",
+    "loneliness",
+    "low_mood"
+  ],
+  "not_applies_to": [
+    "unsafe_environment",
+    "needed_recovery"
+  ],
+  "response_goals": [
+    "区分保护性暂停与持续回避",
+    "降低重新接触任务的门槛"
+  ],
+  "allowed_actions": [
+    "承认回避的短期保护作用",
+    "设计可退出的小步骤"
+  ],
+  "forbidden_actions": [
+    "不把所有休息都解释为回避",
+    "不要求一次面对全部困难"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "explain_to_user": "看起来像是回避先帮你降低了当下的不适，但也可能让任务或担忧在之后变得更重。",
+  "linked_issue_types": [
+    "issue_procrastination",
+    "issue_anxiety",
+    "issue_loneliness",
+    "issue_low_mood",
+    "issue_burnout"
+  ],
+  "suitable_interventions": [
+    "intervention_tiny_next_step",
+    "intervention_problem_split"
+  ]
+}

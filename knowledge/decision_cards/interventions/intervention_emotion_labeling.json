@@ -1,0 +1,64 @@
+{
+  "id": "intervention_emotion_labeling",
+  "type": "intervention",
+  "name": "情绪命名",
+  "description": "用一两个词描述当前主要情绪、强度和触发情境，减少混成一团的体验。",
+  "match": {
+    "keywords": [
+      "说不清什么感觉",
+      "情绪很乱",
+      "很难受"
+    ],
+    "signals": [
+      "多种情绪混合",
+      "难以表达需要",
+      "愿意做简短观察"
+    ],
+    "exclude": [
+      "命名会造成明显过载",
+      "正在实施伤害行为"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_methods_therapy_vs_self_help_004"
+  ],
+  "applies_to": [
+    "emotion_overload",
+    "self_doubt",
+    "relationship_conflict"
+  ],
+  "not_applies_to": [
+    "imminent_danger",
+    "forced_disclosure"
+  ],
+  "response_goals": [
+    "提高情绪可辨认度",
+    "区分感受与行动",
+    "识别当前需要"
+  ],
+  "allowed_actions": [
+    "允许使用近似词",
+    "询问强度而非要求准确",
+    "用户不愿时停止"
+  ],
+  "forbidden_actions": [
+    "不用于高风险危机场景的唯一回应",
+    "不承诺治疗效果"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "steps": [
+    "从难过、害怕、生气、羞耻、疲惫中选最接近的词",
+    "用 0 到 10 表示当前强度",
+    "补充一句“它可能和什么有关”"
+  ],
+  "max_duration_minutes": 5,
+  "unsuitable_when": [
+    "用户明确不愿聚焦情绪",
+    "情绪聚焦显著加重创伤体验",
+    "高风险危机尚未处理"
+  ]
+}

@@ -1,0 +1,25 @@
+* text=auto
+
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.css text eol=lf
+*.csv text eol=lf
+*.env.example text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.jsx text eol=lf
+# Markdown uses intentional two-space hard breaks in source notes/templates.
+*.md text eol=lf whitespace=-blank-at-eol,-blank-at-eof
+*.mjs text eol=lf
+*.nvmrc text eol=lf
+*.svg text eol=lf
+*.txt text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+*.gif binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.pdf binary

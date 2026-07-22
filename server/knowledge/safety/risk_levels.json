@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "risk_levels": [
+    {
+      "id": "level_0", "name": "无明显风险",
+      "signals": ["未出现消极生存意愿、自伤、自杀、伤人或即时失控信息"],
+      "keywords": [],
+      "response_goal": "继续普通觉察对话，并对新出现的风险保持敏感。",
+      "must_include": ["不诊断", "只使用当前相关知识"],
+      "must_not_include": ["无依据地升级为危机", "忽略后续风险信息"],
+      "allowed_followups": ["持续时间", "功能影响", "具体诱因"],
+      "escalation_action": "若出现更高等级信号，立即切换到对应安全回应。",
+      "source_level": "L1_product_safety_rule", "review_status": "pending_clinical_and_legal_review"
+    },
+    {
+      "id": "level_1", "name": "消极表达但无明确自伤意图",
+      "signals": ["表达活着没意思、想消失、没有意义，但未明确表示要自伤或自杀"],
+      "keywords": ["活着没意思", "活着好累", "撑不住了", "想消失", "生活没意义", "没有活下去的意义", "不如消失", "不想存在"],
+      "response_goal": "承认痛苦，直接但克制地确认是否有自伤或自杀想法，并连接现实支持。",
+      "must_include": ["询问当前是否安全", "询问是否出现自伤或自杀想法", "鼓励联系可信任的人"],
+      "must_not_include": ["空泛保证", "普通心理机制分析", "把表达当作矫情"],
+      "allowed_followups": ["你现在安全吗？", "你有伤害自己或结束生命的想法吗？"],
+      "escalation_action": "若确认自伤/自杀想法，升级到 level_2；若出现计划或工具，升级到 level_3。",
+      "source_level": "L1_product_safety_rule", "review_status": "pending_clinical_and_legal_review"
+    },
+    {
+      "id": "level_2", "name": "明确自伤/自杀想法但无计划",
+      "signals": ["明确说想死、不想活、自杀或自伤，但未提供方式、时间、地点或工具"],
+      "keywords": ["想死", "不想活", "想自杀", "要自杀", "想自伤", "伤害自己", "割腕", "轻生"],
+      "response_goal": "停止普通分析，确认计划和即时安全，推动可信任者与专业支持介入。",
+      "must_include": ["询问是否已有方式、时间、地点或工具", "建议不要独处", "联系可信任的人和当地专业支持", "远离或请他人保管可能用于伤害的危险物品"],
+      "must_not_include": ["讨论方法细节", "承诺保密或保证不会发生", "只提供自助练习"],
+      "allowed_followups": ["你现在有没有具体计划或已经准备工具？", "现在谁能来陪你？"],
+      "escalation_action": "有计划、工具或即刻危险时升级到 level_3；正在实施或无法安全则升级到 level_4。",
+      "source_level": "L1_product_safety_rule", "review_status": "pending_clinical_and_legal_review"
+    },
+    {
+      "id": "level_3", "name": "有方式、时间、地点、工具或即刻危险",
+      "signals": ["提到具体方式、时间、地点、工具、遗书、告别或马上行动"],
+      "keywords": ["已经准备", "准备了", "定好时间", "写了遗书", "告别", "今晚就", "马上就", "有工具", "有计划"],
+      "response_goal": "立即降低接触危险物的机会，让现实中的人到场并联系紧急服务。",
+      "must_include": ["明确这是紧急情况", "要求立即联系能到场的人", "联系当地紧急电话或医院急诊", "远离或交出危险物品"],
+      "must_not_include": ["继续探索原因", "让用户独自制定长期计划", "等待下一轮再行动"],
+      "allowed_followups": ["你现在在哪里？", "谁能马上到你身边？", "你能否把危险物品交给别人并拨打紧急电话？"],
+      "escalation_action": "立即联系当地紧急服务和可到场支持者；若行为已开始或无法保证安全，按 level_4。",
+      "source_level": "L1_product_safety_rule", "review_status": "pending_clinical_and_legal_review"
+    },
+    {
+      "id": "level_4", "name": "正在实施或无法保证安全",
+      "signals": ["正在实施自伤、自杀或伤人行为，已经服用/使用危险物，或明确无法保证当前安全"],
+      "keywords": ["正在自杀", "正在割腕", "已经割了", "已经吞了", "已经服了", "已经跳", "控制不住自己", "不能保证安全", "马上伤害"],
+      "response_goal": "用最短指令促成紧急呼救、停止独处和现场救援。",
+      "must_include": ["立即拨打当地紧急电话", "呼叫附近的人", "前往急诊或等待救援", "不继续聊天替代救援"],
+      "must_not_include": ["长篇安慰", "普通追问", "任何可能延迟呼救的练习"],
+      "allowed_followups": ["请只回复：已拨打/身边有人/无法拨打。"],
+      "escalation_action": "立即联系紧急服务；中国大陆可拨打 110 或 120，并让附近的人到场。",
+      "source_level": "L1_product_safety_rule", "review_status": "pending_clinical_and_legal_review"
+    }
+  ],
+  "source_level": "L1_product_safety_rule",
+  "review_status": "pending_clinical_and_legal_review"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "issue_emotion_overload",
+  "type": "issue_type",
+  "name": "情绪过载",
+  "description": "多种强烈情绪同时出现，难以命名、整理或决定下一步。",
+  "match": {
+    "keywords": [
+      "情绪爆炸",
+      "太乱了",
+      "控制不住情绪",
+      "脑子一团糟"
+    ],
+    "signals": [
+      "情绪强度高",
+      "难以辨认需要",
+      "注意力变窄",
+      "行动冲动"
+    ],
+    "exclude": [
+      "正在实施伤害行为",
+      "明确医疗急症"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_relaxation_boundary_003",
+    "ev_methods_thought_emotion_behavior_002"
+  ],
+  "applies_to": [
+    "emotion_overload",
+    "acute_stress",
+    "mild_distress"
+  ],
+  "not_applies_to": [
+    "imminent_danger",
+    "active_suicide_attempt"
+  ],
+  "response_goals": [
+    "先降低信息负荷",
+    "帮助命名主要情绪",
+    "选择一个安全的小步骤"
+  ],
+  "allowed_actions": [
+    "使用短句和单一问题",
+    "提供可停止的稳定练习",
+    "帮助区分情绪与行动冲动"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "high",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_emotional_reasoning",
+    "mechanism_catastrophizing"
+  ],
+  "recommended_interventions": [
+    "intervention_grounding_54321",
+    "intervention_emotion_labeling",
+    "intervention_breathing_60s"
+  ]
+}

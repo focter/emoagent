@@ -1,0 +1,55 @@
+{
+  "id": "safety_level_1_distress_without_intent",
+  "type": "safety_rule",
+  "name": "轻度痛苦但无自伤意图",
+  "description": "用户表达撑不住、想逃开或明显痛苦，但否认自伤意图且没有计划时，需要温和确认安全并提供支持。",
+  "match": {
+    "keywords": [
+      "撑不住了",
+      "想消失一会儿",
+      "活着好累"
+    ],
+    "signals": [
+      "消极表达",
+      "明显痛苦",
+      "无明确自伤意图",
+      "无计划或手段"
+    ],
+    "exclude": [
+      "想伤害自己",
+      "已经想好怎么做",
+      "现在正在做"
+    ]
+  },
+  "evidence_refs": [
+    "ev_safety_risk_identification_001",
+    "ev_common_professional_help_004"
+  ],
+  "applies_to": [
+    "distress_without_intent",
+    "supportive_check_in"
+  ],
+  "not_applies_to": [
+    "explicit_suicidal_ideation",
+    "imminent_danger"
+  ],
+  "response_goals": [
+    "确认是否存在自伤或自杀想法",
+    "降低独处感",
+    "鼓励适当求助"
+  ],
+  "allowed_actions": [
+    "直接但温和地确认安全",
+    "回应情绪痛苦",
+    "询问是否有人可以联系"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不把消极表达直接等同于明确计划",
+    "不忽略安全确认"
+  ],
+  "priority": "high",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "family_pressure", "name": "家庭压力",
+  "description": "家庭期待、冲突、经济依赖、照护责任或控制带来的压力和边界困难。",
+  "keywords": ["父母", "妈妈", "爸爸", "家里", "家庭", "亲戚", "催婚", "孝顺", "照顾家人", "家暴", "不敢拒绝"],
+  "user_expressions": ["父母总是否定我的选择", "一回家就很压抑", "我不敢拒绝家里的要求"],
+  "key_dimensions": ["压力来源", "现实依赖与选择空间", "责任和边界", "暴力威胁与安全"],
+  "first_followups": ["压力更来自期待、冲突、经济，还是照护责任？", "你目前有哪些能选择和暂时不能选择的现实条件？"],
+  "enough_information_signals": ["说明压力来源", "说明现实限制", "说明功能或安全影响"],
+  "common_mechanisms": ["people_pleasing_boundaries", "over_responsibility", "emotional_suppression", "stress_response"],
+  "possible_interventions": ["boundary_sentence", "emotion_labeling", "help_seeking_script"],
+  "do_not_say": ["父母都是为你好", "必须孝顺", "马上断绝关系"],
+  "escalation_signals": ["家暴、威胁或限制人身自由", "照护压力已使基本生活无法维持"],
+  "source_level": "L3_contextual_psychoeducation", "review_status": "pending_clinical_review"
+}

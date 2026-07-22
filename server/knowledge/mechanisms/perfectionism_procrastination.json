@@ -1,0 +1,13 @@
+{
+  "id": "perfectionism_procrastination", "name": "完美主义与拖延",
+  "keywords": ["完美", "不能出错", "做不好", "达不到", "标准", "不敢开始", "重做", "拖到最后"],
+  "use_when": ["高标准让开始成本过高", "害怕不完美导致回避并进一步赶工自责"],
+  "do_not_use_when": ["任务确有严格安全质量标准", "行动困难主要来自低能量、资源或身体限制"],
+  "plain_explanation": "当开始就意味着必须做好，第一步会变得很重；回避后时间变少，又更难达到标准，形成拖延和自责。",
+  "natural_response_examples": ["你可能不是没有标准，而是标准高到每次开始都像要立刻交出成品。"],
+  "safe_small_actions": ["先产出只供自己看的粗糙版本", "把第一步限定为十分钟和一个可见产物"],
+  "avoid": ["否定合理质量要求", "用更严计划制造压力"],
+  "related_issue_types": ["procrastination", "academic_stress", "work_stress", "self_blame"],
+  "related_interventions": ["small_step_activation", "thought_record_light"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ev_ai_app_evaluation_004",
+  "title": "心理健康应用需综合评估安全、证据与适用性",
+  "claim": "心理健康应用不能只按功能多少评价，还需审查安全、证据、可访问性、可用性和具体适用性。",
+  "summary": "APA 模型依次检查背景、访问、隐私安全、临床基础、可用性和数据整合，并拒绝简单的好坏评分。即使全部条件满足，也不表示应用适合每位用户。",
+  "source_ids": ["apa_app_evaluation_model"],
+  "source_note_refs": ["knowledge_sources/notes/ai_ethics_notes.md#apa_app_evaluation_model"],
+  "category": "ai_ethics_privacy",
+  "applies_to": ["digital_mental_health", "app_evaluation", "product_governance"],
+  "not_applies_to": ["universal_suitability_claim", "clinical_approval_claim", "generative_ai_standard"],
+  "allowed_claims": ["应综合评估安全、证据、可用性和目标人群", "适用性需要结合具体用户和场景"],
+  "forbidden_claims": ["功能齐全就代表适合所有人", "满足清单就等于获临床批准", "该框架是生成式 AI 专项认证"],
+  "product_use": ["product_disclaimer", "privacy_notice"],
+  "evidence_level": "professional_framework",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

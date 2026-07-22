@@ -1,0 +1,14 @@
+{
+  "id": "romantic_relationship", "name": "亲密关系困扰",
+  "description": "恋爱、伴侣或婚姻关系中的不确定、冲突、分离、信任与边界问题。",
+  "keywords": ["恋爱", "对象", "男朋友", "女朋友", "伴侣", "分手", "前任", "暧昧", "婚姻", "冷战", "不爱我"],
+  "user_expressions": ["对方不回消息我就很不安", "分手后一直走不出来", "我们总因同一件事吵架"],
+  "key_dimensions": ["具体互动模式", "需要与期待", "沟通和边界", "控制暴力或性安全"],
+  "first_followups": ["最近哪一次具体互动让这种感觉最明显？", "你更需要的是确认、尊重、空间，还是把分歧说清楚？"],
+  "enough_information_signals": ["说明具体互动", "说明自己的需要", "说明重复模式和功能影响"],
+  "common_mechanisms": ["attachment_insecurity", "people_pleasing_boundaries", "cognitive_appraisal", "rumination"],
+  "possible_interventions": ["fact_vs_interpretation", "relationship_clarification", "boundary_sentence"],
+  "do_not_say": ["马上分手", "他肯定不爱你", "这都是依恋类型造成的"],
+  "escalation_signals": ["控制、跟踪、威胁、家暴或性暴力", "分离后出现自伤或伤人意图"],
+  "source_level": "L3_contextual_psychoeducation", "review_status": "pending_clinical_review"
+}

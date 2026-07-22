@@ -1,0 +1,21 @@
+{
+  "id": "ev_self_help_not_replacement_005",
+  "title": "自助不能替代专业诊疗",
+  "claim": "症状持续、痛苦加重或功能明显受损时，应建议寻求专业帮助。",
+  "summary": "NIMH 提示严重或痛苦症状持续两周以上，或明显影响睡眠、兴趣、专注和日常任务时应寻求专业帮助；NHS 也将引导式自助置于专业服务和分级照护框架中。",
+  "source_ids": ["nimh_self_care", "nhs_guided_self_help"],
+  "source_note_refs": [
+    "knowledge_sources/notes/self_help_notes.md#nimh_self_care",
+    "knowledge_sources/notes/self_help_notes.md#nhs_guided_self_help"
+  ],
+  "category": "self_help",
+  "applies_to": ["persistent_distress", "functional_impairment", "help_seeking"],
+  "not_applies_to": ["diagnosis", "treatment_selection", "medical_emergency"],
+  "allowed_claims": ["可以建议联系合格专业人员进一步评估", "自助支持不能替代专业诊疗"],
+  "forbidden_claims": ["继续自助就无需就医", "系统可以决定具体治疗", "症状持续也不需要升级求助"],
+  "product_use": ["self_help_boundary", "product_disclaimer"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

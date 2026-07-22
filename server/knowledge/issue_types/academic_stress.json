@@ -1,0 +1,14 @@
+{
+  "id": "academic_stress", "name": "学业 / 考试压力",
+  "description": "由考试、论文、成绩、升学或学业比较带来的现实负荷和预期压力。",
+  "keywords": ["考试", "考研", "论文", "作业", "学习", "成绩", "复习", "挂科", "答辩", "升学", "导师"],
+  "user_expressions": ["一坐到书桌前就心慌", "担心考试失败", "论文截止快到了但我不敢打开"],
+  "key_dimensions": ["截止时间与现实任务", "失败预期", "学习功能与作息", "支持和资源"],
+  "first_followups": ["现在最紧迫的任务和时间节点是什么？", "压力主要卡在不会做、怕结果，还是很难开始？"],
+  "enough_information_signals": ["说明任务和期限", "说明具体卡点", "说明睡眠或学习影响"],
+  "common_mechanisms": ["stress_response", "catastrophizing", "perfectionism_procrastination", "avoidance_loop"],
+  "possible_interventions": ["small_step_activation", "fact_vs_interpretation", "grounding_breath"],
+  "do_not_say": ["肯定能考好", "这点压力算什么", "通宵做完就行"],
+  "escalation_signals": ["因压力无法维持基本生活", "因成绩表达自伤或自杀意图"],
+  "source_level": "L3_contextual_psychoeducation", "review_status": "pending_clinical_review"
+}

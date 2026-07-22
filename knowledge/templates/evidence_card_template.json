@@ -1,0 +1,18 @@
+{
+  "id": "ev_example_topic_001",
+  "title": "示例证据卡标题",
+  "claim": "一句简短、可追溯且不超出来源的证据主张。",
+  "summary": "用不超过 150 字说明来源支持什么、适用范围是什么，以及不能据此得出什么结论。",
+  "source_ids": ["existing_source_id"],
+  "source_note_refs": ["knowledge_sources/notes/example_notes.md#existing_source_id"],
+  "category": "self_help",
+  "applies_to": ["mild_distress"],
+  "not_applies_to": ["diagnosis", "replacement_for_professional_care"],
+  "allowed_claims": ["可以作为低强度自助支持"],
+  "forbidden_claims": ["可以替代专业治疗"],
+  "product_use": ["self_help_boundary"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

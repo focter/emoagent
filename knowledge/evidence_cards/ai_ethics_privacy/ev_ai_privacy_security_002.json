@@ -1,0 +1,18 @@
+{
+  "id": "ev_ai_privacy_security_002",
+  "title": "心理健康应用的隐私与数据安全",
+  "claim": "心理健康应用应明确敏感数据的用途、存储、共享、删除、认证和泄露响应。",
+  "summary": "APA 应用评估模型把隐私与安全列为关键层级，要求审查政策可理解性、敏感数据处理、第三方共享、用户删除选择、安全认证、事件响应及 AI 偏差治理。",
+  "source_ids": ["apa_app_evaluation_model"],
+  "source_note_refs": ["knowledge_sources/notes/ai_ethics_notes.md#apa_app_evaluation_model"],
+  "category": "ai_ethics_privacy",
+  "applies_to": ["digital_mental_health", "privacy", "sensitive_health_data"],
+  "not_applies_to": ["legal_compliance_conclusion", "security_certification", "unconditional_confidentiality_claim"],
+  "allowed_claims": ["应清楚说明数据收集目的和共享对象", "应提供可理解的删除与安全事件说明"],
+  "forbidden_claims": ["数据绝对不会泄露", "有隐私政策就代表安全", "第三方共享无需告知用户"],
+  "product_use": ["privacy_notice", "product_disclaimer"],
+  "evidence_level": "professional_framework",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

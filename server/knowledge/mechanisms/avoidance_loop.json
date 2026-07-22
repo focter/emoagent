@@ -1,0 +1,13 @@
+{
+  "id": "avoidance_loop", "name": "回避循环",
+  "keywords": ["逃避", "躲开", "不敢面对", "不回复", "越拖", "刷手机", "害怕开始"],
+  "use_when": ["接近任务或冲突会紧张并转而回避", "回避短暂减压但随后压力增加"],
+  "do_not_use_when": ["退出情境是为了躲避暴力或现实危险", "主要障碍是资源缺失或身体疾病"],
+  "plain_explanation": "担心让人先躲开，躲开会短暂轻松；事情仍在后，压力和自责又上升，下一次更难靠近。",
+  "natural_response_examples": ["听起来你不是不在意，反而可能因为太在意结果，靠近任务时就先躲开了一下。"],
+  "safe_small_actions": ["把任务缩成十分钟内可开始的一步", "只记录正在回避的具体结果是否已经发生"],
+  "avoid": ["把回避说成懒惰", "要求一次克服全部困难"],
+  "related_issue_types": ["procrastination", "academic_stress", "work_stress", "anxiety"],
+  "related_interventions": ["small_step_activation", "fact_vs_interpretation"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

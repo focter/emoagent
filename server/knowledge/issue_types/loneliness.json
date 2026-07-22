@@ -1,0 +1,14 @@
+{
+  "id": "loneliness", "name": "孤独 / 空虚 / 意义感下降",
+  "description": "缺少连接、归属或意义感的主观体验，可与社交减少、关系变化、低能量和消极想法并存。",
+  "keywords": ["孤独", "寂寞", "空虚", "生活很空", "没意义", "没人理解", "没人说话", "没有朋友", "被落下", "没意思", "一个人"],
+  "user_expressions": ["每天都很空虚", "好像没有人真正理解我", "生活越来越没意义"],
+  "key_dimensions": ["连接缺失的类型", "近期关系或生活变化", "现有支持", "消极生存意愿与安全"],
+  "first_followups": ["这种孤独更像缺少陪伴、缺少被理解，还是对生活失去方向？", "最近有没有一个还能联系、相对可信任的人？"],
+  "enough_information_signals": ["说明孤独的具体含义", "说明持续时间或变化", "说明支持和安全状态"],
+  "common_mechanisms": ["behavioral_activation", "emotional_suppression", "social_comparison_self_worth", "rumination"],
+  "possible_interventions": ["emotion_labeling", "help_seeking_script", "small_step_activation"],
+  "do_not_say": ["找个人聊聊就好了", "大家都会孤独", "想开一点"],
+  "escalation_signals": ["活着没有意义或想消失", "明确自伤、自杀想法或计划"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

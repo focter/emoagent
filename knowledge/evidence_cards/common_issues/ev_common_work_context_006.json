@@ -1,0 +1,18 @@
+{
+  "id": "ev_common_work_context_006",
+  "title": "工作压力需要同时考虑组织与个人处境",
+  "claim": "工作相关心理健康支持不能只依赖个体应对，还需要考虑组织条件、管理支持和工作参与。",
+  "summary": "WHO 工作场所心理健康指南同时覆盖组织、管理者、员工和个体层干预，以及重返工作与就业支持。产品不应把工作压力简单归因于个人不足。",
+  "source_ids": ["who_mental_health_at_work_guideline"],
+  "source_note_refs": ["knowledge_sources/notes/workplace_notes.md#who_mental_health_at_work_guideline"],
+  "category": "common_issues",
+  "applies_to": ["work_stress", "workplace_distress", "burnout_context"],
+  "not_applies_to": ["diagnosis", "employment_decision", "legal_advice"],
+  "allowed_claims": ["可以了解工作负荷、支持条件和恢复情况", "工作环境与个人处境都可能影响心理状态"],
+  "forbidden_claims": ["工作压力完全是个人能力问题", "一次自助练习可以解决组织问题", "系统可以判断雇主责任"],
+  "product_use": ["issue_explanation", "question_selection", "response_boundary"],
+  "evidence_level": "official_guideline",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

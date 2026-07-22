@@ -1,0 +1,4521 @@
+{
+  "export_version": 1,
+  "generated_at": "2026-07-15T11:14:14.206Z",
+  "scope": "server/knowledge runtime knowledge base",
+  "warning": "This file is a review worksheet. Automated checks do not prove clinical, legal, or product safety readiness.",
+  "counts": {
+    "intervention": 10,
+    "issue_type": 13,
+    "mechanism": 16,
+    "safety_level": 5,
+    "safety_response_templates": 1
+  },
+  "review_status_summary": {
+    "unreviewed": 45
+  },
+  "source_level_summary": {
+    "L1_product_safety_rule": 6,
+    "L2_guideline_informed": 11,
+    "L2_safety_informed": 1,
+    "L3_contextual_psychoeducation": 6,
+    "L3_psychoeducation": 20,
+    "L4_conceptual": 1
+  },
+  "source_registry": [
+    {
+      "id": "who_mhgap",
+      "title": "WHO mhGAP Intervention Guide, Version 2.0",
+      "source_type": "clinical_guideline",
+      "url": "https://www.who.int/publications/i/item/9789241549790",
+      "usage_note": "用于边界、安全识别和非专科心理健康支持原则的上位参考；不复制正文，不据此让 Demo 提供诊断或治疗。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "nice_depression_adults",
+      "title": "NICE Depression in adults: treatment and management (NG222)",
+      "source_type": "clinical_guideline",
+      "url": "https://www.nice.org.uk/guidance/ng222",
+      "usage_note": "用于成人低落、功能影响、风险询问和分级支持的审校参考；不将临床治疗建议直接转为产品自助建议。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "apa_depression_cpg",
+      "title": "APA Clinical Practice Guideline for the Treatment of Depression Across Three Age Cohorts",
+      "source_type": "clinical_guideline",
+      "url": "https://www.apa.org/depression-guideline/guideline.pdf",
+      "usage_note": "用于抑郁相关心理教育边界及循证干预概念审校；Demo 不执行诊断、治疗选择或临床处方。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "samhsa_988_safety_plan",
+      "title": "SAMHSA 988 Safety Plan",
+      "source_type": "crisis_safety_resource",
+      "url": "https://www.samhsa.gov/resource/988/safety-plan",
+      "usage_note": "用于现实支持、环境安全和紧急升级原则；本地模板不替代完整安全计划或危机服务。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "product_internal_rule",
+      "title": "AI 心理健康觉察 Demo 产品内部安全与表达规则",
+      "source_type": "product_policy",
+      "url": "",
+      "usage_note": "记录产品边界、风险优先级、禁用表达和 prompt 注入限制；需要持续进行临床、安全与法律复核。",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "id": "who_mental_health_at_work_guideline",
+      "title": "WHO Guidelines on mental health at work",
+      "source_type": "clinical_guideline",
+      "url": "https://www.who.int/publications/i/item/9789240053052",
+      "usage_note": "用于工作压力的组织与个人多层情境边界；不把组织层建议转写为个体必须完成的自助任务。",
+      "last_checked": "2026-07-15"
+    },
+    {
+      "id": "nhs_grief_bereavement_loss",
+      "title": "NHS Grief after bereavement or loss",
+      "source_type": "public_health_guidance",
+      "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/grief-bereavement-loss/",
+      "usage_note": "用于哀伤体验差异、日常功能和求助边界；不根据阶段或时长诊断哀伤障碍。",
+      "last_checked": "2026-07-15"
+    }
+  ],
+  "reviewer_workflow": {
+    "allowed_decisions": [
+      "approve",
+      "approve_with_minor_changes",
+      "needs_revision",
+      "reject"
+    ],
+    "recommended_review_order": [
+      "safety_level",
+      "safety_response_templates",
+      "issue_type",
+      "mechanism",
+      "intervention"
+    ],
+    "reviewer_fields": "Fill review_decision, reviewer, reviewed_at, reviewer_notes, required_changes, and checklist fields."
+  },
+  "entries": [
+    {
+      "entry_key": "issue_type:academic_stress",
+      "type": "issue_type",
+      "id": "academic_stress",
+      "name": "学业 / 考试压力",
+      "source_path": "server/knowledge/issue_types/academic_stress.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_contextual_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "由考试、论文、成绩、升学或学业比较带来的现实负荷和预期压力。 Key dimensions: 截止时间与现实任务; 失败预期; 学习功能与作息; 支持和资源 Escalation signals: 因压力无法维持基本生活; 因成绩表达自伤或自杀意图",
+      "user_facing_text": {
+        "user_expressions": [
+          "一坐到书桌前就心慌",
+          "担心考试失败",
+          "论文截止快到了但我不敢打开"
+        ],
+        "first_followups": [
+          "现在最紧迫的任务和时间节点是什么？",
+          "压力主要卡在不会做、怕结果，还是很难开始？"
+        ],
+        "do_not_say": [
+          "肯定能考好",
+          "这点压力算什么",
+          "通宵做完就行"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "stress_response",
+          "catastrophizing",
+          "perfectionism_procrastination",
+          "avoidance_loop"
+        ],
+        "possible_interventions": [
+          "small_step_activation",
+          "fact_vs_interpretation",
+          "grounding_breath"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "academic_stress",
+        "name": "学业 / 考试压力",
+        "description": "由考试、论文、成绩、升学或学业比较带来的现实负荷和预期压力。",
+        "keywords": [
+          "考试",
+          "考研",
+          "论文",
+          "作业",
+          "学习",
+          "成绩",
+          "复习",
+          "挂科",
+          "答辩",
+          "升学",
+          "导师"
+        ],
+        "user_expressions": [
+          "一坐到书桌前就心慌",
+          "担心考试失败",
+          "论文截止快到了但我不敢打开"
+        ],
+        "key_dimensions": [
+          "截止时间与现实任务",
+          "失败预期",
+          "学习功能与作息",
+          "支持和资源"
+        ],
+        "first_followups": [
+          "现在最紧迫的任务和时间节点是什么？",
+          "压力主要卡在不会做、怕结果，还是很难开始？"
+        ],
+        "enough_information_signals": [
+          "说明任务和期限",
+          "说明具体卡点",
+          "说明睡眠或学习影响"
+        ],
+        "common_mechanisms": [
+          "stress_response",
+          "catastrophizing",
+          "perfectionism_procrastination",
+          "avoidance_loop"
+        ],
+        "possible_interventions": [
+          "small_step_activation",
+          "fact_vs_interpretation",
+          "grounding_breath"
+        ],
+        "do_not_say": [
+          "肯定能考好",
+          "这点压力算什么",
+          "通宵做完就行"
+        ],
+        "escalation_signals": [
+          "因压力无法维持基本生活",
+          "因成绩表达自伤或自杀意图"
+        ],
+        "source_level": "L3_contextual_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:anxiety",
+      "type": "issue_type",
+      "id": "anxiety",
+      "name": "焦虑 / 担心 / 紧张",
+      "source_path": "server/knowledge/issue_types/anxiety.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "围绕现实或预期威胁的持续担心、警觉和身体紧张，不直接等同于焦虑障碍。 Key dimensions: 担心对象与现实依据; 频率和可控性; 身体反应; 睡眠专注与回避 Escalation signals: 长时间完全无法睡眠; 明显失控或无法保证安全",
+      "user_facing_text": {
+        "user_expressions": [
+          "我总担心会出问题",
+          "还没发生我就开始害怕",
+          "一想到这件事就心慌"
+        ],
+        "first_followups": [
+          "你现在最担心发生的具体事情是什么？",
+          "这种担心对睡眠或日常活动影响到什么程度？"
+        ],
+        "do_not_say": [
+          "别想太多",
+          "肯定不会出事",
+          "这都是心理作用"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "stress_response",
+          "cognitive_appraisal",
+          "catastrophizing",
+          "somatic_stress_response"
+        ],
+        "possible_interventions": [
+          "grounding_breath",
+          "worry_time_limit",
+          "fact_vs_interpretation"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "anxiety",
+        "name": "焦虑 / 担心 / 紧张",
+        "description": "围绕现实或预期威胁的持续担心、警觉和身体紧张，不直接等同于焦虑障碍。",
+        "keywords": [
+          "焦虑",
+          "担心",
+          "害怕",
+          "紧张",
+          "心慌",
+          "不安",
+          "最坏",
+          "出事",
+          "控制不了",
+          "压力大"
+        ],
+        "user_expressions": [
+          "我总担心会出问题",
+          "还没发生我就开始害怕",
+          "一想到这件事就心慌"
+        ],
+        "key_dimensions": [
+          "担心对象与现实依据",
+          "频率和可控性",
+          "身体反应",
+          "睡眠专注与回避"
+        ],
+        "first_followups": [
+          "你现在最担心发生的具体事情是什么？",
+          "这种担心对睡眠或日常活动影响到什么程度？"
+        ],
+        "enough_information_signals": [
+          "说清担心内容",
+          "描述身体或功能影响",
+          "区分现实压力与反复预演"
+        ],
+        "common_mechanisms": [
+          "stress_response",
+          "cognitive_appraisal",
+          "catastrophizing",
+          "somatic_stress_response"
+        ],
+        "possible_interventions": [
+          "grounding_breath",
+          "worry_time_limit",
+          "fact_vs_interpretation"
+        ],
+        "do_not_say": [
+          "别想太多",
+          "肯定不会出事",
+          "这都是心理作用"
+        ],
+        "escalation_signals": [
+          "长时间完全无法睡眠",
+          "明显失控或无法保证安全"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:family_pressure",
+      "type": "issue_type",
+      "id": "family_pressure",
+      "name": "家庭压力",
+      "source_path": "server/knowledge/issue_types/family_pressure.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_contextual_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "家庭期待、冲突、经济依赖、照护责任或控制带来的压力和边界困难。 Key dimensions: 压力来源; 现实依赖与选择空间; 责任和边界; 暴力威胁与安全 Escalation signals: 家暴、威胁或限制人身自由; 照护压力已使基本生活无法维持",
+      "user_facing_text": {
+        "user_expressions": [
+          "父母总是否定我的选择",
+          "一回家就很压抑",
+          "我不敢拒绝家里的要求"
+        ],
+        "first_followups": [
+          "压力更来自期待、冲突、经济，还是照护责任？",
+          "你目前有哪些能选择和暂时不能选择的现实条件？"
+        ],
+        "do_not_say": [
+          "父母都是为你好",
+          "必须孝顺",
+          "马上断绝关系"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "people_pleasing_boundaries",
+          "over_responsibility",
+          "emotional_suppression",
+          "stress_response"
+        ],
+        "possible_interventions": [
+          "boundary_sentence",
+          "emotion_labeling",
+          "help_seeking_script"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "family_pressure",
+        "name": "家庭压力",
+        "description": "家庭期待、冲突、经济依赖、照护责任或控制带来的压力和边界困难。",
+        "keywords": [
+          "父母",
+          "妈妈",
+          "爸爸",
+          "家里",
+          "家庭",
+          "亲戚",
+          "催婚",
+          "孝顺",
+          "照顾家人",
+          "家暴",
+          "不敢拒绝"
+        ],
+        "user_expressions": [
+          "父母总是否定我的选择",
+          "一回家就很压抑",
+          "我不敢拒绝家里的要求"
+        ],
+        "key_dimensions": [
+          "压力来源",
+          "现实依赖与选择空间",
+          "责任和边界",
+          "暴力威胁与安全"
+        ],
+        "first_followups": [
+          "压力更来自期待、冲突、经济，还是照护责任？",
+          "你目前有哪些能选择和暂时不能选择的现实条件？"
+        ],
+        "enough_information_signals": [
+          "说明压力来源",
+          "说明现实限制",
+          "说明功能或安全影响"
+        ],
+        "common_mechanisms": [
+          "people_pleasing_boundaries",
+          "over_responsibility",
+          "emotional_suppression",
+          "stress_response"
+        ],
+        "possible_interventions": [
+          "boundary_sentence",
+          "emotion_labeling",
+          "help_seeking_script"
+        ],
+        "do_not_say": [
+          "父母都是为你好",
+          "必须孝顺",
+          "马上断绝关系"
+        ],
+        "escalation_signals": [
+          "家暴、威胁或限制人身自由",
+          "照护压力已使基本生活无法维持"
+        ],
+        "source_level": "L3_contextual_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:grief_loss",
+      "type": "issue_type",
+      "id": "grief_loss",
+      "name": "丧失 / 哀伤",
+      "source_path": "server/knowledge/issue_types/grief_loss.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_contextual_psychoeducation",
+      "source_ids": [
+        "nhs_grief_bereavement_loss"
+      ],
+      "sources": [
+        {
+          "id": "nhs_grief_bereavement_loss",
+          "title": "NHS Grief after bereavement or loss",
+          "source_type": "public_health_guidance",
+          "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/grief-bereavement-loss/",
+          "usage_note": "用于哀伤体验差异、日常功能和求助边界；不根据阶段或时长诊断哀伤障碍。",
+          "last_checked": "2026-07-15"
+        }
+      ],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "因死亡、关系结束、失去工作或住所等重要丧失出现的悲伤、麻木、愤怒、内疚或生活失衡，不直接等同于心理障碍。 Key dimensions: 丧失事件和发生时间; 当前主要情绪与变化节奏; 睡眠、饮食和日常功能; 现实支持与安全状态 Escalation signals: 出现自伤、自杀或不想活的想法; 长期无法恢复基本生活; 现实暴力或即时人身危险",
+      "user_facing_text": {
+        "user_expressions": [
+          "亲人离世后我一直缓不过来",
+          "分手以后我有时麻木有时又很难受",
+          "失去这份工作后我像失去了一部分生活"
+        ],
+        "first_followups": [
+          "这件事发生后，现在最难承受的是哪一部分？",
+          "最近的睡眠、日常生活和身边支持大概是什么情况？"
+        ],
+        "do_not_say": [
+          "想开点",
+          "时间会治愈一切",
+          "你应该已经走出来了"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "self_blame_loop",
+          "emotional_suppression",
+          "rumination"
+        ],
+        "possible_interventions": [
+          "emotion_labeling",
+          "help_seeking_script"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "grief_loss",
+        "name": "丧失 / 哀伤",
+        "description": "因死亡、关系结束、失去工作或住所等重要丧失出现的悲伤、麻木、愤怒、内疚或生活失衡，不直接等同于心理障碍。",
+        "keywords": [
+          "亲人去世",
+          "去世了",
+          "离世",
+          "过世",
+          "丧亲",
+          "哀伤",
+          "悲痛",
+          "分手后",
+          "失恋",
+          "被裁员",
+          "失去工作"
+        ],
+        "user_expressions": [
+          "亲人离世后我一直缓不过来",
+          "分手以后我有时麻木有时又很难受",
+          "失去这份工作后我像失去了一部分生活"
+        ],
+        "key_dimensions": [
+          "丧失事件和发生时间",
+          "当前主要情绪与变化节奏",
+          "睡眠、饮食和日常功能",
+          "现实支持与安全状态"
+        ],
+        "first_followups": [
+          "这件事发生后，现在最难承受的是哪一部分？",
+          "最近的睡眠、日常生活和身边支持大概是什么情况？"
+        ],
+        "enough_information_signals": [
+          "说明了丧失事件",
+          "描述了当前情绪",
+          "说明了生活影响或现实支持"
+        ],
+        "common_mechanisms": [
+          "self_blame_loop",
+          "emotional_suppression",
+          "rumination"
+        ],
+        "possible_interventions": [
+          "emotion_labeling",
+          "help_seeking_script"
+        ],
+        "do_not_say": [
+          "想开点",
+          "时间会治愈一切",
+          "你应该已经走出来了"
+        ],
+        "escalation_signals": [
+          "出现自伤、自杀或不想活的想法",
+          "长期无法恢复基本生活",
+          "现实暴力或即时人身危险"
+        ],
+        "source_refs": [
+          "nhs_grief_bereavement_loss"
+        ],
+        "source_level": "L3_contextual_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:interpersonal",
+      "type": "issue_type",
+      "id": "interpersonal",
+      "name": "人际关系困扰",
+      "source_path": "server/knowledge/issue_types/interpersonal.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_contextual_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "朋友、同学、同事或室友关系中的冲突、排斥、误解、边界和表达困难。 Key dimensions: 具体互动事实; 对他人意图的解释; 自己的需要与表达; 权力和安全风险 Escalation signals: 持续欺凌、跟踪或威胁; 现实人身安全风险",
+      "user_facing_text": {
+        "user_expressions": [
+          "我感觉被大家排除在外",
+          "和同事吵架后一直在想",
+          "我怕别人不喜欢我"
+        ],
+        "first_followups": [
+          "具体发生了什么，对方有哪些可确认的行为？",
+          "你最希望这段关系里改变什么？"
+        ],
+        "do_not_say": [
+          "都是对方的错",
+          "立刻绝交",
+          "你太敏感了"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "people_pleasing_boundaries",
+          "cognitive_appraisal",
+          "rumination",
+          "social_comparison_self_worth"
+        ],
+        "possible_interventions": [
+          "fact_vs_interpretation",
+          "boundary_sentence",
+          "relationship_clarification"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "interpersonal",
+        "name": "人际关系困扰",
+        "description": "朋友、同学、同事或室友关系中的冲突、排斥、误解、边界和表达困难。",
+        "keywords": [
+          "朋友",
+          "同学",
+          "同事",
+          "室友",
+          "人际",
+          "社交",
+          "孤立",
+          "排挤",
+          "误会",
+          "冲突",
+          "被忽视"
+        ],
+        "user_expressions": [
+          "我感觉被大家排除在外",
+          "和同事吵架后一直在想",
+          "我怕别人不喜欢我"
+        ],
+        "key_dimensions": [
+          "具体互动事实",
+          "对他人意图的解释",
+          "自己的需要与表达",
+          "权力和安全风险"
+        ],
+        "first_followups": [
+          "具体发生了什么，对方有哪些可确认的行为？",
+          "你最希望这段关系里改变什么？"
+        ],
+        "enough_information_signals": [
+          "说明具体互动",
+          "区分事实和推测",
+          "说明需要或边界"
+        ],
+        "common_mechanisms": [
+          "people_pleasing_boundaries",
+          "cognitive_appraisal",
+          "rumination",
+          "social_comparison_self_worth"
+        ],
+        "possible_interventions": [
+          "fact_vs_interpretation",
+          "boundary_sentence",
+          "relationship_clarification"
+        ],
+        "do_not_say": [
+          "都是对方的错",
+          "立刻绝交",
+          "你太敏感了"
+        ],
+        "escalation_signals": [
+          "持续欺凌、跟踪或威胁",
+          "现实人身安全风险"
+        ],
+        "source_level": "L3_contextual_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:loneliness",
+      "type": "issue_type",
+      "id": "loneliness",
+      "name": "孤独 / 空虚 / 意义感下降",
+      "source_path": "server/knowledge/issue_types/loneliness.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "缺少连接、归属或意义感的主观体验，可与社交减少、关系变化、低能量和消极想法并存。 Key dimensions: 连接缺失的类型; 近期关系或生活变化; 现有支持; 消极生存意愿与安全 Escalation signals: 活着没有意义或想消失; 明确自伤、自杀想法或计划",
+      "user_facing_text": {
+        "user_expressions": [
+          "每天都很空虚",
+          "好像没有人真正理解我",
+          "生活越来越没意义"
+        ],
+        "first_followups": [
+          "这种孤独更像缺少陪伴、缺少被理解，还是对生活失去方向？",
+          "最近有没有一个还能联系、相对可信任的人？"
+        ],
+        "do_not_say": [
+          "找个人聊聊就好了",
+          "大家都会孤独",
+          "想开一点"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "behavioral_activation",
+          "emotional_suppression",
+          "social_comparison_self_worth",
+          "rumination"
+        ],
+        "possible_interventions": [
+          "emotion_labeling",
+          "help_seeking_script",
+          "small_step_activation"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "loneliness",
+        "name": "孤独 / 空虚 / 意义感下降",
+        "description": "缺少连接、归属或意义感的主观体验，可与社交减少、关系变化、低能量和消极想法并存。",
+        "keywords": [
+          "孤独",
+          "寂寞",
+          "空虚",
+          "生活很空",
+          "没意义",
+          "没人理解",
+          "没人说话",
+          "没有朋友",
+          "被落下",
+          "没意思",
+          "一个人"
+        ],
+        "user_expressions": [
+          "每天都很空虚",
+          "好像没有人真正理解我",
+          "生活越来越没意义"
+        ],
+        "key_dimensions": [
+          "连接缺失的类型",
+          "近期关系或生活变化",
+          "现有支持",
+          "消极生存意愿与安全"
+        ],
+        "first_followups": [
+          "这种孤独更像缺少陪伴、缺少被理解，还是对生活失去方向？",
+          "最近有没有一个还能联系、相对可信任的人？"
+        ],
+        "enough_information_signals": [
+          "说明孤独的具体含义",
+          "说明持续时间或变化",
+          "说明支持和安全状态"
+        ],
+        "common_mechanisms": [
+          "behavioral_activation",
+          "emotional_suppression",
+          "social_comparison_self_worth",
+          "rumination"
+        ],
+        "possible_interventions": [
+          "emotion_labeling",
+          "help_seeking_script",
+          "small_step_activation"
+        ],
+        "do_not_say": [
+          "找个人聊聊就好了",
+          "大家都会孤独",
+          "想开一点"
+        ],
+        "escalation_signals": [
+          "活着没有意义或想消失",
+          "明确自伤、自杀想法或计划"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:low_energy",
+      "type": "issue_type",
+      "id": "low_energy",
+      "name": "低能量 / 提不起劲",
+      "source_path": "server/knowledge/issue_types/low_energy.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "持续感到精力不足、启动困难或兴趣下降；需同时留意作息、身体状况、现实负荷和安全风险。 Key dimensions: 持续时间与频率; 睡眠食欲和身体状态; 学习工作与基本生活影响; 近期压力或疾病 Escalation signals: 无法维持进食饮水或基本生活; 强烈绝望、自伤或自杀想法",
+      "user_facing_text": {
+        "user_expressions": [
+          "我什么都不想做",
+          "最近总觉得很累",
+          "明明有事但就是动不了"
+        ],
+        "first_followups": [
+          "这种状态大概持续多久了？",
+          "最近睡眠、食欲或日常生活有没有明显变化？"
+        ],
+        "do_not_say": [
+          "你就是懒",
+          "多运动就好了",
+          "你一定是抑郁症"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "behavioral_activation",
+          "stress_response",
+          "sleep_emotion_loop"
+        ],
+        "possible_interventions": [
+          "small_step_activation",
+          "emotion_labeling"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "low_energy",
+        "name": "低能量 / 提不起劲",
+        "description": "持续感到精力不足、启动困难或兴趣下降；需同时留意作息、身体状况、现实负荷和安全风险。",
+        "keywords": [
+          "没劲",
+          "提不起劲",
+          "不想动",
+          "什么都不想",
+          "很累",
+          "疲惫",
+          "没精神",
+          "没动力",
+          "起不来"
+        ],
+        "user_expressions": [
+          "我什么都不想做",
+          "最近总觉得很累",
+          "明明有事但就是动不了"
+        ],
+        "key_dimensions": [
+          "持续时间与频率",
+          "睡眠食欲和身体状态",
+          "学习工作与基本生活影响",
+          "近期压力或疾病"
+        ],
+        "first_followups": [
+          "这种状态大概持续多久了？",
+          "最近睡眠、食欲或日常生活有没有明显变化？"
+        ],
+        "enough_information_signals": [
+          "说明了持续时间",
+          "说明了生活功能影响",
+          "说明了诱因或身体变化"
+        ],
+        "common_mechanisms": [
+          "behavioral_activation",
+          "stress_response",
+          "sleep_emotion_loop"
+        ],
+        "possible_interventions": [
+          "small_step_activation",
+          "emotion_labeling"
+        ],
+        "do_not_say": [
+          "你就是懒",
+          "多运动就好了",
+          "你一定是抑郁症"
+        ],
+        "escalation_signals": [
+          "无法维持进食饮水或基本生活",
+          "强烈绝望、自伤或自杀想法"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:procrastination",
+      "type": "issue_type",
+      "id": "procrastination",
+      "name": "拖延 / 行动困难",
+      "source_path": "server/knowledge/issue_types/procrastination.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "明知任务重要却难以启动或持续，常与压力、回避、完美标准、低能量或注意力负荷有关。 Key dimensions: 具体任务与时间压力; 开始前的想法和感受; 回避后的短期结果; 精力与执行环境 Escalation signals: 基本生活长期无法启动; 伴随强烈绝望或自伤想法",
+      "user_facing_text": {
+        "user_expressions": [
+          "我知道要做但就是开始不了",
+          "越拖越害怕",
+          "总要到最后一刻才动"
+        ],
+        "first_followups": [
+          "每次准备开始时，最先出现的想法或感觉是什么？",
+          "你通常会转去做什么，之后压力怎样变化？"
+        ],
+        "do_not_say": [
+          "你就是自制力差",
+          "逼自己一次做完",
+          "拖延症没救了"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "avoidance_loop",
+          "perfectionism_procrastination",
+          "behavioral_activation",
+          "self_blame_loop"
+        ],
+        "possible_interventions": [
+          "small_step_activation",
+          "thought_record_light"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "procrastination",
+        "name": "拖延 / 行动困难",
+        "description": "明知任务重要却难以启动或持续，常与压力、回避、完美标准、低能量或注意力负荷有关。",
+        "keywords": [
+          "拖延",
+          "拖到",
+          "不开始",
+          "行动不了",
+          "启动不了",
+          "一直刷手机",
+          "来不及",
+          "不敢打开",
+          "完不成"
+        ],
+        "user_expressions": [
+          "我知道要做但就是开始不了",
+          "越拖越害怕",
+          "总要到最后一刻才动"
+        ],
+        "key_dimensions": [
+          "具体任务与时间压力",
+          "开始前的想法和感受",
+          "回避后的短期结果",
+          "精力与执行环境"
+        ],
+        "first_followups": [
+          "每次准备开始时，最先出现的想法或感觉是什么？",
+          "你通常会转去做什么，之后压力怎样变化？"
+        ],
+        "enough_information_signals": [
+          "描述任务和截止时间",
+          "描述启动前体验",
+          "描述重复的回避结果"
+        ],
+        "common_mechanisms": [
+          "avoidance_loop",
+          "perfectionism_procrastination",
+          "behavioral_activation",
+          "self_blame_loop"
+        ],
+        "possible_interventions": [
+          "small_step_activation",
+          "thought_record_light"
+        ],
+        "do_not_say": [
+          "你就是自制力差",
+          "逼自己一次做完",
+          "拖延症没救了"
+        ],
+        "escalation_signals": [
+          "基本生活长期无法启动",
+          "伴随强烈绝望或自伤想法"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:romantic_relationship",
+      "type": "issue_type",
+      "id": "romantic_relationship",
+      "name": "亲密关系困扰",
+      "source_path": "server/knowledge/issue_types/romantic_relationship.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_contextual_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "恋爱、伴侣或婚姻关系中的不确定、冲突、分离、信任与边界问题。 Key dimensions: 具体互动模式; 需要与期待; 沟通和边界; 控制暴力或性安全 Escalation signals: 控制、跟踪、威胁、家暴或性暴力; 分离后出现自伤或伤人意图",
+      "user_facing_text": {
+        "user_expressions": [
+          "对方不回消息我就很不安",
+          "分手后一直走不出来",
+          "我们总因同一件事吵架"
+        ],
+        "first_followups": [
+          "最近哪一次具体互动让这种感觉最明显？",
+          "你更需要的是确认、尊重、空间，还是把分歧说清楚？"
+        ],
+        "do_not_say": [
+          "马上分手",
+          "他肯定不爱你",
+          "这都是依恋类型造成的"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "attachment_insecurity",
+          "people_pleasing_boundaries",
+          "cognitive_appraisal",
+          "rumination"
+        ],
+        "possible_interventions": [
+          "fact_vs_interpretation",
+          "relationship_clarification",
+          "boundary_sentence"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "romantic_relationship",
+        "name": "亲密关系困扰",
+        "description": "恋爱、伴侣或婚姻关系中的不确定、冲突、分离、信任与边界问题。",
+        "keywords": [
+          "恋爱",
+          "对象",
+          "男朋友",
+          "女朋友",
+          "伴侣",
+          "分手",
+          "前任",
+          "暧昧",
+          "婚姻",
+          "冷战",
+          "不爱我"
+        ],
+        "user_expressions": [
+          "对方不回消息我就很不安",
+          "分手后一直走不出来",
+          "我们总因同一件事吵架"
+        ],
+        "key_dimensions": [
+          "具体互动模式",
+          "需要与期待",
+          "沟通和边界",
+          "控制暴力或性安全"
+        ],
+        "first_followups": [
+          "最近哪一次具体互动让这种感觉最明显？",
+          "你更需要的是确认、尊重、空间，还是把分歧说清楚？"
+        ],
+        "enough_information_signals": [
+          "说明具体互动",
+          "说明自己的需要",
+          "说明重复模式和功能影响"
+        ],
+        "common_mechanisms": [
+          "attachment_insecurity",
+          "people_pleasing_boundaries",
+          "cognitive_appraisal",
+          "rumination"
+        ],
+        "possible_interventions": [
+          "fact_vs_interpretation",
+          "relationship_clarification",
+          "boundary_sentence"
+        ],
+        "do_not_say": [
+          "马上分手",
+          "他肯定不爱你",
+          "这都是依恋类型造成的"
+        ],
+        "escalation_signals": [
+          "控制、跟踪、威胁、家暴或性暴力",
+          "分离后出现自伤或伤人意图"
+        ],
+        "source_level": "L3_contextual_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:rumination",
+      "type": "issue_type",
+      "id": "rumination",
+      "name": "反刍 / 停不下来的想法",
+      "source_path": "server/knowledge/issue_types/rumination.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "同一事件、问题或自我评价被反复回放，却没有形成新信息或可执行下一步。 Key dimensions: 反复内容; 触发时段; 是否产生新信息; 睡眠专注与情绪影响 Escalation signals: 连续严重失眠; 反复内容包含自伤、自杀或伤人计划",
+      "user_facing_text": {
+        "user_expressions": [
+          "脑子一直停不下来",
+          "那段对话反复在脑子里重放",
+          "我想了很多遍还是更难受"
+        ],
+        "first_followups": [
+          "这些想法通常在什么情境下最容易开始？",
+          "反复想之后，你得到新线索了，还是主要更难受？"
+        ],
+        "do_not_say": [
+          "别想了",
+          "你就是想太多",
+          "把它彻底想明白就好"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "rumination",
+          "cognitive_appraisal",
+          "self_blame_loop"
+        ],
+        "possible_interventions": [
+          "worry_time_limit",
+          "thought_record_light",
+          "grounding_breath"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "rumination",
+        "name": "反刍 / 停不下来的想法",
+        "description": "同一事件、问题或自我评价被反复回放，却没有形成新信息或可执行下一步。",
+        "keywords": [
+          "反复想",
+          "一直想",
+          "停不下来",
+          "想来想去",
+          "脑子里重放",
+          "纠结",
+          "后悔",
+          "如果当时",
+          "越想越"
+        ],
+        "user_expressions": [
+          "脑子一直停不下来",
+          "那段对话反复在脑子里重放",
+          "我想了很多遍还是更难受"
+        ],
+        "key_dimensions": [
+          "反复内容",
+          "触发时段",
+          "是否产生新信息",
+          "睡眠专注与情绪影响"
+        ],
+        "first_followups": [
+          "这些想法通常在什么情境下最容易开始？",
+          "反复想之后，你得到新线索了，还是主要更难受？"
+        ],
+        "enough_information_signals": [
+          "说明反复内容",
+          "说明频率或触发",
+          "说明睡眠专注影响"
+        ],
+        "common_mechanisms": [
+          "rumination",
+          "cognitive_appraisal",
+          "self_blame_loop"
+        ],
+        "possible_interventions": [
+          "worry_time_limit",
+          "thought_record_light",
+          "grounding_breath"
+        ],
+        "do_not_say": [
+          "别想了",
+          "你就是想太多",
+          "把它彻底想明白就好"
+        ],
+        "escalation_signals": [
+          "连续严重失眠",
+          "反复内容包含自伤、自杀或伤人计划"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:self_blame",
+      "type": "issue_type",
+      "id": "self_blame",
+      "name": "自责 / 自我否定",
+      "source_path": "server/knowledge/issue_types/self_blame.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "把具体失误、困难或责任扩大为对整个人的否定，可能伴随羞耻、回避和反复回想。 Key dimensions: 触发事件; 事实与整体自我评价; 可控责任边界; 对行动和安全的影响 Escalation signals: 强烈绝望; 自我惩罚、自伤或自杀想法",
+      "user_facing_text": {
+        "user_expressions": [
+          "我感觉自己很废",
+          "我什么都做不好",
+          "出了问题都是我的错"
+        ],
+        "first_followups": [
+          "最近哪件具体的事最容易触发这种评价？",
+          "这种自责让你更能处理事情，还是更难开始？"
+        ],
+        "do_not_say": [
+          "你一点错都没有",
+          "你要相信自己",
+          "这全是你的责任"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "self_blame_loop",
+          "over_responsibility",
+          "all_or_nothing_thinking",
+          "social_comparison_self_worth"
+        ],
+        "possible_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light",
+          "small_step_activation"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "self_blame",
+        "name": "自责 / 自我否定",
+        "description": "把具体失误、困难或责任扩大为对整个人的否定，可能伴随羞耻、回避和反复回想。",
+        "keywords": [
+          "自责",
+          "怪自己",
+          "都是我的错",
+          "很废",
+          "没用",
+          "失败",
+          "不如别人",
+          "讨厌自己",
+          "我不行",
+          "内疚"
+        ],
+        "user_expressions": [
+          "我感觉自己很废",
+          "我什么都做不好",
+          "出了问题都是我的错"
+        ],
+        "key_dimensions": [
+          "触发事件",
+          "事实与整体自我评价",
+          "可控责任边界",
+          "对行动和安全的影响"
+        ],
+        "first_followups": [
+          "最近哪件具体的事最容易触发这种评价？",
+          "这种自责让你更能处理事情，还是更难开始？"
+        ],
+        "enough_information_signals": [
+          "说明具体事件",
+          "呈现从结果到自我评价的过程",
+          "描述回避或功能影响"
+        ],
+        "common_mechanisms": [
+          "self_blame_loop",
+          "over_responsibility",
+          "all_or_nothing_thinking",
+          "social_comparison_self_worth"
+        ],
+        "possible_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light",
+          "small_step_activation"
+        ],
+        "do_not_say": [
+          "你一点错都没有",
+          "你要相信自己",
+          "这全是你的责任"
+        ],
+        "escalation_signals": [
+          "强烈绝望",
+          "自我惩罚、自伤或自杀想法"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:sleep_disturbance",
+      "type": "issue_type",
+      "id": "sleep_disturbance",
+      "name": "睡眠困扰",
+      "source_path": "server/knowledge/issue_types/sleep_disturbance.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "入睡、维持睡眠、早醒或作息紊乱，并与情绪、压力、身体状况及白天功能相互影响。 Key dimensions: 睡眠模式与持续时间; 白天功能; 作息和刺激物; 情绪身体变化 Escalation signals: 多日几乎不睡且异常兴奋或失控; 困倦已影响驾驶或操作安全",
+      "user_facing_text": {
+        "user_expressions": [
+          "我每天躺很久都睡不着",
+          "最近总是半夜醒",
+          "晚上脑子停不下来"
+        ],
+        "first_followups": [
+          "主要是难入睡、容易醒，还是醒得太早？",
+          "这种变化持续多久，对白天影响怎样？"
+        ],
+        "do_not_say": [
+          "少玩手机就一定好",
+          "吃点药就行",
+          "失眠都是焦虑造成的"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "sleep_emotion_loop",
+          "stress_response",
+          "rumination"
+        ],
+        "possible_interventions": [
+          "sleep_wind_down",
+          "worry_time_limit",
+          "grounding_breath"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "sleep_disturbance",
+        "name": "睡眠困扰",
+        "description": "入睡、维持睡眠、早醒或作息紊乱，并与情绪、压力、身体状况及白天功能相互影响。",
+        "keywords": [
+          "失眠",
+          "睡不着",
+          "早醒",
+          "夜里醒",
+          "睡不好",
+          "熬夜",
+          "噩梦",
+          "困",
+          "睡眠"
+        ],
+        "user_expressions": [
+          "我每天躺很久都睡不着",
+          "最近总是半夜醒",
+          "晚上脑子停不下来"
+        ],
+        "key_dimensions": [
+          "睡眠模式与持续时间",
+          "白天功能",
+          "作息和刺激物",
+          "情绪身体变化"
+        ],
+        "first_followups": [
+          "主要是难入睡、容易醒，还是醒得太早？",
+          "这种变化持续多久，对白天影响怎样？"
+        ],
+        "enough_information_signals": [
+          "说明睡眠类型和持续时间",
+          "说明白天影响",
+          "说明可能诱因或伴随状态"
+        ],
+        "common_mechanisms": [
+          "sleep_emotion_loop",
+          "stress_response",
+          "rumination"
+        ],
+        "possible_interventions": [
+          "sleep_wind_down",
+          "worry_time_limit",
+          "grounding_breath"
+        ],
+        "do_not_say": [
+          "少玩手机就一定好",
+          "吃点药就行",
+          "失眠都是焦虑造成的"
+        ],
+        "escalation_signals": [
+          "多日几乎不睡且异常兴奋或失控",
+          "困倦已影响驾驶或操作安全"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "issue_type:work_stress",
+      "type": "issue_type",
+      "id": "work_stress",
+      "name": "工作 / 实习压力",
+      "source_path": "server/knowledge/issue_types/work_stress.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_contextual_psychoeducation",
+      "source_ids": [
+        "who_mental_health_at_work_guideline"
+      ],
+      "sources": [
+        {
+          "id": "who_mental_health_at_work_guideline",
+          "title": "WHO Guidelines on mental health at work",
+          "source_type": "clinical_guideline",
+          "url": "https://www.who.int/publications/i/item/9789240053052",
+          "usage_note": "用于工作压力的组织与个人多层情境边界；不把组织层建议转写为个体必须完成的自助任务。",
+          "last_checked": "2026-07-15"
+        }
+      ],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "由工作量、绩效、角色变化、人际、实习适应或不确定性带来的持续压力。 Key dimensions: 负荷和可控性; 角色期待; 工作功能与身体反应; 现实权益或安全 Escalation signals: 职场暴力或明确威胁; 无法保证自身安全或维持基本生活",
+      "user_facing_text": {
+        "user_expressions": [
+          "一想到上班就很紧张",
+          "工作总出错让我很自责",
+          "加班后完全放松不下来"
+        ],
+        "first_followups": [
+          "目前最压着你的是工作量、评价，还是关系上的压力？",
+          "它已经怎样影响睡眠、专注或下班后的恢复？"
+        ],
+        "do_not_say": [
+          "马上辞职",
+          "忍一忍就过去了",
+          "出错说明你能力不行"
+        ]
+      },
+      "linked_ids": {
+        "common_mechanisms": [
+          "stress_response",
+          "somatic_stress_response",
+          "over_responsibility",
+          "perfectionism_procrastination"
+        ],
+        "possible_interventions": [
+          "emotion_labeling",
+          "small_step_activation",
+          "boundary_sentence"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "work_stress",
+        "name": "工作 / 实习压力",
+        "description": "由工作量、绩效、角色变化、人际、实习适应或不确定性带来的持续压力。",
+        "keywords": [
+          "工作",
+          "上班",
+          "项目",
+          "领导",
+          "同事",
+          "加班",
+          "绩效",
+          "实习",
+          "汇报",
+          "裁员",
+          "离职"
+        ],
+        "user_expressions": [
+          "一想到上班就很紧张",
+          "工作总出错让我很自责",
+          "加班后完全放松不下来"
+        ],
+        "key_dimensions": [
+          "负荷和可控性",
+          "角色期待",
+          "工作功能与身体反应",
+          "现实权益或安全"
+        ],
+        "first_followups": [
+          "目前最压着你的是工作量、评价，还是关系上的压力？",
+          "它已经怎样影响睡眠、专注或下班后的恢复？"
+        ],
+        "enough_information_signals": [
+          "说明具体工作压力源",
+          "说明持续时间",
+          "说明功能或身体影响"
+        ],
+        "common_mechanisms": [
+          "stress_response",
+          "somatic_stress_response",
+          "over_responsibility",
+          "perfectionism_procrastination"
+        ],
+        "possible_interventions": [
+          "emotion_labeling",
+          "small_step_activation",
+          "boundary_sentence"
+        ],
+        "do_not_say": [
+          "马上辞职",
+          "忍一忍就过去了",
+          "出错说明你能力不行"
+        ],
+        "escalation_signals": [
+          "职场暴力或明确威胁",
+          "无法保证自身安全或维持基本生活"
+        ],
+        "source_refs": [
+          "who_mental_health_at_work_guideline"
+        ],
+        "source_level": "L3_contextual_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:all_or_nothing_thinking",
+      "type": "mechanism",
+      "id": "all_or_nothing_thinking",
+      "name": "全或无思维",
+      "source_path": "server/knowledge/mechanisms/all_or_nothing_thinking.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "当标准只剩完美或失败，中间已经完成、可调整的部分会被忽略，开始和复盘都会更困难。 Use when: 结果只被分为成功或失败; 局部失误被扩大为全部否定 Do not use when: 情境确实有明确二元安全边界; 用户尚未表现极端化评价",
+      "user_facing_text": {
+        "plain_explanation": "当标准只剩完美或失败，中间已经完成、可调整的部分会被忽略，开始和复盘都会更困难。",
+        "natural_response_examples": [
+          "这次没有达到目标，不等于所有努力都归零；我们可以具体看哪一部分完成、哪一部分受阻。"
+        ],
+        "safe_small_actions": [
+          "用百分比描述完成程度",
+          "写出失败以外的两个中间状态"
+        ],
+        "avoid": [
+          "否认真实失败",
+          "要求用户强行乐观"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "self_blame",
+          "procrastination",
+          "academic_stress",
+          "work_stress"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "all_or_nothing_thinking",
+        "name": "全或无思维",
+        "keywords": [
+          "要么",
+          "彻底",
+          "一无是处",
+          "什么都",
+          "从来没有",
+          "必须完美",
+          "全失败"
+        ],
+        "use_when": [
+          "结果只被分为成功或失败",
+          "局部失误被扩大为全部否定"
+        ],
+        "do_not_use_when": [
+          "情境确实有明确二元安全边界",
+          "用户尚未表现极端化评价"
+        ],
+        "plain_explanation": "当标准只剩完美或失败，中间已经完成、可调整的部分会被忽略，开始和复盘都会更困难。",
+        "natural_response_examples": [
+          "这次没有达到目标，不等于所有努力都归零；我们可以具体看哪一部分完成、哪一部分受阻。"
+        ],
+        "safe_small_actions": [
+          "用百分比描述完成程度",
+          "写出失败以外的两个中间状态"
+        ],
+        "avoid": [
+          "否认真实失败",
+          "要求用户强行乐观"
+        ],
+        "related_issue_types": [
+          "self_blame",
+          "procrastination",
+          "academic_stress",
+          "work_stress"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:attachment_insecurity",
+      "type": "mechanism",
+      "id": "attachment_insecurity",
+      "name": "依恋不安全感",
+      "source_path": "server/knowledge/mechanisms/attachment_insecurity.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L4_conceptual",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "关系里的不确定可能把警觉迅速拉高，让人更想确认或先退开；这是一种暂时理解，不是给人贴固定类型标签。 Use when: 关系不确定触发强烈被抛下担忧; 用户反复确认或回避亲密并描述重复模式 Do not use when: 仅凭一次关系冲突; 存在欺骗、控制或暴力等明确现实风险",
+      "user_facing_text": {
+        "plain_explanation": "关系里的不确定可能把警觉迅速拉高，让人更想确认或先退开；这是一种暂时理解，不是给人贴固定类型标签。",
+        "natural_response_examples": [
+          "消息没有得到回应时，你的警觉很快跳到了关系会失去，这种不确定对你似乎很难承受。"
+        ],
+        "safe_small_actions": [
+          "区分当下事实与被抛下预测",
+          "用具体观察和需要发起一次澄清"
+        ],
+        "avoid": [
+          "诊断依恋类型",
+          "用机制替对方行为开脱"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "romantic_relationship",
+          "interpersonal",
+          "loneliness"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "relationship_clarification"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "attachment_insecurity",
+        "name": "依恋不安全感",
+        "keywords": [
+          "不回消息",
+          "不爱我",
+          "会离开",
+          "被抛弃",
+          "反复确认",
+          "冷战",
+          "没有安全感"
+        ],
+        "use_when": [
+          "关系不确定触发强烈被抛下担忧",
+          "用户反复确认或回避亲密并描述重复模式"
+        ],
+        "do_not_use_when": [
+          "仅凭一次关系冲突",
+          "存在欺骗、控制或暴力等明确现实风险"
+        ],
+        "plain_explanation": "关系里的不确定可能把警觉迅速拉高，让人更想确认或先退开；这是一种暂时理解，不是给人贴固定类型标签。",
+        "natural_response_examples": [
+          "消息没有得到回应时，你的警觉很快跳到了关系会失去，这种不确定对你似乎很难承受。"
+        ],
+        "safe_small_actions": [
+          "区分当下事实与被抛下预测",
+          "用具体观察和需要发起一次澄清"
+        ],
+        "avoid": [
+          "诊断依恋类型",
+          "用机制替对方行为开脱"
+        ],
+        "related_issue_types": [
+          "romantic_relationship",
+          "interpersonal",
+          "loneliness"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "relationship_clarification"
+        ],
+        "source_level": "L4_conceptual",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:avoidance_loop",
+      "type": "mechanism",
+      "id": "avoidance_loop",
+      "name": "回避循环",
+      "source_path": "server/knowledge/mechanisms/avoidance_loop.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "担心让人先躲开，躲开会短暂轻松；事情仍在后，压力和自责又上升，下一次更难靠近。 Use when: 接近任务或冲突会紧张并转而回避; 回避短暂减压但随后压力增加 Do not use when: 退出情境是为了躲避暴力或现实危险; 主要障碍是资源缺失或身体疾病",
+      "user_facing_text": {
+        "plain_explanation": "担心让人先躲开，躲开会短暂轻松；事情仍在后，压力和自责又上升，下一次更难靠近。",
+        "natural_response_examples": [
+          "听起来你不是不在意，反而可能因为太在意结果，靠近任务时就先躲开了一下。"
+        ],
+        "safe_small_actions": [
+          "把任务缩成十分钟内可开始的一步",
+          "只记录正在回避的具体结果是否已经发生"
+        ],
+        "avoid": [
+          "把回避说成懒惰",
+          "要求一次克服全部困难"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "procrastination",
+          "academic_stress",
+          "work_stress",
+          "anxiety"
+        ],
+        "related_interventions": [
+          "small_step_activation",
+          "fact_vs_interpretation"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "avoidance_loop",
+        "name": "回避循环",
+        "keywords": [
+          "逃避",
+          "躲开",
+          "不敢面对",
+          "不回复",
+          "越拖",
+          "刷手机",
+          "害怕开始"
+        ],
+        "use_when": [
+          "接近任务或冲突会紧张并转而回避",
+          "回避短暂减压但随后压力增加"
+        ],
+        "do_not_use_when": [
+          "退出情境是为了躲避暴力或现实危险",
+          "主要障碍是资源缺失或身体疾病"
+        ],
+        "plain_explanation": "担心让人先躲开，躲开会短暂轻松；事情仍在后，压力和自责又上升，下一次更难靠近。",
+        "natural_response_examples": [
+          "听起来你不是不在意，反而可能因为太在意结果，靠近任务时就先躲开了一下。"
+        ],
+        "safe_small_actions": [
+          "把任务缩成十分钟内可开始的一步",
+          "只记录正在回避的具体结果是否已经发生"
+        ],
+        "avoid": [
+          "把回避说成懒惰",
+          "要求一次克服全部困难"
+        ],
+        "related_issue_types": [
+          "procrastination",
+          "academic_stress",
+          "work_stress",
+          "anxiety"
+        ],
+        "related_interventions": [
+          "small_step_activation",
+          "fact_vs_interpretation"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:behavioral_activation",
+      "type": "mechanism",
+      "id": "behavioral_activation",
+      "name": "行为激活",
+      "source_path": "server/knowledge/mechanisms/behavioral_activation.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "低能量会让活动减少，生活里的节奏、反馈和掌控感也随之变少；有时可先做很小一步，再观察能量变化。 Use when: 低能量伴随活动减少和反馈减少; 基本安全和生活尚可，适合极低门槛行动 Do not use when: 用户正在耗竭且首先需要休息或医疗评估; 用户有即刻危险或无法维持基本生活",
+      "user_facing_text": {
+        "plain_explanation": "低能量会让活动减少，生活里的节奏、反馈和掌控感也随之变少；有时可先做很小一步，再观察能量变化。",
+        "natural_response_examples": [
+          "活动和连接变少后，生活里的反馈可能也会减少；现在不用要求自己恢复正常，只观察一个很小动作是否带来一点变化。"
+        ],
+        "safe_small_actions": [
+          "选择两到十分钟能结束的动作",
+          "把完成标准改成只接触五分钟"
+        ],
+        "avoid": [
+          "承诺行动必然改善情绪",
+          "给出密集任务清单"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "low_energy",
+          "procrastination",
+          "loneliness"
+        ],
+        "related_interventions": [
+          "small_step_activation"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "behavioral_activation",
+        "name": "行为激活",
+        "keywords": [
+          "没动力",
+          "不想动",
+          "躺着",
+          "起不来",
+          "什么都不想做",
+          "活动变少"
+        ],
+        "use_when": [
+          "低能量伴随活动减少和反馈减少",
+          "基本安全和生活尚可，适合极低门槛行动"
+        ],
+        "do_not_use_when": [
+          "用户正在耗竭且首先需要休息或医疗评估",
+          "用户有即刻危险或无法维持基本生活"
+        ],
+        "plain_explanation": "低能量会让活动减少，生活里的节奏、反馈和掌控感也随之变少；有时可先做很小一步，再观察能量变化。",
+        "natural_response_examples": [
+          "活动和连接变少后，生活里的反馈可能也会减少；现在不用要求自己恢复正常，只观察一个很小动作是否带来一点变化。"
+        ],
+        "safe_small_actions": [
+          "选择两到十分钟能结束的动作",
+          "把完成标准改成只接触五分钟"
+        ],
+        "avoid": [
+          "承诺行动必然改善情绪",
+          "给出密集任务清单"
+        ],
+        "related_issue_types": [
+          "low_energy",
+          "procrastination",
+          "loneliness"
+        ],
+        "related_interventions": [
+          "small_step_activation"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:catastrophizing",
+      "type": "mechanism",
+      "id": "catastrophizing",
+      "name": "灾难化思维",
+      "source_path": "server/knowledge/mechanisms/catastrophizing.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "压力会把最坏可能推到眼前，像它已经确定发生；可以同时检查发生概率和即使发生时可用的应对资源。 Use when: 用户直接跳到最坏结果; 低概率后果被体验为必然且难以应对 Do not use when: 危险现实且需要立即行动; 用户描述的是已有严重后果",
+      "user_facing_text": {
+        "plain_explanation": "压力会把最坏可能推到眼前，像它已经确定发生；可以同时检查发生概率和即使发生时可用的应对资源。",
+        "natural_response_examples": [
+          "你的脑子现在先跳到了最坏结果，但‘可能发生’和‘已经确定’之间还有一段需要核实的信息。"
+        ],
+        "safe_small_actions": [
+          "列出已确认事实和最坏预测",
+          "写下一个更常见结果及可做的第一步"
+        ],
+        "avoid": [
+          "保证坏事不会发生",
+          "嘲笑担心不理性"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "anxiety",
+          "academic_stress",
+          "work_stress",
+          "romantic_relationship"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "catastrophizing",
+        "name": "灾难化思维",
+        "keywords": [
+          "最坏",
+          "完了",
+          "肯定失败",
+          "一切都毁了",
+          "没救",
+          "一定会",
+          "怎么办"
+        ],
+        "use_when": [
+          "用户直接跳到最坏结果",
+          "低概率后果被体验为必然且难以应对"
+        ],
+        "do_not_use_when": [
+          "危险现实且需要立即行动",
+          "用户描述的是已有严重后果"
+        ],
+        "plain_explanation": "压力会把最坏可能推到眼前，像它已经确定发生；可以同时检查发生概率和即使发生时可用的应对资源。",
+        "natural_response_examples": [
+          "你的脑子现在先跳到了最坏结果，但‘可能发生’和‘已经确定’之间还有一段需要核实的信息。"
+        ],
+        "safe_small_actions": [
+          "列出已确认事实和最坏预测",
+          "写下一个更常见结果及可做的第一步"
+        ],
+        "avoid": [
+          "保证坏事不会发生",
+          "嘲笑担心不理性"
+        ],
+        "related_issue_types": [
+          "anxiety",
+          "academic_stress",
+          "work_stress",
+          "romantic_relationship"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:cognitive_appraisal",
+      "type": "mechanism",
+      "id": "cognitive_appraisal",
+      "name": "认知评价",
+      "source_path": "server/knowledge/mechanisms/cognitive_appraisal.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "事件本身和我们对它的解释会一起影响感受；区分二者不是否定感受，而是看清哪些已确认、哪些仍是推测。 Use when: 同一事实被赋予强烈威胁或自我否定含义; 用户把推测当成已确认事实 Do not use when: 威胁已有充分现实证据; 用户只需要被倾听且尚未表达自己的解释",
+      "user_facing_text": {
+        "plain_explanation": "事件本身和我们对它的解释会一起影响感受；区分二者不是否定感受，而是看清哪些已确认、哪些仍是推测。",
+        "natural_response_examples": [
+          "对方没有回复是目前能确认的事实，‘他不在乎我’是一个可以理解、但还需要证据的解释。"
+        ],
+        "safe_small_actions": [
+          "各写一句事实和解释",
+          "补写一个不粉饰也不最坏化的可能解释"
+        ],
+        "avoid": [
+          "把情绪说成想法错误",
+          "强迫积极思考"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "anxiety",
+          "interpersonal",
+          "romantic_relationship",
+          "rumination"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "cognitive_appraisal",
+        "name": "认知评价",
+        "keywords": [
+          "说明",
+          "意味着",
+          "肯定",
+          "觉得",
+          "认定",
+          "是不是",
+          "代表"
+        ],
+        "use_when": [
+          "同一事实被赋予强烈威胁或自我否定含义",
+          "用户把推测当成已确认事实"
+        ],
+        "do_not_use_when": [
+          "威胁已有充分现实证据",
+          "用户只需要被倾听且尚未表达自己的解释"
+        ],
+        "plain_explanation": "事件本身和我们对它的解释会一起影响感受；区分二者不是否定感受，而是看清哪些已确认、哪些仍是推测。",
+        "natural_response_examples": [
+          "对方没有回复是目前能确认的事实，‘他不在乎我’是一个可以理解、但还需要证据的解释。"
+        ],
+        "safe_small_actions": [
+          "各写一句事实和解释",
+          "补写一个不粉饰也不最坏化的可能解释"
+        ],
+        "avoid": [
+          "把情绪说成想法错误",
+          "强迫积极思考"
+        ],
+        "related_issue_types": [
+          "anxiety",
+          "interpersonal",
+          "romantic_relationship",
+          "rumination"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:emotional_suppression",
+      "type": "mechanism",
+      "id": "emotional_suppression",
+      "name": "情绪压抑",
+      "source_path": "server/knowledge/mechanisms/emotional_suppression.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "暂时压住情绪能帮助应付当下，但长期没有命名和出口，紧绷可能以麻木、身体不适或突然爆发出现。 Use when: 用户长期不允许自己感受或表达; 压下情绪后出现累积紧绷、麻木或爆发 Do not use when: 暂不表达是为了现实安全; 用户已经充分表达且主要问题在现实资源",
+      "user_facing_text": {
+        "plain_explanation": "暂时压住情绪能帮助应付当下，但长期没有命名和出口，紧绷可能以麻木、身体不适或突然爆发出现。",
+        "natural_response_examples": [
+          "你可能已经撑着装作没事很久了，先辨认情绪不等于立刻做出反应。"
+        ],
+        "safe_small_actions": [
+          "用一到两个词命名当下情绪",
+          "选择安全场合写下没说出口的话"
+        ],
+        "avoid": [
+          "逼迫当面对质",
+          "把所有身体症状归于压抑"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "family_pressure",
+          "interpersonal",
+          "romantic_relationship",
+          "loneliness"
+        ],
+        "related_interventions": [
+          "emotion_labeling",
+          "boundary_sentence",
+          "help_seeking_script"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "emotional_suppression",
+        "name": "情绪压抑",
+        "keywords": [
+          "忍着",
+          "不能说",
+          "装没事",
+          "压下去",
+          "不敢表达",
+          "憋着",
+          "麻木"
+        ],
+        "use_when": [
+          "用户长期不允许自己感受或表达",
+          "压下情绪后出现累积紧绷、麻木或爆发"
+        ],
+        "do_not_use_when": [
+          "暂不表达是为了现实安全",
+          "用户已经充分表达且主要问题在现实资源"
+        ],
+        "plain_explanation": "暂时压住情绪能帮助应付当下，但长期没有命名和出口，紧绷可能以麻木、身体不适或突然爆发出现。",
+        "natural_response_examples": [
+          "你可能已经撑着装作没事很久了，先辨认情绪不等于立刻做出反应。"
+        ],
+        "safe_small_actions": [
+          "用一到两个词命名当下情绪",
+          "选择安全场合写下没说出口的话"
+        ],
+        "avoid": [
+          "逼迫当面对质",
+          "把所有身体症状归于压抑"
+        ],
+        "related_issue_types": [
+          "family_pressure",
+          "interpersonal",
+          "romantic_relationship",
+          "loneliness"
+        ],
+        "related_interventions": [
+          "emotion_labeling",
+          "boundary_sentence",
+          "help_seeking_script"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:over_responsibility",
+      "type": "mechanism",
+      "id": "over_responsibility",
+      "name": "过度责任感",
+      "source_path": "server/knowledge/mechanisms/over_responsibility.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "责任感能推动行动，但把他人的选择和所有结果都算到自己身上，会让责任边界无限扩大。 Use when: 用户承担超出可控范围的结果; 休息或拒绝被解释为自私和失职 Do not use when: 需要先承认并处理明确伤害责任; 安全照护职责正在被忽略",
+      "user_facing_text": {
+        "plain_explanation": "责任感能推动行动，但把他人的选择和所有结果都算到自己身上，会让责任边界无限扩大。",
+        "natural_response_examples": [
+          "你可以为自己能控制的部分负责，但不需要把所有人的反应和全部结果都背在身上。"
+        ],
+        "safe_small_actions": [
+          "分三栏写可控、可影响、不可控",
+          "确定今天只承担的一项具体责任"
+        ],
+        "avoid": [
+          "替用户免除真实责任",
+          "鼓励突然放弃照护义务"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "self_blame",
+          "family_pressure",
+          "work_stress"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "boundary_sentence"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "over_responsibility",
+        "name": "过度责任感",
+        "keywords": [
+          "都怪我",
+          "我应该",
+          "必须负责",
+          "不能让",
+          "内疚",
+          "自私",
+          "照顾所有人"
+        ],
+        "use_when": [
+          "用户承担超出可控范围的结果",
+          "休息或拒绝被解释为自私和失职"
+        ],
+        "do_not_use_when": [
+          "需要先承认并处理明确伤害责任",
+          "安全照护职责正在被忽略"
+        ],
+        "plain_explanation": "责任感能推动行动，但把他人的选择和所有结果都算到自己身上，会让责任边界无限扩大。",
+        "natural_response_examples": [
+          "你可以为自己能控制的部分负责，但不需要把所有人的反应和全部结果都背在身上。"
+        ],
+        "safe_small_actions": [
+          "分三栏写可控、可影响、不可控",
+          "确定今天只承担的一项具体责任"
+        ],
+        "avoid": [
+          "替用户免除真实责任",
+          "鼓励突然放弃照护义务"
+        ],
+        "related_issue_types": [
+          "self_blame",
+          "family_pressure",
+          "work_stress"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "boundary_sentence"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:people_pleasing_boundaries",
+      "type": "mechanism",
+      "id": "people_pleasing_boundaries",
+      "name": "讨好与边界",
+      "source_path": "server/knowledge/mechanisms/people_pleasing_boundaries.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "优先不让别人失望能暂时维持平静，但自己的需要长期没有位置，容易累积成疲惫、委屈或爆发。 Use when: 为避免冲突长期压下需要; 答应后疲惫委屈却仍不敢表达 Do not use when: 拒绝可能引发暴力或现实报复; 用户正在策略性配合以保障安全",
+      "user_facing_text": {
+        "plain_explanation": "优先不让别人失望能暂时维持平静，但自己的需要长期没有位置，容易累积成疲惫、委屈或爆发。",
+        "natural_response_examples": [
+          "在这段关系里，你似乎一直在照顾对方会不会不高兴，却很少有空间确认自己愿不愿意。"
+        ],
+        "safe_small_actions": [
+          "先说需要考虑后再回复",
+          "区分愿意、勉强和不能接受"
+        ],
+        "avoid": [
+          "把讨好贴成人格标签",
+          "忽略权力与安全差异"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "interpersonal",
+          "romantic_relationship",
+          "family_pressure",
+          "work_stress"
+        ],
+        "related_interventions": [
+          "boundary_sentence",
+          "relationship_clarification"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "people_pleasing_boundaries",
+        "name": "讨好与边界",
+        "keywords": [
+          "不敢拒绝",
+          "怕他生气",
+          "讨好",
+          "委屈",
+          "迁就",
+          "都答应",
+          "边界",
+          "怕别人不喜欢"
+        ],
+        "use_when": [
+          "为避免冲突长期压下需要",
+          "答应后疲惫委屈却仍不敢表达"
+        ],
+        "do_not_use_when": [
+          "拒绝可能引发暴力或现实报复",
+          "用户正在策略性配合以保障安全"
+        ],
+        "plain_explanation": "优先不让别人失望能暂时维持平静，但自己的需要长期没有位置，容易累积成疲惫、委屈或爆发。",
+        "natural_response_examples": [
+          "在这段关系里，你似乎一直在照顾对方会不会不高兴，却很少有空间确认自己愿不愿意。"
+        ],
+        "safe_small_actions": [
+          "先说需要考虑后再回复",
+          "区分愿意、勉强和不能接受"
+        ],
+        "avoid": [
+          "把讨好贴成人格标签",
+          "忽略权力与安全差异"
+        ],
+        "related_issue_types": [
+          "interpersonal",
+          "romantic_relationship",
+          "family_pressure",
+          "work_stress"
+        ],
+        "related_interventions": [
+          "boundary_sentence",
+          "relationship_clarification"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:perfectionism_procrastination",
+      "type": "mechanism",
+      "id": "perfectionism_procrastination",
+      "name": "完美主义与拖延",
+      "source_path": "server/knowledge/mechanisms/perfectionism_procrastination.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "当开始就意味着必须做好，第一步会变得很重；回避后时间变少，又更难达到标准，形成拖延和自责。 Use when: 高标准让开始成本过高; 害怕不完美导致回避并进一步赶工自责 Do not use when: 任务确有严格安全质量标准; 行动困难主要来自低能量、资源或身体限制",
+      "user_facing_text": {
+        "plain_explanation": "当开始就意味着必须做好，第一步会变得很重；回避后时间变少，又更难达到标准，形成拖延和自责。",
+        "natural_response_examples": [
+          "你可能不是没有标准，而是标准高到每次开始都像要立刻交出成品。"
+        ],
+        "safe_small_actions": [
+          "先产出只供自己看的粗糙版本",
+          "把第一步限定为十分钟和一个可见产物"
+        ],
+        "avoid": [
+          "否定合理质量要求",
+          "用更严计划制造压力"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "procrastination",
+          "academic_stress",
+          "work_stress",
+          "self_blame"
+        ],
+        "related_interventions": [
+          "small_step_activation",
+          "thought_record_light"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "perfectionism_procrastination",
+        "name": "完美主义与拖延",
+        "keywords": [
+          "完美",
+          "不能出错",
+          "做不好",
+          "达不到",
+          "标准",
+          "不敢开始",
+          "重做",
+          "拖到最后"
+        ],
+        "use_when": [
+          "高标准让开始成本过高",
+          "害怕不完美导致回避并进一步赶工自责"
+        ],
+        "do_not_use_when": [
+          "任务确有严格安全质量标准",
+          "行动困难主要来自低能量、资源或身体限制"
+        ],
+        "plain_explanation": "当开始就意味着必须做好，第一步会变得很重；回避后时间变少，又更难达到标准，形成拖延和自责。",
+        "natural_response_examples": [
+          "你可能不是没有标准，而是标准高到每次开始都像要立刻交出成品。"
+        ],
+        "safe_small_actions": [
+          "先产出只供自己看的粗糙版本",
+          "把第一步限定为十分钟和一个可见产物"
+        ],
+        "avoid": [
+          "否定合理质量要求",
+          "用更严计划制造压力"
+        ],
+        "related_issue_types": [
+          "procrastination",
+          "academic_stress",
+          "work_stress",
+          "self_blame"
+        ],
+        "related_interventions": [
+          "small_step_activation",
+          "thought_record_light"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:rumination",
+      "type": "mechanism",
+      "id": "rumination",
+      "name": "反刍思维",
+      "source_path": "server/knowledge/mechanisms/rumination.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "脑子不断回放，像是在努力找答案；当它不再产生新信息时，重复会让人再次经历难受，而不是解决问题。 Use when: 过去事件或担心被反复回放; 思考没有新信息却持续放大情绪 Do not use when: 用户正在进行有明确新信息的现实规划; 当前需要紧急决策或安全行动",
+      "user_facing_text": {
+        "plain_explanation": "脑子不断回放，像是在努力找答案；当它不再产生新信息时，重复会让人再次经历难受，而不是解决问题。",
+        "natural_response_examples": [
+          "这种反复回放没有让事情更清楚，反而每次都把当时的难受重新带回来。"
+        ],
+        "safe_small_actions": [
+          "标记哪些想法有新信息、哪些只是重复",
+          "把为什么换成现在能确认什么"
+        ],
+        "avoid": [
+          "命令用户别想",
+          "暗示只要想通就能解决"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "rumination",
+          "anxiety",
+          "self_blame",
+          "sleep_disturbance",
+          "romantic_relationship"
+        ],
+        "related_interventions": [
+          "worry_time_limit",
+          "thought_record_light",
+          "grounding_breath"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "rumination",
+        "name": "反刍思维",
+        "keywords": [
+          "反复想",
+          "一直想",
+          "停不下来",
+          "重放",
+          "想来想去",
+          "后悔",
+          "如果当时"
+        ],
+        "use_when": [
+          "过去事件或担心被反复回放",
+          "思考没有新信息却持续放大情绪"
+        ],
+        "do_not_use_when": [
+          "用户正在进行有明确新信息的现实规划",
+          "当前需要紧急决策或安全行动"
+        ],
+        "plain_explanation": "脑子不断回放，像是在努力找答案；当它不再产生新信息时，重复会让人再次经历难受，而不是解决问题。",
+        "natural_response_examples": [
+          "这种反复回放没有让事情更清楚，反而每次都把当时的难受重新带回来。"
+        ],
+        "safe_small_actions": [
+          "标记哪些想法有新信息、哪些只是重复",
+          "把为什么换成现在能确认什么"
+        ],
+        "avoid": [
+          "命令用户别想",
+          "暗示只要想通就能解决"
+        ],
+        "related_issue_types": [
+          "rumination",
+          "anxiety",
+          "self_blame",
+          "sleep_disturbance",
+          "romantic_relationship"
+        ],
+        "related_interventions": [
+          "worry_time_limit",
+          "thought_record_light",
+          "grounding_breath"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:self_blame_loop",
+      "type": "mechanism",
+      "id": "self_blame_loop",
+      "name": "自责循环",
+      "source_path": "server/knowledge/mechanisms/self_blame_loop.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "具体失误被解释成‘我这个人不行’，会消耗行动需要的力气；事情更难推进后，又像在证明原来的评价。 Use when: 一次结果被扩大为整个人不行; 自责导致僵住回避并制造更多困难 Do not use when: 用户正在讨论需要承担的具体责任且未自我贬低; 需要优先处理安全或现实补救",
+      "user_facing_text": {
+        "plain_explanation": "具体失误被解释成‘我这个人不行’，会消耗行动需要的力气；事情更难推进后，又像在证明原来的评价。",
+        "natural_response_examples": [
+          "你说的是一件没做好的事，但脑子里的结论已经变成了对整个人的否定；这种自责可能让你更难具体处理那次失误。"
+        ],
+        "safe_small_actions": [
+          "把自我评价改写成只描述事件和结果的句子",
+          "分开可控责任、外部条件和不可控部分"
+        ],
+        "avoid": [
+          "免除所有责任",
+          "用空泛鼓励反驳用户"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "self_blame",
+          "procrastination",
+          "rumination",
+          "work_stress"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "self_blame_loop",
+        "name": "自责循环",
+        "keywords": [
+          "自责",
+          "怪自己",
+          "都是我的错",
+          "废物",
+          "没用",
+          "做不好",
+          "讨厌自己"
+        ],
+        "use_when": [
+          "一次结果被扩大为整个人不行",
+          "自责导致僵住回避并制造更多困难"
+        ],
+        "do_not_use_when": [
+          "用户正在讨论需要承担的具体责任且未自我贬低",
+          "需要优先处理安全或现实补救"
+        ],
+        "plain_explanation": "具体失误被解释成‘我这个人不行’，会消耗行动需要的力气；事情更难推进后，又像在证明原来的评价。",
+        "natural_response_examples": [
+          "你说的是一件没做好的事，但脑子里的结论已经变成了对整个人的否定；这种自责可能让你更难具体处理那次失误。"
+        ],
+        "safe_small_actions": [
+          "把自我评价改写成只描述事件和结果的句子",
+          "分开可控责任、外部条件和不可控部分"
+        ],
+        "avoid": [
+          "免除所有责任",
+          "用空泛鼓励反驳用户"
+        ],
+        "related_issue_types": [
+          "self_blame",
+          "procrastination",
+          "rumination",
+          "work_stress"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:sleep_emotion_loop",
+      "type": "mechanism",
+      "id": "sleep_emotion_loop",
+      "name": "睡眠-情绪循环",
+      "source_path": "server/knowledge/mechanisms/sleep_emotion_loop.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "压力会影响睡眠，睡眠不足又会降低情绪和注意力的缓冲；越担心必须马上睡着，身体可能越警觉。 Use when: 睡眠变化与压力情绪互相影响; 担心睡不着本身增加睡前警觉 Do not use when: 多日几乎不睡并异常兴奋; 呼吸暂停、剧痛等可能需要医疗评估",
+      "user_facing_text": {
+        "plain_explanation": "压力会影响睡眠，睡眠不足又会降低情绪和注意力的缓冲；越担心必须马上睡着，身体可能越警觉。",
+        "natural_response_examples": [
+          "这不只是睡眠一个点：夜里更警觉，白天更难应对，晚上又更担心睡不好。"
+        ],
+        "safe_small_actions": [
+          "睡前短暂写下待办和担心",
+          "建立低刺激的固定收尾动作"
+        ],
+        "avoid": [
+          "承诺一晚见效",
+          "提供药物或停药建议"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "sleep_disturbance",
+          "anxiety",
+          "low_energy",
+          "work_stress",
+          "academic_stress"
+        ],
+        "related_interventions": [
+          "sleep_wind_down",
+          "worry_time_limit",
+          "grounding_breath"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "sleep_emotion_loop",
+        "name": "睡眠-情绪循环",
+        "keywords": [
+          "睡不着",
+          "失眠",
+          "早醒",
+          "越想睡",
+          "白天困",
+          "晚上清醒",
+          "睡眠"
+        ],
+        "use_when": [
+          "睡眠变化与压力情绪互相影响",
+          "担心睡不着本身增加睡前警觉"
+        ],
+        "do_not_use_when": [
+          "多日几乎不睡并异常兴奋",
+          "呼吸暂停、剧痛等可能需要医疗评估"
+        ],
+        "plain_explanation": "压力会影响睡眠，睡眠不足又会降低情绪和注意力的缓冲；越担心必须马上睡着，身体可能越警觉。",
+        "natural_response_examples": [
+          "这不只是睡眠一个点：夜里更警觉，白天更难应对，晚上又更担心睡不好。"
+        ],
+        "safe_small_actions": [
+          "睡前短暂写下待办和担心",
+          "建立低刺激的固定收尾动作"
+        ],
+        "avoid": [
+          "承诺一晚见效",
+          "提供药物或停药建议"
+        ],
+        "related_issue_types": [
+          "sleep_disturbance",
+          "anxiety",
+          "low_energy",
+          "work_stress",
+          "academic_stress"
+        ],
+        "related_interventions": [
+          "sleep_wind_down",
+          "worry_time_limit",
+          "grounding_breath"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:social_comparison_self_worth",
+      "type": "mechanism",
+      "id": "social_comparison_self_worth",
+      "name": "比较与自我价值",
+      "source_path": "server/knowledge/mechanisms/social_comparison_self_worth.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "比较能提供参照，但只看到他人的结果、再拿它评价自己的全部价值，会忽略背景、过程和不同目标。 Use when: 他人进展被用作整体自我价值证据; 比较引发退缩、羞耻或过度证明 Do not use when: 用户正在讨论客观资源不平等; 比较用于具体技能校准而非自我否定",
+      "user_facing_text": {
+        "plain_explanation": "比较能提供参照，但只看到他人的结果、再拿它评价自己的全部价值，会忽略背景、过程和不同目标。",
+        "natural_response_examples": [
+          "你看到的是对方展示出来的进展，却用它给自己的整体价值打了分，这两者并不对等。"
+        ],
+        "safe_small_actions": [
+          "把比较内容改成一个具体维度",
+          "写下自己的目标和下一项可控行动"
+        ],
+        "avoid": [
+          "贬低被比较的人",
+          "用你也很优秀做空泛反驳"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "self_blame",
+          "academic_stress",
+          "work_stress",
+          "loneliness",
+          "interpersonal"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light",
+          "small_step_activation"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "social_comparison_self_worth",
+        "name": "比较与自我价值",
+        "keywords": [
+          "不如别人",
+          "别人都",
+          "同学",
+          "朋友圈",
+          "比较",
+          "落后",
+          "被落下",
+          "没价值"
+        ],
+        "use_when": [
+          "他人进展被用作整体自我价值证据",
+          "比较引发退缩、羞耻或过度证明"
+        ],
+        "do_not_use_when": [
+          "用户正在讨论客观资源不平等",
+          "比较用于具体技能校准而非自我否定"
+        ],
+        "plain_explanation": "比较能提供参照，但只看到他人的结果、再拿它评价自己的全部价值，会忽略背景、过程和不同目标。",
+        "natural_response_examples": [
+          "你看到的是对方展示出来的进展，却用它给自己的整体价值打了分，这两者并不对等。"
+        ],
+        "safe_small_actions": [
+          "把比较内容改成一个具体维度",
+          "写下自己的目标和下一项可控行动"
+        ],
+        "avoid": [
+          "贬低被比较的人",
+          "用你也很优秀做空泛反驳"
+        ],
+        "related_issue_types": [
+          "self_blame",
+          "academic_stress",
+          "work_stress",
+          "loneliness",
+          "interpersonal"
+        ],
+        "related_interventions": [
+          "fact_vs_interpretation",
+          "thought_record_light",
+          "small_step_activation"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:somatic_stress_response",
+      "type": "mechanism",
+      "id": "somatic_stress_response",
+      "name": "身体化压力反应",
+      "source_path": "server/knowledge/mechanisms/somatic_stress_response.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "压力可能通过心跳、呼吸、肌肉和消化表现出来，但相似症状也可能有身体原因，需要保留医学判断空间。 Use when: 身体反应与压力情境同步出现; 用户在高负荷下持续紧绷 Do not use when: 出现急性胸痛、呼吸困难、昏厥等医疗警讯; 身体原因尚未排查却准备下心理结论",
+      "user_facing_text": {
+        "plain_explanation": "压力可能通过心跳、呼吸、肌肉和消化表现出来，但相似症状也可能有身体原因，需要保留医学判断空间。",
+        "natural_response_examples": [
+          "这些身体反应可能与紧张同时出现，但不能仅凭对话认定都是心理造成的。"
+        ],
+        "safe_small_actions": [
+          "记录症状、情境和持续时间",
+          "短暂延长呼气并观察是否变化"
+        ],
+        "avoid": [
+          "把症状全部心理化",
+          "延误紧急医疗帮助"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "anxiety",
+          "academic_stress",
+          "work_stress",
+          "sleep_disturbance"
+        ],
+        "related_interventions": [
+          "grounding_breath",
+          "emotion_labeling"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "somatic_stress_response",
+        "name": "身体化压力反应",
+        "keywords": [
+          "心慌",
+          "胸闷",
+          "胃痛",
+          "胃口",
+          "头疼",
+          "发抖",
+          "出汗",
+          "肌肉紧",
+          "呼吸急"
+        ],
+        "use_when": [
+          "身体反应与压力情境同步出现",
+          "用户在高负荷下持续紧绷"
+        ],
+        "do_not_use_when": [
+          "出现急性胸痛、呼吸困难、昏厥等医疗警讯",
+          "身体原因尚未排查却准备下心理结论"
+        ],
+        "plain_explanation": "压力可能通过心跳、呼吸、肌肉和消化表现出来，但相似症状也可能有身体原因，需要保留医学判断空间。",
+        "natural_response_examples": [
+          "这些身体反应可能与紧张同时出现，但不能仅凭对话认定都是心理造成的。"
+        ],
+        "safe_small_actions": [
+          "记录症状、情境和持续时间",
+          "短暂延长呼气并观察是否变化"
+        ],
+        "avoid": [
+          "把症状全部心理化",
+          "延误紧急医疗帮助"
+        ],
+        "related_issue_types": [
+          "anxiety",
+          "academic_stress",
+          "work_stress",
+          "sleep_disturbance"
+        ],
+        "related_interventions": [
+          "grounding_breath",
+          "emotion_labeling"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "mechanism:stress_response",
+      "type": "mechanism",
+      "id": "stress_response",
+      "name": "压力反应",
+      "source_path": "server/knowledge/mechanisms/stress_response.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "压力持续时，身体可能一直处于准备应对的状态；睡眠、专注、烦躁和紧绷会彼此推高。 Use when: 持续负荷后出现警觉、睡眠或专注变化; 状态与考试、工作、冲突或重大变化相关 Do not use when: 症状可能需要急诊或身体检查; 用心理解释会遮蔽暴力、过劳等现实问题",
+      "user_facing_text": {
+        "plain_explanation": "压力持续时，身体可能一直处于准备应对的状态；睡眠、专注、烦躁和紧绷会彼此推高。",
+        "natural_response_examples": [
+          "你这段时间像是一直没有真正从应对状态里退下来，睡不好后更难集中，出错又让紧张增加。"
+        ],
+        "safe_small_actions": [
+          "记录一天中压力最高的时段和身体反应",
+          "给当天任务设一个明确停止点"
+        ],
+        "avoid": [
+          "把身体不适全部心理化",
+          "淡化现实工作量"
+        ]
+      },
+      "linked_ids": {
+        "related_issue_types": [
+          "anxiety",
+          "academic_stress",
+          "work_stress",
+          "family_pressure",
+          "low_energy"
+        ],
+        "related_interventions": [
+          "grounding_breath",
+          "emotion_labeling",
+          "small_step_activation"
+        ]
+      },
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "stress_response",
+        "name": "压力反应",
+        "keywords": [
+          "压力",
+          "紧张",
+          "心慌",
+          "失眠",
+          "注意力",
+          "烦躁",
+          "忙",
+          "考试",
+          "项目",
+          "加班"
+        ],
+        "use_when": [
+          "持续负荷后出现警觉、睡眠或专注变化",
+          "状态与考试、工作、冲突或重大变化相关"
+        ],
+        "do_not_use_when": [
+          "症状可能需要急诊或身体检查",
+          "用心理解释会遮蔽暴力、过劳等现实问题"
+        ],
+        "plain_explanation": "压力持续时，身体可能一直处于准备应对的状态；睡眠、专注、烦躁和紧绷会彼此推高。",
+        "natural_response_examples": [
+          "你这段时间像是一直没有真正从应对状态里退下来，睡不好后更难集中，出错又让紧张增加。"
+        ],
+        "safe_small_actions": [
+          "记录一天中压力最高的时段和身体反应",
+          "给当天任务设一个明确停止点"
+        ],
+        "avoid": [
+          "把身体不适全部心理化",
+          "淡化现实工作量"
+        ],
+        "related_issue_types": [
+          "anxiety",
+          "academic_stress",
+          "work_stress",
+          "family_pressure",
+          "low_energy"
+        ],
+        "related_interventions": [
+          "grounding_breath",
+          "emotion_labeling",
+          "small_step_activation"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:boundary_sentence",
+      "type": "intervention",
+      "id": "boundary_sentence",
+      "name": "边界表达句式",
+      "source_path": "server/knowledge/interventions/boundary_sentence.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "可以试着说：‘当___发生时，我会___；接下来我希望___。’先从风险较低的一件小事开始。 Suitable for: 低风险关系中的请求或越界; 用户希望表达限制而非控制对方 Not suitable for: 表达可能引发暴力、报复或失去基本资源; 当前存在明显权力或人身安全风险",
+      "user_facing_text": {
+        "instruction": [
+          "先说可观察行为",
+          "说明自己的感受或限制",
+          "提出具体可执行请求"
+        ],
+        "natural_prompt": "可以试着说：‘当___发生时，我会___；接下来我希望___。’先从风险较低的一件小事开始。",
+        "example": "当你没问就用我的东西时，我会不舒服；以后请先问我一声。",
+        "safety_notes": [
+          "仅作沟通参考，不是关系治疗方案",
+          "有暴力或报复风险时优先制定现实安全安排"
+        ],
+        "avoid": [
+          "指责人格",
+          "用边界威胁或操控"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "boundary_sentence",
+        "name": "边界表达句式",
+        "keywords": [
+          "不敢拒绝",
+          "边界",
+          "委屈",
+          "迁就",
+          "越界",
+          "不能说",
+          "答应",
+          "不打招呼",
+          "用我的东西",
+          "说没关系"
+        ],
+        "suitable_for": [
+          "低风险关系中的请求或越界",
+          "用户希望表达限制而非控制对方"
+        ],
+        "not_suitable_for": [
+          "表达可能引发暴力、报复或失去基本资源",
+          "当前存在明显权力或人身安全风险"
+        ],
+        "instruction": [
+          "先说可观察行为",
+          "说明自己的感受或限制",
+          "提出具体可执行请求"
+        ],
+        "natural_prompt": "可以试着说：‘当___发生时，我会___；接下来我希望___。’先从风险较低的一件小事开始。",
+        "example": "当你没问就用我的东西时，我会不舒服；以后请先问我一声。",
+        "avoid": [
+          "指责人格",
+          "用边界威胁或操控"
+        ],
+        "safety_notes": [
+          "仅作沟通参考，不是关系治疗方案",
+          "有暴力或报复风险时优先制定现实安全安排"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:emotion_labeling",
+      "type": "intervention",
+      "id": "emotion_labeling",
+      "name": "情绪命名",
+      "source_path": "server/knowledge/interventions/emotion_labeling.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "先不用把原因讲清楚；如果选一两个词，现在更接近紧张、委屈、生气、难过，还是麻木？ Suitable for: 情绪混在一起难以描述; 长期压住感受或身体紧绷 Not suitable for: 命名会明显加剧失控; 当前需要先处理医疗或人身安全",
+      "user_facing_text": {
+        "instruction": [
+          "从焦虑、难过、委屈、生气、麻木中选一到两个近似词",
+          "用0到10表示强度",
+          "不要求解释原因"
+        ],
+        "natural_prompt": "先不用把原因讲清楚；如果选一两个词，现在更接近紧张、委屈、生气、难过，还是麻木？",
+        "example": "我现在更接近委屈7分、害怕4分。",
+        "safety_notes": [
+          "仅用于自我觉察，不承诺减轻症状",
+          "若情绪伴随自伤或伤人冲动，应进入安全回应"
+        ],
+        "avoid": [
+          "替用户决定情绪",
+          "要求精确或完整"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "emotion_labeling",
+        "name": "情绪命名",
+        "keywords": [
+          "说不清",
+          "压抑",
+          "麻木",
+          "烦",
+          "难受",
+          "委屈",
+          "生气",
+          "害怕"
+        ],
+        "suitable_for": [
+          "情绪混在一起难以描述",
+          "长期压住感受或身体紧绷"
+        ],
+        "not_suitable_for": [
+          "命名会明显加剧失控",
+          "当前需要先处理医疗或人身安全"
+        ],
+        "instruction": [
+          "从焦虑、难过、委屈、生气、麻木中选一到两个近似词",
+          "用0到10表示强度",
+          "不要求解释原因"
+        ],
+        "natural_prompt": "先不用把原因讲清楚；如果选一两个词，现在更接近紧张、委屈、生气、难过，还是麻木？",
+        "example": "我现在更接近委屈7分、害怕4分。",
+        "avoid": [
+          "替用户决定情绪",
+          "要求精确或完整"
+        ],
+        "safety_notes": [
+          "仅用于自我觉察，不承诺减轻症状",
+          "若情绪伴随自伤或伤人冲动，应进入安全回应"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:fact_vs_interpretation",
+      "type": "intervention",
+      "id": "fact_vs_interpretation",
+      "name": "事实-解释区分",
+      "source_path": "server/knowledge/interventions/fact_vs_interpretation.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "如果你愿意，我们可以只分两行写：已经确认的事实是什么，你脑子里最强的解释是什么。 Suitable for: 把推测当成事实; 灾难化、自责或关系不确定 Not suitable for: 存在明确即时危险; 用户需要先被倾听而非练习",
+      "user_facing_text": {
+        "instruction": [
+          "写下一句可被观察或核实的事实",
+          "再写下脑中对它的解释",
+          "标记还缺哪些信息"
+        ],
+        "natural_prompt": "如果你愿意，我们可以只分两行写：已经确认的事实是什么，你脑子里最强的解释是什么。",
+        "example": "事实：对方两天没回复；解释：他不再在意我。解释可以理解，但还不是已确认事实。",
+        "safety_notes": [
+          "仅作心理教育和自助整理，不是治疗方案",
+          "若涉及暴力或即时危险，应优先采取现实安全行动"
+        ],
+        "avoid": [
+          "用练习否定情绪",
+          "强迫写积极解释"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "fact_vs_interpretation",
+        "name": "事实-解释区分",
+        "keywords": [
+          "肯定",
+          "意味着",
+          "都是",
+          "一定",
+          "说明",
+          "不爱我",
+          "失败"
+        ],
+        "suitable_for": [
+          "把推测当成事实",
+          "灾难化、自责或关系不确定"
+        ],
+        "not_suitable_for": [
+          "存在明确即时危险",
+          "用户需要先被倾听而非练习"
+        ],
+        "instruction": [
+          "写下一句可被观察或核实的事实",
+          "再写下脑中对它的解释",
+          "标记还缺哪些信息"
+        ],
+        "natural_prompt": "如果你愿意，我们可以只分两行写：已经确认的事实是什么，你脑子里最强的解释是什么。",
+        "example": "事实：对方两天没回复；解释：他不再在意我。解释可以理解，但还不是已确认事实。",
+        "avoid": [
+          "用练习否定情绪",
+          "强迫写积极解释"
+        ],
+        "safety_notes": [
+          "仅作心理教育和自助整理，不是治疗方案",
+          "若涉及暴力或即时危险，应优先采取现实安全行动"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:grounding_breath",
+      "type": "intervention",
+      "id": "grounding_breath",
+      "name": "呼吸/落地稳定",
+      "source_path": "server/knowledge/interventions/grounding_breath.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "如果呼吸练习不会让你更不舒服，可以先感受脚下支撑，保持自然吸气，把呼气稍微放慢一分钟。 Suitable for: 短时紧张或身体警觉; 需要先把注意力带回当下 Not suitable for: 呼吸练习会引发不适或惊恐; 存在急性胸痛、严重呼吸困难或医疗紧急情况",
+      "user_facing_text": {
+        "instruction": [
+          "双脚接触地面并看见三个物体",
+          "自然吸气，不憋气，把呼气稍微放慢",
+          "持续约一分钟，不追求立刻平静"
+        ],
+        "natural_prompt": "如果呼吸练习不会让你更不舒服，可以先感受脚下支撑，保持自然吸气，把呼气稍微放慢一分钟。",
+        "example": "看见桌子、窗户和杯子；吸气自然，呼气略慢。",
+        "safety_notes": [
+          "不适加重就停止；这不是治疗或急救替代",
+          "急性身体警讯应联系医疗服务"
+        ],
+        "avoid": [
+          "要求大口深呼吸",
+          "承诺立刻消除焦虑"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "grounding_breath",
+        "name": "呼吸/落地稳定",
+        "keywords": [
+          "心慌",
+          "紧张",
+          "发抖",
+          "呼吸",
+          "失控",
+          "身体紧",
+          "脑子停不下来"
+        ],
+        "suitable_for": [
+          "短时紧张或身体警觉",
+          "需要先把注意力带回当下"
+        ],
+        "not_suitable_for": [
+          "呼吸练习会引发不适或惊恐",
+          "存在急性胸痛、严重呼吸困难或医疗紧急情况"
+        ],
+        "instruction": [
+          "双脚接触地面并看见三个物体",
+          "自然吸气，不憋气，把呼气稍微放慢",
+          "持续约一分钟，不追求立刻平静"
+        ],
+        "natural_prompt": "如果呼吸练习不会让你更不舒服，可以先感受脚下支撑，保持自然吸气，把呼气稍微放慢一分钟。",
+        "example": "看见桌子、窗户和杯子；吸气自然，呼气略慢。",
+        "avoid": [
+          "要求大口深呼吸",
+          "承诺立刻消除焦虑"
+        ],
+        "safety_notes": [
+          "不适加重就停止；这不是治疗或急救替代",
+          "急性身体警讯应联系医疗服务"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:help_seeking_script",
+      "type": "intervention",
+      "id": "help_seeking_script",
+      "name": "求助表达句式",
+      "source_path": "server/knowledge/interventions/help_seeking_script.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_safety_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "safety_informed",
+      "summary": "可以只发一句：‘我这两天状态不太好，现在不需要你解决问题，能不能今晚陪我通话十分钟？’ Suitable for: 用户有可信任对象但难以开口; 需要提出具体陪伴或实际协助 Not suitable for: 对象可能施暴、报复或泄露隐私; 即时危险中不应只发信息等待",
+      "user_facing_text": {
+        "instruction": [
+          "简要说明当前状态",
+          "提出一项具体请求",
+          "说明希望对方何时回应"
+        ],
+        "natural_prompt": "可以只发一句：‘我这两天状态不太好，现在不需要你解决问题，能不能今晚陪我通话十分钟？’",
+        "example": "我今天很难保证自己一个人安全，请现在联系我并来陪我；如果联系不上我，请帮我联系紧急服务。",
+        "safety_notes": [
+          "一般求助句式仅作自助参考",
+          "即时危险时应同步联系紧急服务、医院或能到场的可信任者，不能只依赖消息"
+        ],
+        "avoid": [
+          "要求一次讲清全部经历",
+          "只说帮帮我而没有可执行请求"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "help_seeking_script",
+        "name": "求助表达句式",
+        "keywords": [
+          "求助",
+          "不知道怎么说",
+          "没人理解",
+          "一个人",
+          "需要帮助",
+          "不敢告诉"
+        ],
+        "suitable_for": [
+          "用户有可信任对象但难以开口",
+          "需要提出具体陪伴或实际协助"
+        ],
+        "not_suitable_for": [
+          "对象可能施暴、报复或泄露隐私",
+          "即时危险中不应只发信息等待"
+        ],
+        "instruction": [
+          "简要说明当前状态",
+          "提出一项具体请求",
+          "说明希望对方何时回应"
+        ],
+        "natural_prompt": "可以只发一句：‘我这两天状态不太好，现在不需要你解决问题，能不能今晚陪我通话十分钟？’",
+        "example": "我今天很难保证自己一个人安全，请现在联系我并来陪我；如果联系不上我，请帮我联系紧急服务。",
+        "avoid": [
+          "要求一次讲清全部经历",
+          "只说帮帮我而没有可执行请求"
+        ],
+        "safety_notes": [
+          "一般求助句式仅作自助参考",
+          "即时危险时应同步联系紧急服务、医院或能到场的可信任者，不能只依赖消息"
+        ],
+        "source_level": "L2_safety_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:relationship_clarification",
+      "type": "intervention",
+      "id": "relationship_clarification",
+      "name": "关系澄清",
+      "source_path": "server/knowledge/interventions/relationship_clarification.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "可以把‘你是不是不在乎我’换成：‘这两天没收到回复，我有些不安，想确认你现在是否方便联系。’ Suitable for: 关系不确定且双方存在安全沟通空间; 用户想核实事实和表达需要 Not suitable for: 控制、跟踪、威胁或暴力关系; 对方明确要求停止联系",
+      "user_facing_text": {
+        "instruction": [
+          "说明观察到的具体情况",
+          "用询问核实而非断定意图",
+          "表达一个当前需要"
+        ],
+        "natural_prompt": "可以把‘你是不是不在乎我’换成：‘这两天没收到回复，我有些不安，想确认你现在是否方便联系。’",
+        "example": "我注意到我们这周两次谈到家务都中断了，想找一个都比较平静的时间说清分工。",
+        "safety_notes": [
+          "仅作沟通自助参考，不承诺改善关系",
+          "若有暴力、胁迫或跟踪，应优先求助和保障安全"
+        ],
+        "avoid": [
+          "反复逼问",
+          "用试探或监控获取确认"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "relationship_clarification",
+        "name": "关系澄清",
+        "keywords": [
+          "冷战",
+          "不回消息",
+          "关系不确定",
+          "误会",
+          "需要确认",
+          "反复冲突",
+          "说清楚"
+        ],
+        "suitable_for": [
+          "关系不确定且双方存在安全沟通空间",
+          "用户想核实事实和表达需要"
+        ],
+        "not_suitable_for": [
+          "控制、跟踪、威胁或暴力关系",
+          "对方明确要求停止联系"
+        ],
+        "instruction": [
+          "说明观察到的具体情况",
+          "用询问核实而非断定意图",
+          "表达一个当前需要"
+        ],
+        "natural_prompt": "可以把‘你是不是不在乎我’换成：‘这两天没收到回复，我有些不安，想确认你现在是否方便联系。’",
+        "example": "我注意到我们这周两次谈到家务都中断了，想找一个都比较平静的时间说清分工。",
+        "avoid": [
+          "反复逼问",
+          "用试探或监控获取确认"
+        ],
+        "safety_notes": [
+          "仅作沟通自助参考，不承诺改善关系",
+          "若有暴力、胁迫或跟踪，应优先求助和保障安全"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:sleep_wind_down",
+      "type": "intervention",
+      "id": "sleep_wind_down",
+      "name": "睡前卸载",
+      "source_path": "server/knowledge/interventions/sleep_wind_down.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "睡前可以用五分钟把待办和担心写下来，并标明明天什么时候处理；目的不是强迫入睡，而是暂时停止继续规划。 Suitable for: 睡前待办和担忧反复出现; 希望尝试低刺激收尾流程 Not suitable for: 多日几乎不睡且异常兴奋; 呼吸暂停、剧痛或其他需医疗评估的表现",
+      "user_facing_text": {
+        "instruction": [
+          "睡前用五分钟写下待办和担忧",
+          "给可处理事项标注明天最早处理时间",
+          "随后转入固定低刺激活动"
+        ],
+        "natural_prompt": "睡前可以用五分钟把待办和担心写下来，并标明明天什么时候处理；目的不是强迫入睡，而是暂时停止继续规划。",
+        "example": "写下‘明早9点确认邮件’，然后调暗灯光、做固定清洁流程。",
+        "safety_notes": [
+          "这是睡眠卫生类自助建议，不是失眠治疗，也不保证当晚有效",
+          "持续或严重睡眠问题应考虑专业评估"
+        ],
+        "avoid": [
+          "把睡着当作必须完成的任务",
+          "给药物或停药建议"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "sleep_wind_down",
+        "name": "睡前卸载",
+        "keywords": [
+          "睡不着",
+          "失眠",
+          "睡前",
+          "夜里",
+          "脑子停不下来",
+          "担忧"
+        ],
+        "suitable_for": [
+          "睡前待办和担忧反复出现",
+          "希望尝试低刺激收尾流程"
+        ],
+        "not_suitable_for": [
+          "多日几乎不睡且异常兴奋",
+          "呼吸暂停、剧痛或其他需医疗评估的表现"
+        ],
+        "instruction": [
+          "睡前用五分钟写下待办和担忧",
+          "给可处理事项标注明天最早处理时间",
+          "随后转入固定低刺激活动"
+        ],
+        "natural_prompt": "睡前可以用五分钟把待办和担心写下来，并标明明天什么时候处理；目的不是强迫入睡，而是暂时停止继续规划。",
+        "example": "写下‘明早9点确认邮件’，然后调暗灯光、做固定清洁流程。",
+        "avoid": [
+          "把睡着当作必须完成的任务",
+          "给药物或停药建议"
+        ],
+        "safety_notes": [
+          "这是睡眠卫生类自助建议，不是失眠治疗，也不保证当晚有效",
+          "持续或严重睡眠问题应考虑专业评估"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:small_step_activation",
+      "type": "intervention",
+      "id": "small_step_activation",
+      "name": "小步行为激活",
+      "source_path": "server/knowledge/interventions/small_step_activation.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L2_guideline_informed",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "如果你想试一个很小的动作，可以只把文件打开并写一个标题，五分钟后就允许停。 Suitable for: 低能量或回避导致启动困难; 能尝试两到十分钟的小动作 Not suitable for: 明显耗竭需要休息或医疗评估; 无法维持基本生活或有即时危险",
+      "user_facing_text": {
+        "instruction": [
+          "选一个十分钟内能开始的动作",
+          "把目标设为接触而非完成",
+          "结束后只观察能量变化"
+        ],
+        "natural_prompt": "如果你想试一个很小的动作，可以只把文件打开并写一个标题，五分钟后就允许停。",
+        "example": "不是完成论文，而是打开文档、写下一个小标题。",
+        "safety_notes": [
+          "这是可选自助建议，不是治疗，也不保证改善",
+          "行动不应替代必要休息、医疗评估或现实支持"
+        ],
+        "avoid": [
+          "一次给很多任务",
+          "把未完成解释为不努力"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "small_step_activation",
+        "name": "小步行为激活",
+        "keywords": [
+          "开始不了",
+          "没动力",
+          "拖延",
+          "不想动",
+          "行动困难",
+          "卡住"
+        ],
+        "suitable_for": [
+          "低能量或回避导致启动困难",
+          "能尝试两到十分钟的小动作"
+        ],
+        "not_suitable_for": [
+          "明显耗竭需要休息或医疗评估",
+          "无法维持基本生活或有即时危险"
+        ],
+        "instruction": [
+          "选一个十分钟内能开始的动作",
+          "把目标设为接触而非完成",
+          "结束后只观察能量变化"
+        ],
+        "natural_prompt": "如果你想试一个很小的动作，可以只把文件打开并写一个标题，五分钟后就允许停。",
+        "example": "不是完成论文，而是打开文档、写下一个小标题。",
+        "avoid": [
+          "一次给很多任务",
+          "把未完成解释为不努力"
+        ],
+        "safety_notes": [
+          "这是可选自助建议，不是治疗，也不保证改善",
+          "行动不应替代必要休息、医疗评估或现实支持"
+        ],
+        "source_level": "L2_guideline_informed",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:thought_record_light",
+      "type": "intervention",
+      "id": "thought_record_light",
+      "name": "轻量想法记录",
+      "source_path": "server/knowledge/interventions/thought_record_light.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "可以只记三行：发生了什么、脑子立刻说了什么、情绪0到10有多强。 Suitable for: 重复想法和情绪之间关系较清楚; 用户愿意做简短书写 Not suitable for: 书写会加剧创伤重现或失控; 当前有即时危险",
+      "user_facing_text": {
+        "instruction": [
+          "只写情境、自动想法、情绪强度三项",
+          "补一条支持和一条不支持该想法的证据",
+          "不要求得出正确答案"
+        ],
+        "natural_prompt": "可以只记三行：发生了什么、脑子立刻说了什么、情绪0到10有多强。",
+        "example": "情境：汇报出错；想法：我什么都做不好；情绪：羞耻8分。",
+        "safety_notes": [
+          "仅用于自我观察，不是治疗作业，也不保证效果",
+          "明显痛苦上升时停止并寻求现实支持"
+        ],
+        "avoid": [
+          "写成长篇反刍",
+          "把记录当作诊断量表"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "thought_record_light",
+        "name": "轻量想法记录",
+        "keywords": [
+          "反复",
+          "自责",
+          "最坏",
+          "肯定",
+          "想法",
+          "停不下来"
+        ],
+        "suitable_for": [
+          "重复想法和情绪之间关系较清楚",
+          "用户愿意做简短书写"
+        ],
+        "not_suitable_for": [
+          "书写会加剧创伤重现或失控",
+          "当前有即时危险"
+        ],
+        "instruction": [
+          "只写情境、自动想法、情绪强度三项",
+          "补一条支持和一条不支持该想法的证据",
+          "不要求得出正确答案"
+        ],
+        "natural_prompt": "可以只记三行：发生了什么、脑子立刻说了什么、情绪0到10有多强。",
+        "example": "情境：汇报出错；想法：我什么都做不好；情绪：羞耻8分。",
+        "avoid": [
+          "写成长篇反刍",
+          "把记录当作诊断量表"
+        ],
+        "safety_notes": [
+          "仅用于自我观察，不是治疗作业，也不保证效果",
+          "明显痛苦上升时停止并寻求现实支持"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "intervention:worry_time_limit",
+      "type": "intervention",
+      "id": "worry_time_limit",
+      "name": "担忧限时",
+      "source_path": "server/knowledge/interventions/worry_time_limit.json",
+      "review_status": "pending_clinical_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L3_psychoeducation",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "ordinary_psychoeducation",
+      "summary": "可以把它记成一句话，约定今天一个十分钟时段再看；这不是压住想法，而是暂时把注意力还给眼前。 Suitable for: 重复担忧没有新信息; 担忧挤占睡眠或当前活动 Not suitable for: 问题需要立即实际处理; 担忧涉及即时安全风险",
+      "user_facing_text": {
+        "instruction": [
+          "设置今天一个10分钟担忧时段",
+          "其他时间只记下关键词",
+          "到时区分可行动问题和重复想法"
+        ],
+        "natural_prompt": "可以把它记成一句话，约定今天一个十分钟时段再看；这不是压住想法，而是暂时把注意力还给眼前。",
+        "example": "晚上7:30看担忧清单十分钟，只为可处理项写下一步。",
+        "safety_notes": [
+          "仅作注意力管理的自助尝试，不是治疗方案",
+          "自伤、自杀或伤人想法不能延期处理"
+        ],
+        "avoid": [
+          "要求彻底停止思考",
+          "把紧急问题推迟"
+        ]
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "worry_time_limit",
+        "name": "担忧限时",
+        "keywords": [
+          "一直想",
+          "停不下来",
+          "反复担心",
+          "睡前想",
+          "重放"
+        ],
+        "suitable_for": [
+          "重复担忧没有新信息",
+          "担忧挤占睡眠或当前活动"
+        ],
+        "not_suitable_for": [
+          "问题需要立即实际处理",
+          "担忧涉及即时安全风险"
+        ],
+        "instruction": [
+          "设置今天一个10分钟担忧时段",
+          "其他时间只记下关键词",
+          "到时区分可行动问题和重复想法"
+        ],
+        "natural_prompt": "可以把它记成一句话，约定今天一个十分钟时段再看；这不是压住想法，而是暂时把注意力还给眼前。",
+        "example": "晚上7:30看担忧清单十分钟，只为可处理项写下一步。",
+        "avoid": [
+          "要求彻底停止思考",
+          "把紧急问题推迟"
+        ],
+        "safety_notes": [
+          "仅作注意力管理的自助尝试，不是治疗方案",
+          "自伤、自杀或伤人想法不能延期处理"
+        ],
+        "source_level": "L3_psychoeducation",
+        "review_status": "pending_clinical_review"
+      }
+    },
+    {
+      "entry_key": "safety_level:level_0",
+      "type": "safety_level",
+      "id": "level_0",
+      "name": "无明显风险",
+      "source_path": "server/knowledge/safety/risk_levels.json#level_0",
+      "review_status": "pending_clinical_and_legal_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L1_product_safety_rule",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "routine_safety_boundary",
+      "summary": "继续普通觉察对话，并对新出现的风险保持敏感。 Signals: 未出现消极生存意愿、自伤、自杀、伤人或即时失控信息 Escalation: 若出现更高等级信号，立即切换到对应安全回应。",
+      "user_facing_text": {
+        "must_include": [
+          "不诊断",
+          "只使用当前相关知识"
+        ],
+        "must_not_include": [
+          "无依据地升级为危机",
+          "忽略后续风险信息"
+        ],
+        "allowed_followups": [
+          "持续时间",
+          "功能影响",
+          "具体诱因"
+        ],
+        "escalation_action": "若出现更高等级信号，立即切换到对应安全回应。"
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "level_0",
+        "name": "无明显风险",
+        "signals": [
+          "未出现消极生存意愿、自伤、自杀、伤人或即时失控信息"
+        ],
+        "keywords": [],
+        "response_goal": "继续普通觉察对话，并对新出现的风险保持敏感。",
+        "must_include": [
+          "不诊断",
+          "只使用当前相关知识"
+        ],
+        "must_not_include": [
+          "无依据地升级为危机",
+          "忽略后续风险信息"
+        ],
+        "allowed_followups": [
+          "持续时间",
+          "功能影响",
+          "具体诱因"
+        ],
+        "escalation_action": "若出现更高等级信号，立即切换到对应安全回应。",
+        "source_level": "L1_product_safety_rule",
+        "review_status": "pending_clinical_and_legal_review"
+      }
+    },
+    {
+      "entry_key": "safety_level:level_1",
+      "type": "safety_level",
+      "id": "level_1",
+      "name": "消极表达但无明确自伤意图",
+      "source_path": "server/knowledge/safety/risk_levels.json#level_1",
+      "review_status": "pending_clinical_and_legal_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L1_product_safety_rule",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "self_harm_risk",
+      "summary": "承认痛苦，直接但克制地确认是否有自伤或自杀想法，并连接现实支持。 Signals: 表达活着没意思、想消失、没有意义，但未明确表示要自伤或自杀 Escalation: 若确认自伤/自杀想法，升级到 level_2；若出现计划或工具，升级到 level_3。",
+      "user_facing_text": {
+        "must_include": [
+          "询问当前是否安全",
+          "询问是否出现自伤或自杀想法",
+          "鼓励联系可信任的人"
+        ],
+        "must_not_include": [
+          "空泛保证",
+          "普通心理机制分析",
+          "把表达当作矫情"
+        ],
+        "allowed_followups": [
+          "你现在安全吗？",
+          "你有伤害自己或结束生命的想法吗？"
+        ],
+        "escalation_action": "若确认自伤/自杀想法，升级到 level_2；若出现计划或工具，升级到 level_3。"
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "level_1",
+        "name": "消极表达但无明确自伤意图",
+        "signals": [
+          "表达活着没意思、想消失、没有意义，但未明确表示要自伤或自杀"
+        ],
+        "keywords": [
+          "活着没意思",
+          "活着好累",
+          "撑不住了",
+          "想消失",
+          "生活没意义",
+          "没有活下去的意义",
+          "不如消失",
+          "不想存在"
+        ],
+        "response_goal": "承认痛苦，直接但克制地确认是否有自伤或自杀想法，并连接现实支持。",
+        "must_include": [
+          "询问当前是否安全",
+          "询问是否出现自伤或自杀想法",
+          "鼓励联系可信任的人"
+        ],
+        "must_not_include": [
+          "空泛保证",
+          "普通心理机制分析",
+          "把表达当作矫情"
+        ],
+        "allowed_followups": [
+          "你现在安全吗？",
+          "你有伤害自己或结束生命的想法吗？"
+        ],
+        "escalation_action": "若确认自伤/自杀想法，升级到 level_2；若出现计划或工具，升级到 level_3。",
+        "source_level": "L1_product_safety_rule",
+        "review_status": "pending_clinical_and_legal_review"
+      }
+    },
+    {
+      "entry_key": "safety_level:level_2",
+      "type": "safety_level",
+      "id": "level_2",
+      "name": "明确自伤/自杀想法但无计划",
+      "source_path": "server/knowledge/safety/risk_levels.json#level_2",
+      "review_status": "pending_clinical_and_legal_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L1_product_safety_rule",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "self_harm_risk",
+      "summary": "停止普通分析，确认计划和即时安全，推动可信任者与专业支持介入。 Signals: 明确说想死、不想活、自杀或自伤，但未提供方式、时间、地点或工具 Escalation: 有计划、工具或即刻危险时升级到 level_3；正在实施或无法安全则升级到 level_4。",
+      "user_facing_text": {
+        "must_include": [
+          "询问是否已有方式、时间、地点或工具",
+          "建议不要独处",
+          "联系可信任的人和当地专业支持",
+          "远离或请他人保管可能用于伤害的危险物品"
+        ],
+        "must_not_include": [
+          "讨论方法细节",
+          "承诺保密或保证不会发生",
+          "只提供自助练习"
+        ],
+        "allowed_followups": [
+          "你现在有没有具体计划或已经准备工具？",
+          "现在谁能来陪你？"
+        ],
+        "escalation_action": "有计划、工具或即刻危险时升级到 level_3；正在实施或无法安全则升级到 level_4。"
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "level_2",
+        "name": "明确自伤/自杀想法但无计划",
+        "signals": [
+          "明确说想死、不想活、自杀或自伤，但未提供方式、时间、地点或工具"
+        ],
+        "keywords": [
+          "想死",
+          "不想活",
+          "想自杀",
+          "要自杀",
+          "想自伤",
+          "伤害自己",
+          "割腕",
+          "轻生"
+        ],
+        "response_goal": "停止普通分析，确认计划和即时安全，推动可信任者与专业支持介入。",
+        "must_include": [
+          "询问是否已有方式、时间、地点或工具",
+          "建议不要独处",
+          "联系可信任的人和当地专业支持",
+          "远离或请他人保管可能用于伤害的危险物品"
+        ],
+        "must_not_include": [
+          "讨论方法细节",
+          "承诺保密或保证不会发生",
+          "只提供自助练习"
+        ],
+        "allowed_followups": [
+          "你现在有没有具体计划或已经准备工具？",
+          "现在谁能来陪你？"
+        ],
+        "escalation_action": "有计划、工具或即刻危险时升级到 level_3；正在实施或无法安全则升级到 level_4。",
+        "source_level": "L1_product_safety_rule",
+        "review_status": "pending_clinical_and_legal_review"
+      }
+    },
+    {
+      "entry_key": "safety_level:level_3",
+      "type": "safety_level",
+      "id": "level_3",
+      "name": "有方式、时间、地点、工具或即刻危险",
+      "source_path": "server/knowledge/safety/risk_levels.json#level_3",
+      "review_status": "pending_clinical_and_legal_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L1_product_safety_rule",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "high_or_imminent_risk",
+      "summary": "立即降低接触危险物的机会，让现实中的人到场并联系紧急服务。 Signals: 提到具体方式、时间、地点、工具、遗书、告别或马上行动 Escalation: 立即联系当地紧急服务和可到场支持者；若行为已开始或无法保证安全，按 level_4。",
+      "user_facing_text": {
+        "must_include": [
+          "明确这是紧急情况",
+          "要求立即联系能到场的人",
+          "联系当地紧急电话或医院急诊",
+          "远离或交出危险物品"
+        ],
+        "must_not_include": [
+          "继续探索原因",
+          "让用户独自制定长期计划",
+          "等待下一轮再行动"
+        ],
+        "allowed_followups": [
+          "你现在在哪里？",
+          "谁能马上到你身边？",
+          "你能否把危险物品交给别人并拨打紧急电话？"
+        ],
+        "escalation_action": "立即联系当地紧急服务和可到场支持者；若行为已开始或无法保证安全，按 level_4。"
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "level_3",
+        "name": "有方式、时间、地点、工具或即刻危险",
+        "signals": [
+          "提到具体方式、时间、地点、工具、遗书、告别或马上行动"
+        ],
+        "keywords": [
+          "已经准备",
+          "准备了",
+          "定好时间",
+          "写了遗书",
+          "告别",
+          "今晚就",
+          "马上就",
+          "有工具",
+          "有计划"
+        ],
+        "response_goal": "立即降低接触危险物的机会，让现实中的人到场并联系紧急服务。",
+        "must_include": [
+          "明确这是紧急情况",
+          "要求立即联系能到场的人",
+          "联系当地紧急电话或医院急诊",
+          "远离或交出危险物品"
+        ],
+        "must_not_include": [
+          "继续探索原因",
+          "让用户独自制定长期计划",
+          "等待下一轮再行动"
+        ],
+        "allowed_followups": [
+          "你现在在哪里？",
+          "谁能马上到你身边？",
+          "你能否把危险物品交给别人并拨打紧急电话？"
+        ],
+        "escalation_action": "立即联系当地紧急服务和可到场支持者；若行为已开始或无法保证安全，按 level_4。",
+        "source_level": "L1_product_safety_rule",
+        "review_status": "pending_clinical_and_legal_review"
+      }
+    },
+    {
+      "entry_key": "safety_level:level_4",
+      "type": "safety_level",
+      "id": "level_4",
+      "name": "正在实施或无法保证安全",
+      "source_path": "server/knowledge/safety/risk_levels.json#level_4",
+      "review_status": "pending_clinical_and_legal_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L1_product_safety_rule",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "high_or_imminent_risk",
+      "summary": "用最短指令促成紧急呼救、停止独处和现场救援。 Signals: 正在实施自伤、自杀或伤人行为，已经服用/使用危险物，或明确无法保证当前安全 Escalation: 立即联系紧急服务；中国大陆可拨打 110 或 120，并让附近的人到场。",
+      "user_facing_text": {
+        "must_include": [
+          "立即拨打当地紧急电话",
+          "呼叫附近的人",
+          "前往急诊或等待救援",
+          "不继续聊天替代救援"
+        ],
+        "must_not_include": [
+          "长篇安慰",
+          "普通追问",
+          "任何可能延迟呼救的练习"
+        ],
+        "allowed_followups": [
+          "请只回复：已拨打/身边有人/无法拨打。"
+        ],
+        "escalation_action": "立即联系紧急服务；中国大陆可拨打 110 或 120，并让附近的人到场。"
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "level_4",
+        "name": "正在实施或无法保证安全",
+        "signals": [
+          "正在实施自伤、自杀或伤人行为，已经服用/使用危险物，或明确无法保证当前安全"
+        ],
+        "keywords": [
+          "正在自杀",
+          "正在割腕",
+          "已经割了",
+          "已经吞了",
+          "已经服了",
+          "已经跳",
+          "控制不住自己",
+          "不能保证安全",
+          "马上伤害"
+        ],
+        "response_goal": "用最短指令促成紧急呼救、停止独处和现场救援。",
+        "must_include": [
+          "立即拨打当地紧急电话",
+          "呼叫附近的人",
+          "前往急诊或等待救援",
+          "不继续聊天替代救援"
+        ],
+        "must_not_include": [
+          "长篇安慰",
+          "普通追问",
+          "任何可能延迟呼救的练习"
+        ],
+        "allowed_followups": [
+          "请只回复：已拨打/身边有人/无法拨打。"
+        ],
+        "escalation_action": "立即联系紧急服务；中国大陆可拨打 110 或 120，并让附近的人到场。",
+        "source_level": "L1_product_safety_rule",
+        "review_status": "pending_clinical_and_legal_review"
+      }
+    },
+    {
+      "entry_key": "safety_response_templates:crisis_response",
+      "type": "safety_response_templates",
+      "id": "crisis_response",
+      "name": "Crisis response templates",
+      "source_path": "server/knowledge/safety/crisis_response.json#crisis_response",
+      "review_status": "pending_clinical_and_legal_review",
+      "normalized_review_status": "unreviewed",
+      "source_level": "L1_product_safety_rule",
+      "source_ids": [],
+      "sources": [],
+      "risk_class": "safety_critical_review",
+      "summary": "安全回应优先于普通 prompt。模板需按检测等级选择，不得与普通机制分析或微干预拼接。 Template levels: level_0, level_1, level_2, level_3, level_4",
+      "user_facing_text": {
+        "templates": {
+          "level_0": "继续普通支持性对话；如出现新的安全信号，立即重新分级。",
+          "level_1": "你说自己很累、撑不住或想暂时消失，我需要认真确认：你现在安全吗？有没有伤害自己或结束生命的想法？请尽快告诉一位可信任的人；如果不能保证安全，请立即联系当地紧急服务、危机热线或医院急诊。",
+          "level_2": "我很重视你说的自伤或自杀想法。你现在有没有具体方式、时间、地点或已经准备好的工具？请不要独处，马上联系一位能来陪你的可信任者，并远离或请对方保管可能用于伤害的危险物品；如果有计划或不确定能否安全，请联系当地紧急电话或医院急诊，中国大陆可拨打 110 或 120。",
+          "level_3": "这已经是紧急情况，当前先确保你现在的安全。请立即远离或把危险物品交给别人，联系能马上到场的人，并拨打当地紧急电话或前往医院急诊；中国大陆可拨打 110 或 120。请不要独处，也不要只依赖这个网页。",
+          "level_4": "请现在立即拨打当地紧急电话或危机热线，并呼叫附近可信任的人；中国大陆可拨打 110 或 120。不要独处，放下并远离危险物品，前往医院急诊或等待救援。当前先确保安全，请只回复：已拨打、身边有人，或无法拨打。"
+        },
+        "usage_note": "安全回应优先于普通 prompt。模板需按检测等级选择，不得与普通机制分析或微干预拼接。"
+      },
+      "linked_ids": {},
+      "checklist": {
+        "clinical_or_psychological_accuracy": null,
+        "safety_boundary_ok": null,
+        "non_diagnostic_wording_ok": null,
+        "no_treatment_or_effect_promise": null,
+        "escalation_or_help_seeking_ok": null,
+        "privacy_or_sensitive_data_ok": null,
+        "localization_needed": null
+      },
+      "review_decision": "",
+      "reviewer": "",
+      "reviewed_at": "",
+      "reviewer_notes": "",
+      "required_changes": [],
+      "raw": {
+        "id": "crisis_response",
+        "name": "Crisis response templates",
+        "version": 2,
+        "templates": {
+          "level_0": "继续普通支持性对话；如出现新的安全信号，立即重新分级。",
+          "level_1": "你说自己很累、撑不住或想暂时消失，我需要认真确认：你现在安全吗？有没有伤害自己或结束生命的想法？请尽快告诉一位可信任的人；如果不能保证安全，请立即联系当地紧急服务、危机热线或医院急诊。",
+          "level_2": "我很重视你说的自伤或自杀想法。你现在有没有具体方式、时间、地点或已经准备好的工具？请不要独处，马上联系一位能来陪你的可信任者，并远离或请对方保管可能用于伤害的危险物品；如果有计划或不确定能否安全，请联系当地紧急电话或医院急诊，中国大陆可拨打 110 或 120。",
+          "level_3": "这已经是紧急情况，当前先确保你现在的安全。请立即远离或把危险物品交给别人，联系能马上到场的人，并拨打当地紧急电话或前往医院急诊；中国大陆可拨打 110 或 120。请不要独处，也不要只依赖这个网页。",
+          "level_4": "请现在立即拨打当地紧急电话或危机热线，并呼叫附近可信任的人；中国大陆可拨打 110 或 120。不要独处，放下并远离危险物品，前往医院急诊或等待救援。当前先确保安全，请只回复：已拨打、身边有人，或无法拨打。"
+        },
+        "usage_note": "安全回应优先于普通 prompt。模板需按检测等级选择，不得与普通机制分析或微干预拼接。",
+        "source_level": "L1_product_safety_rule",
+        "review_status": "pending_clinical_and_legal_review"
+      }
+    }
+  ]
+}

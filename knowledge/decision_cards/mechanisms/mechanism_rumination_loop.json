@@ -1,0 +1,63 @@
+{
+  "id": "mechanism_rumination_loop",
+  "type": "mechanism",
+  "name": "反刍循环",
+  "description": "同一问题反复在脑中运转，但没有新增信息、决定或行动。",
+  "match": {
+    "keywords": [
+      "一直想",
+      "反复回想",
+      "停不下来"
+    ],
+    "signals": [
+      "内容重复",
+      "痛苦加重",
+      "没有新结论",
+      "影响睡眠"
+    ],
+    "exclude": [
+      "有时间限制且产生行动的问题解决"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_methods_no_effect_promise_005"
+  ],
+  "applies_to": [
+    "rumination",
+    "sleep_problem",
+    "low_mood",
+    "anxiety"
+  ],
+  "not_applies_to": [
+    "psychosis_assessment",
+    "normal_reflection"
+  ],
+  "response_goals": [
+    "识别循环而非争论内容",
+    "把注意力转向当下或可行动部分"
+  ],
+  "allowed_actions": [
+    "询问是否出现新信息",
+    "使用短时注意转换",
+    "选择一个可解决的问题"
+  ],
+  "forbidden_actions": [
+    "不要求强行停止所有想法",
+    "不把反复思考诊断为疾病"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "explain_to_user": "这可能是思考进入了循环：内容一直重复，却没有带来新的信息或下一步。",
+  "linked_issue_types": [
+    "issue_rumination",
+    "issue_sleep_problem"
+  ],
+  "suitable_interventions": [
+    "intervention_thought_defusion",
+    "intervention_grounding_54321",
+    "intervention_problem_split"
+  ]
+}

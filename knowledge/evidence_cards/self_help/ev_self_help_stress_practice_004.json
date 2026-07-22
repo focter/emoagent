@@ -1,0 +1,18 @@
+{
+  "id": "ev_self_help_stress_practice_004",
+  "title": "压力时期的短时自助练习",
+  "claim": "压力管理技能可拆分为短时、可重复的日常练习。",
+  "summary": "WHO《Doing What Matters in Times of Stress》介绍每天用几分钟练习压力应对技能，并可配合图解和音频。当前本地来源是介绍页，具体练习仍需核对完整指南。",
+  "source_ids": ["who_doing_what_matters"],
+  "source_note_refs": ["knowledge_sources/notes/self_help_notes.md#who_doing_what_matters"],
+  "category": "self_help",
+  "applies_to": ["stress", "mild_distress", "daily_practice"],
+  "not_applies_to": ["imminent_danger", "active_suicide_attempt", "treatment_claim"],
+  "allowed_claims": ["可以尝试短时、可重复的压力管理练习", "练习需要结合个人感受调整"],
+  "forbidden_claims": ["几分钟练习一定会消除压力", "介绍页足以支持复刻完整干预", "高风险时只需完成练习"],
+  "product_use": ["intervention_design", "self_help_boundary"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

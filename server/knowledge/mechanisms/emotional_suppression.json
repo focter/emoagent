@@ -1,0 +1,13 @@
+{
+  "id": "emotional_suppression", "name": "情绪压抑",
+  "keywords": ["忍着", "不能说", "装没事", "压下去", "不敢表达", "憋着", "麻木"],
+  "use_when": ["用户长期不允许自己感受或表达", "压下情绪后出现累积紧绷、麻木或爆发"],
+  "do_not_use_when": ["暂不表达是为了现实安全", "用户已经充分表达且主要问题在现实资源"],
+  "plain_explanation": "暂时压住情绪能帮助应付当下，但长期没有命名和出口，紧绷可能以麻木、身体不适或突然爆发出现。",
+  "natural_response_examples": ["你可能已经撑着装作没事很久了，先辨认情绪不等于立刻做出反应。"],
+  "safe_small_actions": ["用一到两个词命名当下情绪", "选择安全场合写下没说出口的话"],
+  "avoid": ["逼迫当面对质", "把所有身体症状归于压抑"],
+  "related_issue_types": ["family_pressure", "interpersonal", "romantic_relationship", "loneliness"],
+  "related_interventions": ["emotion_labeling", "boundary_sentence", "help_seeking_script"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

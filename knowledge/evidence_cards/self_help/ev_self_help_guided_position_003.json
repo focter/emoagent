@@ -1,0 +1,21 @@
+{
+  "id": "ev_self_help_guided_position_003",
+  "title": "引导式自助属于结构化支持",
+  "claim": "引导式自助通常由结构化材料和受训人员的简短支持共同组成。",
+  "summary": "WHO 与 NHS 资料均显示，引导式自助不是把材料交给用户后完全放任，而是需要受训、接受督导的人员支持，并与问题类型、强度和个人偏好匹配。",
+  "source_ids": ["who_self_help_interventions", "nhs_guided_self_help"],
+  "source_note_refs": [
+    "knowledge_sources/notes/self_help_notes.md#who_self_help_interventions",
+    "knowledge_sources/notes/self_help_notes.md#nhs_guided_self_help"
+  ],
+  "category": "self_help",
+  "applies_to": ["guided_self_help", "anxiety", "low_mood", "low_intensity_support"],
+  "not_applies_to": ["unsupervised_treatment", "imminent_danger", "replacement_for_professional_care"],
+  "allowed_claims": ["引导式自助通常包含结构化材料和人员支持", "支持形式应与具体问题相匹配"],
+  "forbidden_claims": ["聊天产品自动等同于引导式自助服务", "无需培训督导即可提供专业干预"],
+  "product_use": ["self_help_boundary", "product_disclaimer"],
+  "evidence_level": "clinical_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

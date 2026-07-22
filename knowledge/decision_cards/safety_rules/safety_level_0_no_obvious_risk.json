@@ -1,0 +1,54 @@
+{
+  "id": "safety_level_0_no_obvious_risk",
+  "type": "safety_rule",
+  "name": "无明显风险",
+  "description": "未出现自伤、自杀、伤人或即时危险信号时，可保持普通支持性回应并继续观察。",
+  "match": {
+    "keywords": [
+      "有点烦",
+      "最近压力大",
+      "心情不好"
+    ],
+    "signals": [
+      "表达一般困扰",
+      "能描述具体问题",
+      "无自伤或伤人意图"
+    ],
+    "exclude": [
+      "不想活",
+      "伤害自己",
+      "准备了工具",
+      "正在实施"
+    ]
+  },
+  "evidence_refs": [
+    "ev_self_help_self_care_scope_002",
+    "ev_common_psychoeducation_limit_005"
+  ],
+  "applies_to": [
+    "mild_distress",
+    "routine_support"
+  ],
+  "not_applies_to": [
+    "self_harm_risk",
+    "suicide_risk",
+    "harm_to_others"
+  ],
+  "response_goals": [
+    "理解当前困扰",
+    "确认用户最希望讨论的部分"
+  ],
+  "allowed_actions": [
+    "使用低压力支持性回应",
+    "提出一个聚焦问题",
+    "在合适时提供一个轻量建议"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不夸大普通压力为危机"
+  ],
+  "priority": "low",
+  "risk_level": "none",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。"
+}

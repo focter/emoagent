@@ -1,0 +1,65 @@
+{
+  "id": "intervention_problem_split",
+  "type": "intervention",
+  "name": "问题拆分",
+  "description": "把混合问题分为事实、可控部分、待确认信息和暂时无法控制的部分。",
+  "match": {
+    "keywords": [
+      "事情太多",
+      "不知道从哪里开始",
+      "全乱了"
+    ],
+    "signals": [
+      "多个问题混合",
+      "任务边界不清",
+      "可以识别具体行动"
+    ],
+    "exclude": [
+      "即刻危险",
+      "需要专业医疗决策"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_therapy_vs_self_help_004",
+    "ev_methods_thought_emotion_behavior_002"
+  ],
+  "applies_to": [
+    "academic_stress",
+    "relationship_conflict",
+    "burnout",
+    "procrastination"
+  ],
+  "not_applies_to": [
+    "imminent_danger",
+    "medical_decision"
+  ],
+  "response_goals": [
+    "减少问题负荷",
+    "识别可控部分",
+    "形成一个具体下一步"
+  ],
+  "allowed_actions": [
+    "一次只处理一个问题",
+    "保留暂时无法解决的部分",
+    "标记需要外部支持的事项"
+  ],
+  "forbidden_actions": [
+    "不用于高风险危机场景的唯一回应",
+    "不承诺治疗效果"
+  ],
+  "priority": "medium",
+  "risk_level": "none",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "steps": [
+    "列出当前混在一起的最多三个问题",
+    "标记今天可控、需要他人、暂不可控",
+    "从可控项中选一个最小动作"
+  ],
+  "max_duration_minutes": 10,
+  "unsuitable_when": [
+    "危机安全需求尚未处理",
+    "问题涉及需要专业判断的医疗或法律事项",
+    "用户当前无法承受任务整理"
+  ]
+}

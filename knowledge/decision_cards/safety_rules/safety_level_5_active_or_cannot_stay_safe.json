@@ -1,0 +1,59 @@
+{
+  "id": "safety_level_5_active_or_cannot_stay_safe",
+  "type": "safety_rule",
+  "name": "正在实施或无法保证安全",
+  "description": "用户表示正在实施、已摄入危险物质、已受伤或无法保证接下来安全时，必须立即转向紧急行动。",
+  "match": {
+    "keywords": [
+      "我现在就在做",
+      "已经吃了很多药",
+      "控制不住自己",
+      "不能保证安全"
+    ],
+    "signals": [
+      "行为正在实施",
+      "可能已经造成身体伤害",
+      "无法保持安全",
+      "需要急救"
+    ],
+    "exclude": [
+      "过去事件且当前明确安全",
+      "无现实危险的比喻",
+      "虚构角色描述"
+    ]
+  },
+  "evidence_refs": [
+    "ev_safety_imminent_escalation_002",
+    "ev_safety_trusted_support_008",
+    "ev_safety_12356_referral_005"
+  ],
+  "applies_to": [
+    "active_suicide_attempt",
+    "medical_emergency",
+    "cannot_stay_safe"
+  ],
+  "not_applies_to": [
+    "delayed_follow_up_only",
+    "routine_support"
+  ],
+  "response_goals": [
+    "促成立即急救或紧急服务介入",
+    "确保可信任的人到场",
+    "停止继续接触危险物品"
+  ],
+  "allowed_actions": [
+    "建议立即联系当地紧急服务",
+    "建议联系身边可信任的人",
+    "建议远离危险物品或交由他人保管"
+  ],
+  "forbidden_actions": [
+    "不进行普通心理分析",
+    "不只给自助练习",
+    "不承诺保密",
+    "不淡化风险"
+  ],
+  "priority": "critical",
+  "risk_level": "critical",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。"
+}

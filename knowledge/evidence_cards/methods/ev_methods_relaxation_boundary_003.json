@@ -1,0 +1,18 @@
+{
+  "id": "ev_methods_relaxation_boundary_003",
+  "title": "呼吸、放松与正念练习的边界",
+  "claim": "呼吸、放松或正念可作为应对压力的练习元素，但不等于治疗或危机处置。",
+  "summary": "NIMH 将正念、冥想、呼吸和放松列为心理治疗可能采用的元素之一。它们可用于一般稳定和练习，不应承诺疗效，也不能替代高风险安全回应。",
+  "source_ids": ["nimh_psychotherapies"],
+  "source_note_refs": ["knowledge_sources/notes/methods_notes.md#nimh_psychotherapies"],
+  "category": "methods",
+  "applies_to": ["mild_distress", "stress", "grounding", "relaxation"],
+  "not_applies_to": ["active_suicide_attempt", "imminent_danger", "medical_emergency"],
+  "allowed_claims": ["可以把呼吸或放松作为短时稳定练习", "如果练习不适合可以停止"],
+  "forbidden_claims": ["呼吸练习能治疗心理疾病", "正念对所有人都安全有效", "危机时只做放松即可"],
+  "product_use": ["intervention_design", "self_help_boundary"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

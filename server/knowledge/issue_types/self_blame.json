@@ -1,0 +1,14 @@
+{
+  "id": "self_blame", "name": "自责 / 自我否定",
+  "description": "把具体失误、困难或责任扩大为对整个人的否定，可能伴随羞耻、回避和反复回想。",
+  "keywords": ["自责", "怪自己", "都是我的错", "很废", "没用", "失败", "不如别人", "讨厌自己", "我不行", "内疚"],
+  "user_expressions": ["我感觉自己很废", "我什么都做不好", "出了问题都是我的错"],
+  "key_dimensions": ["触发事件", "事实与整体自我评价", "可控责任边界", "对行动和安全的影响"],
+  "first_followups": ["最近哪件具体的事最容易触发这种评价？", "这种自责让你更能处理事情，还是更难开始？"],
+  "enough_information_signals": ["说明具体事件", "呈现从结果到自我评价的过程", "描述回避或功能影响"],
+  "common_mechanisms": ["self_blame_loop", "over_responsibility", "all_or_nothing_thinking", "social_comparison_self_worth"],
+  "possible_interventions": ["fact_vs_interpretation", "thought_record_light", "small_step_activation"],
+  "do_not_say": ["你一点错都没有", "你要相信自己", "这全是你的责任"],
+  "escalation_signals": ["强烈绝望", "自我惩罚、自伤或自杀想法"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

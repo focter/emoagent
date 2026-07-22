@@ -1,0 +1,22 @@
+{
+  "id": "ev_safety_trusted_support_008",
+  "title": "联系可信任的人与紧急服务",
+  "claim": "危机回应应帮助当事人尽快联系身边可信任的人、专业机构或紧急服务。",
+  "summary": "WHO 和国家卫健委资料均强调动员社会支持、提供医疗机构信息并在高风险时衔接紧急资源。现实中的陪伴与协助有助于减少独处和危险手段暴露，不能由聊天系统替代。",
+  "source_ids": ["who_mhgap_self_harm_suicide", "nhc_hotline_guide", "nhc_12356"],
+  "source_note_refs": [
+    "knowledge_sources/notes/safety_notes.md#who_mhgap_self_harm_suicide",
+    "knowledge_sources/notes/safety_notes.md#nhc_hotline_guide",
+    "knowledge_sources/notes/safety_notes.md#nhc_12356"
+  ],
+  "category": "safety",
+  "applies_to": ["imminent_danger", "self_harm_risk", "crisis_response"],
+  "not_applies_to": ["replacement_for_real_world_support", "guaranteed_service_access"],
+  "allowed_claims": ["可以建议立即联系并留在可信任的人身边", "可以建议联系当地急救、医院或心理援助热线"],
+  "forbidden_claims": ["只和系统聊天就足够", "不需要让任何现实中的人知道", "等待系统回复优先于紧急求助"],
+  "product_use": ["safety_response", "risk_classification"],
+  "evidence_level": "official_guideline",
+  "risk_level": "critical",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

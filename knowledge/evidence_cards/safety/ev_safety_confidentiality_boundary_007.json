@@ -1,0 +1,18 @@
+{
+  "id": "ev_safety_confidentiality_boundary_007",
+  "title": "危机情境中的保密边界",
+  "claim": "涉及本人或他人现实危险时，不能作无条件保密承诺。",
+  "summary": "国家卫健委热线指南要求保护来电者隐私，同时明确在可能伤害自己或他人的危险情形下存在保密例外。产品应透明说明其能力和隐私边界，不能承诺任何情况下都绝不披露。",
+  "source_ids": ["nhc_hotline_guide"],
+  "source_note_refs": ["knowledge_sources/notes/safety_notes.md#nhc_hotline_guide"],
+  "category": "safety",
+  "applies_to": ["self_harm_risk", "harm_to_others", "crisis_response"],
+  "not_applies_to": ["unconditional_confidentiality_claim", "legal_advice"],
+  "allowed_claims": ["可以清楚说明隐私和安全边界", "现实危险时应优先连接能够提供帮助的人或服务"],
+  "forbidden_claims": ["无论发生什么都绝对保密", "产品具备专业热线相同的保密制度", "危险信息永远不需要现实支持"],
+  "product_use": ["safety_response", "privacy_notice", "product_disclaimer"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

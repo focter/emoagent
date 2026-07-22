@@ -1,0 +1,66 @@
+{
+  "id": "style_psychoeducation_brief",
+  "type": "response_style",
+  "name": "简短心理教育风格",
+  "description": "用非诊断语言解释一种可能模式，并立即连接到用户的具体处境。",
+  "match": {
+    "keywords": [
+      "为什么会这样",
+      "这是什么心理",
+      "能解释一下吗"
+    ],
+    "signals": [
+      "用户希望理解模式",
+      "有足够具体信息",
+      "无高风险信号"
+    ],
+    "exclude": [
+      "需要临床诊断",
+      "危机状态"
+    ]
+  },
+  "evidence_refs": [
+    "ev_common_psychoeducation_limit_005",
+    "ev_common_no_system_diagnosis_003"
+  ],
+  "applies_to": [
+    "psychoeducation",
+    "mechanism_explanation"
+  ],
+  "not_applies_to": [
+    "diagnosis",
+    "crisis_response"
+  ],
+  "response_goals": [
+    "提供可理解的可能解释",
+    "保留不确定性",
+    "避免报告式长文"
+  ],
+  "allowed_actions": [
+    "使用“可能”或“看起来像”",
+    "说明解释只是一个假设",
+    "连接一个可观察例子"
+  ],
+  "forbidden_actions": [
+    "不下诊断结论",
+    "不堆叠多个机制",
+    "不把教育内容写成治疗方案"
+  ],
+  "priority": "medium",
+  "risk_level": "none",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "tone_rules": [
+    "平实具体",
+    "避免术语堆砌",
+    "不居高临下"
+  ],
+  "length_rules": [
+    "机制解释控制在 2 至 3 句话",
+    "最多解释一个主要机制"
+  ],
+  "question_rules": [
+    "信息不足时先问一个例子",
+    "解释后可询问是否贴近用户体验"
+  ]
+}

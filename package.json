@@ -1,0 +1,59 @@
+{
+  "name": "mindful-chat-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.0.0 || ^24.0.0",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n client,server -c cyan,green \"npm:dev:client\" \"npm:dev:server\"",
+    "dev:client": "vite",
+    "dev:server": "node --watch server/index.js",
+    "test": "node --test",
+    "eval": "node evals/run-evals.js",
+    "eval:safety": "node evals/run-safety-evals.js",
+    "eval:knowledge": "node evals/run-knowledge-matcher-evals.js",
+    "eval:knowledge:integration": "node evals/run-knowledge-context-integration-evals.js",
+    "eval:knowledge:manual": "node evals/run-manual-experience-evals.js",
+    "eval:knowledge:manual:json": "node evals/run-manual-experience-evals.js --json",
+    "eval:knowledge:manual:failures": "node evals/run-manual-experience-evals.js --failures-only",
+    "eval:knowledge:prompt-boundary": "node evals/run-knowledge-prompt-injection-boundary-evals.js",
+    "eval:model": "node evals/run-model-smoke.js",
+    "knowledge:audit": "node scripts/audit-knowledge.js",
+    "knowledge:sources:collect": "node scripts/collect-knowledge-sources.js",
+    "knowledge:sources:check": "node scripts/check-knowledge-sources.js",
+    "knowledge:sources:manual": "node scripts/manual-collect-knowledge-source.js",
+    "knowledge:evidence:check": "node scripts/check-evidence-cards.js",
+    "knowledge:decision:check": "node scripts/check-decision-cards.js",
+    "knowledge:dry-run": "node scripts/knowledge-dry-run.js",
+    "knowledge:all:check": "npm run knowledge:sources:check && npm run knowledge:evidence:check && npm run knowledge:decision:check",
+    "review:knowledge:export": "node scripts/export-knowledge-review.js",
+    "review:knowledge:export:overwrite": "node scripts/export-knowledge-review.js --overwrite",
+    "review:knowledge:validate": "node scripts/validate-knowledge-review.js",
+    "review:knowledge:validate:strict": "node scripts/validate-knowledge-review.js --strict",
+    "review:human:score": "node scripts/score-human-review-samples.js",
+    "check:secrets": "node scripts/check-secrets.js",
+    "check:mojibake": "node scripts/check-mojibake.js",
+    "check:mojibake:strict": "node scripts/check-mojibake.js --fail-on-found",
+    "smoke:frontend": "node scripts/run-frontend-smoke.js",
+    "e2e:browser": "playwright test",
+    "preflight:local": "node scripts/run-local-preflight.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.0.7"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "sleep_emotion_loop", "name": "睡眠-情绪循环",
+  "keywords": ["睡不着", "失眠", "早醒", "越想睡", "白天困", "晚上清醒", "睡眠"],
+  "use_when": ["睡眠变化与压力情绪互相影响", "担心睡不着本身增加睡前警觉"],
+  "do_not_use_when": ["多日几乎不睡并异常兴奋", "呼吸暂停、剧痛等可能需要医疗评估"],
+  "plain_explanation": "压力会影响睡眠，睡眠不足又会降低情绪和注意力的缓冲；越担心必须马上睡着，身体可能越警觉。",
+  "natural_response_examples": ["这不只是睡眠一个点：夜里更警觉，白天更难应对，晚上又更担心睡不好。"],
+  "safe_small_actions": ["睡前短暂写下待办和担心", "建立低刺激的固定收尾动作"],
+  "avoid": ["承诺一晚见效", "提供药物或停药建议"],
+  "related_issue_types": ["sleep_disturbance", "anxiety", "low_energy", "work_stress", "academic_stress"],
+  "related_interventions": ["sleep_wind_down", "worry_time_limit", "grounding_breath"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

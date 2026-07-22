@@ -1,0 +1,492 @@
+{
+  "version": "0.1.0",
+  "generated_from": "knowledge/evidence_cards",
+  "review_status": "machine_draft",
+  "cards": [
+    {
+      "id": "intervention_breathing_60s",
+      "path": "knowledge/decision_cards/interventions/intervention_breathing_60s.json",
+      "type": "intervention",
+      "evidence_refs": [
+        "ev_methods_relaxation_boundary_003",
+        "ev_self_help_stress_practice_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "intervention_emotion_labeling",
+      "path": "knowledge/decision_cards/interventions/intervention_emotion_labeling.json",
+      "type": "intervention",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_methods_therapy_vs_self_help_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "intervention_grounding_54321",
+      "path": "knowledge/decision_cards/interventions/intervention_grounding_54321.json",
+      "type": "intervention",
+      "evidence_refs": [
+        "ev_methods_relaxation_boundary_003",
+        "ev_self_help_stress_practice_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "intervention_problem_split",
+      "path": "knowledge/decision_cards/interventions/intervention_problem_split.json",
+      "type": "intervention",
+      "evidence_refs": [
+        "ev_methods_therapy_vs_self_help_004",
+        "ev_methods_thought_emotion_behavior_002"
+      ],
+      "priority": "medium",
+      "risk_level": "none",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "intervention_seek_support",
+      "path": "knowledge/decision_cards/interventions/intervention_seek_support.json",
+      "type": "intervention",
+      "evidence_refs": [
+        "ev_self_help_not_replacement_005",
+        "ev_safety_trusted_support_008",
+        "ev_student_scenarios_support_002"
+      ],
+      "priority": "high",
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "intervention_sleep_wind_down",
+      "path": "knowledge/decision_cards/interventions/intervention_sleep_wind_down.json",
+      "type": "intervention",
+      "evidence_refs": [
+        "ev_self_help_self_care_scope_002",
+        "ev_self_help_stress_practice_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "intervention_thought_defusion",
+      "path": "knowledge/decision_cards/interventions/intervention_thought_defusion.json",
+      "type": "intervention",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_self_help_stress_practice_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "intervention_tiny_next_step",
+      "path": "knowledge/decision_cards/interventions/intervention_tiny_next_step.json",
+      "type": "intervention",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_self_help_self_care_scope_002"
+      ],
+      "priority": "medium",
+      "risk_level": "none",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_academic_stress",
+      "path": "knowledge/decision_cards/issue_types/issue_academic_stress.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_student_scenarios_support_002",
+        "ev_student_system_context_001"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_anxiety",
+      "path": "knowledge/decision_cards/issue_types/issue_anxiety.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_common_anxiety_boundary_002",
+        "ev_common_no_system_diagnosis_003"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_burnout",
+      "path": "knowledge/decision_cards/issue_types/issue_burnout.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_self_help_self_care_scope_002",
+        "ev_common_professional_help_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_emotion_overload",
+      "path": "knowledge/decision_cards/issue_types/issue_emotion_overload.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_methods_relaxation_boundary_003",
+        "ev_methods_thought_emotion_behavior_002"
+      ],
+      "priority": "high",
+      "risk_level": "medium",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_loneliness",
+      "path": "knowledge/decision_cards/issue_types/issue_loneliness.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_self_help_self_care_scope_002",
+        "ev_self_help_not_replacement_005"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_low_mood",
+      "path": "knowledge/decision_cards/issue_types/issue_low_mood.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_common_low_mood_boundary_001",
+        "ev_common_professional_help_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_procrastination",
+      "path": "knowledge/decision_cards/issue_types/issue_procrastination.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_self_help_self_care_scope_002"
+      ],
+      "priority": "medium",
+      "risk_level": "none",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_relationship_conflict",
+      "path": "knowledge/decision_cards/issue_types/issue_relationship_conflict.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_student_scenarios_support_002",
+        "ev_methods_therapy_vs_self_help_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_rumination",
+      "path": "knowledge/decision_cards/issue_types/issue_rumination.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_methods_no_effect_promise_005"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_self_doubt",
+      "path": "knowledge/decision_cards/issue_types/issue_self_doubt.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_common_psychoeducation_limit_005"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_sleep_problem",
+      "path": "knowledge/decision_cards/issue_types/issue_sleep_problem.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_self_help_self_care_scope_002",
+        "ev_common_professional_help_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "mechanism_all_or_nothing_thinking",
+      "path": "knowledge/decision_cards/mechanisms/mechanism_all_or_nothing_thinking.json",
+      "type": "mechanism",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_common_psychoeducation_limit_005"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "mechanism_avoidance",
+      "path": "knowledge/decision_cards/mechanisms/mechanism_avoidance.json",
+      "type": "mechanism",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_self_help_self_care_scope_002"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "mechanism_catastrophizing",
+      "path": "knowledge/decision_cards/mechanisms/mechanism_catastrophizing.json",
+      "type": "mechanism",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_common_anxiety_boundary_002"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "mechanism_emotional_reasoning",
+      "path": "knowledge/decision_cards/mechanisms/mechanism_emotional_reasoning.json",
+      "type": "mechanism",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_common_psychoeducation_limit_005"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "mechanism_perfectionism",
+      "path": "knowledge/decision_cards/mechanisms/mechanism_perfectionism.json",
+      "type": "mechanism",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_methods_no_effect_promise_005"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "mechanism_rumination_loop",
+      "path": "knowledge/decision_cards/mechanisms/mechanism_rumination_loop.json",
+      "type": "mechanism",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_methods_no_effect_promise_005"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "mechanism_self_criticism",
+      "path": "knowledge/decision_cards/mechanisms/mechanism_self_criticism.json",
+      "type": "mechanism",
+      "evidence_refs": [
+        "ev_methods_thought_emotion_behavior_002",
+        "ev_common_low_mood_boundary_001"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "mechanism_uncertainty_intolerance",
+      "path": "knowledge/decision_cards/mechanisms/mechanism_uncertainty_intolerance.json",
+      "type": "mechanism",
+      "evidence_refs": [
+        "ev_common_anxiety_boundary_002",
+        "ev_methods_no_effect_promise_005"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "style_crisis_directive",
+      "path": "knowledge/decision_cards/response_styles/style_crisis_directive.json",
+      "type": "response_style",
+      "evidence_refs": [
+        "ev_safety_imminent_escalation_002",
+        "ev_safety_trusted_support_008",
+        "ev_safety_no_routine_self_help_006"
+      ],
+      "priority": "critical",
+      "risk_level": "critical",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "style_low_pressure_supportive",
+      "path": "knowledge/decision_cards/response_styles/style_low_pressure_supportive.json",
+      "type": "response_style",
+      "evidence_refs": [
+        "ev_self_help_low_intensity_boundary_001",
+        "ev_self_help_self_care_scope_002"
+      ],
+      "priority": "medium",
+      "risk_level": "none",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "style_psychoeducation_brief",
+      "path": "knowledge/decision_cards/response_styles/style_psychoeducation_brief.json",
+      "type": "response_style",
+      "evidence_refs": [
+        "ev_common_psychoeducation_limit_005",
+        "ev_common_no_system_diagnosis_003"
+      ],
+      "priority": "medium",
+      "risk_level": "none",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "style_student_context_supportive",
+      "path": "knowledge/decision_cards/response_styles/style_student_context_supportive.json",
+      "type": "response_style",
+      "evidence_refs": [
+        "ev_student_system_context_001",
+        "ev_student_scenarios_support_002"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "safety_high_risk_no_routine_advice",
+      "path": "knowledge/decision_cards/safety_rules/safety_high_risk_no_routine_advice.json",
+      "type": "safety_rule",
+      "evidence_refs": [
+        "ev_safety_no_routine_self_help_006",
+        "ev_methods_avoid_crisis_006"
+      ],
+      "priority": "critical",
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "safety_level_0_no_obvious_risk",
+      "path": "knowledge/decision_cards/safety_rules/safety_level_0_no_obvious_risk.json",
+      "type": "safety_rule",
+      "evidence_refs": [
+        "ev_self_help_self_care_scope_002",
+        "ev_common_psychoeducation_limit_005"
+      ],
+      "priority": "low",
+      "risk_level": "none",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "safety_level_1_distress_without_intent",
+      "path": "knowledge/decision_cards/safety_rules/safety_level_1_distress_without_intent.json",
+      "type": "safety_rule",
+      "evidence_refs": [
+        "ev_safety_risk_identification_001",
+        "ev_common_professional_help_004"
+      ],
+      "priority": "high",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "safety_level_2_hopeless_no_plan",
+      "path": "knowledge/decision_cards/safety_rules/safety_level_2_hopeless_no_plan.json",
+      "type": "safety_rule",
+      "evidence_refs": [
+        "ev_safety_risk_identification_001",
+        "ev_safety_trusted_support_008"
+      ],
+      "priority": "critical",
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "safety_level_3_self_harm_ideation",
+      "path": "knowledge/decision_cards/safety_rules/safety_level_3_self_harm_ideation.json",
+      "type": "safety_rule",
+      "evidence_refs": [
+        "ev_safety_risk_identification_001",
+        "ev_safety_plan_boundary_003",
+        "ev_safety_trusted_support_008"
+      ],
+      "priority": "critical",
+      "risk_level": "high",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "safety_level_4_plan_means_time_place",
+      "path": "knowledge/decision_cards/safety_rules/safety_level_4_plan_means_time_place.json",
+      "type": "safety_rule",
+      "evidence_refs": [
+        "ev_safety_imminent_escalation_002",
+        "ev_safety_trusted_support_008",
+        "ev_safety_no_routine_self_help_006"
+      ],
+      "priority": "critical",
+      "risk_level": "critical",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "safety_level_5_active_or_cannot_stay_safe",
+      "path": "knowledge/decision_cards/safety_rules/safety_level_5_active_or_cannot_stay_safe.json",
+      "type": "safety_rule",
+      "evidence_refs": [
+        "ev_safety_imminent_escalation_002",
+        "ev_safety_trusted_support_008",
+        "ev_safety_12356_referral_005"
+      ],
+      "priority": "critical",
+      "risk_level": "critical",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_work_stress",
+      "path": "knowledge/decision_cards/issue_types/issue_work_stress.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_common_work_context_006",
+        "ev_common_professional_help_004"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    },
+    {
+      "id": "issue_grief_loss",
+      "path": "knowledge/decision_cards/issue_types/issue_grief_loss.json",
+      "type": "issue_type",
+      "evidence_refs": [
+        "ev_common_grief_variability_007",
+        "ev_common_grief_help_boundary_008"
+      ],
+      "priority": "medium",
+      "risk_level": "low",
+      "review_status": "machine_draft"
+    }
+  ]
+}

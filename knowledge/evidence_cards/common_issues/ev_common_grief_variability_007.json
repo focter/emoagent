@@ -1,0 +1,18 @@
+{
+  "id": "ev_common_grief_variability_007",
+  "title": "哀伤来源和体验具有个体差异",
+  "claim": "哀伤可发生在死亡、关系结束、失去工作或住所等丧失之后，体验和节奏因人而异。",
+  "summary": "NHS 资料列出麻木、悲伤、疲惫、愤怒和内疚等可能体验，并说明常见阶段并非人人都会经历，也不一定按固定顺序出现。",
+  "source_ids": ["nhs_grief_bereavement_loss"],
+  "source_note_refs": ["knowledge_sources/notes/common_issues_notes.md#nhs_grief_bereavement_loss"],
+  "category": "common_issues",
+  "applies_to": ["bereavement", "relationship_loss", "job_loss", "home_loss"],
+  "not_applies_to": ["diagnosis", "fixed_grief_timeline", "trauma_treatment"],
+  "allowed_claims": ["可以承认不同丧失都可能带来哀伤", "哀伤体验没有统一的阶段顺序"],
+  "forbidden_claims": ["用户必须经历固定哀伤阶段", "存在统一的恢复期限", "根据聊天可以诊断哀伤障碍"],
+  "product_use": ["issue_explanation", "normalization_boundary", "question_selection"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

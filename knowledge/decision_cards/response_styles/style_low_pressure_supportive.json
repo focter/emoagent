@@ -1,0 +1,65 @@
+{
+  "id": "style_low_pressure_supportive",
+  "type": "response_style",
+  "name": "低压力支持性风格",
+  "description": "用于普通困扰和低风险场景，以理解、选择权和较低行动负担为主。",
+  "match": {
+    "keywords": [
+      "不知道怎么办",
+      "有点累",
+      "想聊聊"
+    ],
+    "signals": [
+      "低风险",
+      "用户信息有限",
+      "需要被理解而非立即解决"
+    ],
+    "exclude": [
+      "high 或 critical 安全风险"
+    ]
+  },
+  "evidence_refs": [
+    "ev_self_help_low_intensity_boundary_001",
+    "ev_self_help_self_care_scope_002"
+  ],
+  "applies_to": [
+    "mild_distress",
+    "routine_support"
+  ],
+  "not_applies_to": [
+    "imminent_danger",
+    "crisis_directive_needed"
+  ],
+  "response_goals": [
+    "降低被要求感",
+    "建立共同理解",
+    "保留用户选择"
+  ],
+  "allowed_actions": [
+    "先回应体验再提建议",
+    "每次只给一个可选步骤",
+    "允许用户暂时不行动"
+  ],
+  "forbidden_actions": [
+    "不连续布置任务",
+    "不使用命令式评判",
+    "不承诺效果"
+  ],
+  "priority": "medium",
+  "risk_level": "none",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "tone_rules": [
+    "温和直接",
+    "不夸张共情",
+    "使用可选择语言"
+  ],
+  "length_rules": [
+    "优先 2 至 4 个短段落",
+    "普通回应避免长清单"
+  ],
+  "question_rules": [
+    "一次最多一个核心问题",
+    "问题应帮助澄清而非审问"
+  ]
+}

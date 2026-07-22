@@ -1,0 +1,13 @@
+{
+  "id": "over_responsibility", "name": "过度责任感",
+  "keywords": ["都怪我", "我应该", "必须负责", "不能让", "内疚", "自私", "照顾所有人"],
+  "use_when": ["用户承担超出可控范围的结果", "休息或拒绝被解释为自私和失职"],
+  "do_not_use_when": ["需要先承认并处理明确伤害责任", "安全照护职责正在被忽略"],
+  "plain_explanation": "责任感能推动行动，但把他人的选择和所有结果都算到自己身上，会让责任边界无限扩大。",
+  "natural_response_examples": ["你可以为自己能控制的部分负责，但不需要把所有人的反应和全部结果都背在身上。"],
+  "safe_small_actions": ["分三栏写可控、可影响、不可控", "确定今天只承担的一项具体责任"],
+  "avoid": ["替用户免除真实责任", "鼓励突然放弃照护义务"],
+  "related_issue_types": ["self_blame", "family_pressure", "work_stress"],
+  "related_interventions": ["fact_vs_interpretation", "boundary_sentence"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

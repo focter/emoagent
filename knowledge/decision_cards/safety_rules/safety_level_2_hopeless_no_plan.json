@@ -1,0 +1,56 @@
+{
+  "id": "safety_level_2_hopeless_no_plan",
+  "type": "safety_rule",
+  "name": "明确绝望或不想活但无计划",
+  "description": "出现明确不想活或强烈绝望表达，即使没有计划，也需要进入安全回应并确认现实支持。",
+  "match": {
+    "keywords": [
+      "不想活了",
+      "没有活下去的意义",
+      "希望永远消失"
+    ],
+    "signals": [
+      "明确死亡愿望",
+      "强烈绝望",
+      "否认具体计划",
+      "尚无工具或时间"
+    ],
+    "exclude": [
+      "只是形容 bug",
+      "网络夸张表达且明确无现实意图",
+      "正在实施"
+    ]
+  },
+  "evidence_refs": [
+    "ev_safety_risk_identification_001",
+    "ev_safety_trusted_support_008"
+  ],
+  "applies_to": [
+    "suicidal_ideation_without_plan",
+    "crisis_response"
+  ],
+  "not_applies_to": [
+    "routine_self_help",
+    "imminent_danger"
+  ],
+  "response_goals": [
+    "确认即时安全和是否独处",
+    "连接可信任的人或专业支持",
+    "继续评估计划和手段"
+  ],
+  "allowed_actions": [
+    "明确表达对安全的关切",
+    "询问是否有计划或可用手段",
+    "建议尽快联系可信任的人或热线"
+  ],
+  "forbidden_actions": [
+    "不进行普通心理分析",
+    "不只给自助练习",
+    "不承诺保密",
+    "不淡化风险"
+  ],
+  "priority": "critical",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。"
+}

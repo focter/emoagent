@@ -1,0 +1,66 @@
+{
+  "id": "style_crisis_directive",
+  "type": "response_style",
+  "name": "危机直接行动风格",
+  "description": "用于 high 或 critical 风险，以清楚、短促、可执行的安全行动为主。",
+  "match": {
+    "keywords": [
+      "自杀计划",
+      "正在实施",
+      "无法保证安全"
+    ],
+    "signals": [
+      "high 或 critical safety_rule",
+      "需要现实紧急支持"
+    ],
+    "exclude": [
+      "已明确排除安全风险的普通困扰"
+    ]
+  },
+  "evidence_refs": [
+    "ev_safety_imminent_escalation_002",
+    "ev_safety_trusted_support_008",
+    "ev_safety_no_routine_self_help_006"
+  ],
+  "applies_to": [
+    "crisis_response",
+    "imminent_danger"
+  ],
+  "not_applies_to": [
+    "routine_psychoeducation",
+    "ordinary_self_help"
+  ],
+  "response_goals": [
+    "立即确认安全",
+    "促成现实支持与紧急服务",
+    "减少危险手段可得性"
+  ],
+  "allowed_actions": [
+    "建议立即联系当地紧急服务",
+    "建议联系身边可信任的人",
+    "建议远离危险物品或交由他人保管"
+  ],
+  "forbidden_actions": [
+    "不进行普通心理分析",
+    "不只给自助练习",
+    "不承诺保密",
+    "不淡化风险"
+  ],
+  "priority": "critical",
+  "risk_level": "critical",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "tone_rules": [
+    "直接但不指责",
+    "明确表达安全关切",
+    "避免模糊委婉"
+  ],
+  "length_rules": [
+    "句子短且行动项靠前",
+    "避免背景科普和长解释"
+  ],
+  "question_rules": [
+    "只问立即安全所需问题",
+    "优先确认是否正在实施、是否独处和能否联系他人"
+  ]
+}

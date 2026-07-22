@@ -1,0 +1,15 @@
+{
+  "id": "work_stress", "name": "工作 / 实习压力",
+  "description": "由工作量、绩效、角色变化、人际、实习适应或不确定性带来的持续压力。",
+  "keywords": ["工作", "上班", "项目", "领导", "同事", "加班", "绩效", "实习", "汇报", "裁员", "离职"],
+  "user_expressions": ["一想到上班就很紧张", "工作总出错让我很自责", "加班后完全放松不下来"],
+  "key_dimensions": ["负荷和可控性", "角色期待", "工作功能与身体反应", "现实权益或安全"],
+  "first_followups": ["目前最压着你的是工作量、评价，还是关系上的压力？", "它已经怎样影响睡眠、专注或下班后的恢复？"],
+  "enough_information_signals": ["说明具体工作压力源", "说明持续时间", "说明功能或身体影响"],
+  "common_mechanisms": ["stress_response", "somatic_stress_response", "over_responsibility", "perfectionism_procrastination"],
+  "possible_interventions": ["emotion_labeling", "small_step_activation", "boundary_sentence"],
+  "do_not_say": ["马上辞职", "忍一忍就过去了", "出错说明你能力不行"],
+  "escalation_signals": ["职场暴力或明确威胁", "无法保证自身安全或维持基本生活"],
+  "source_refs": ["who_mental_health_at_work_guideline"],
+  "source_level": "L3_contextual_psychoeducation", "review_status": "pending_clinical_review"
+}

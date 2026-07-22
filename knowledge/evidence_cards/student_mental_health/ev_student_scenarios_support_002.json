@@ -1,0 +1,18 @@
+{
+  "id": "ev_student_scenarios_support_002",
+  "title": "学生常见压力场景与资源边界",
+  "claim": "学业就业、人际情感、经济家庭、校园欺凌和环境变化均可能影响学生心理健康。",
+  "summary": "行动计划要求关注多类学生风险因素，并畅通学校咨询、医疗机构和热线的转介通道。产品可帮助梳理处境和求助方向，但应先核实用户所在地及学校实际资源。",
+  "source_ids": ["moe_student_mental_health_2023_2025"],
+  "source_note_refs": ["knowledge_sources/notes/student_notes.md#moe_student_mental_health_2023_2025"],
+  "category": "student_mental_health",
+  "applies_to": ["academic_stress", "interpersonal", "family_pressure", "life_transition", "school_support"],
+  "not_applies_to": ["guaranteed_school_service", "diagnosis", "replacement_for_professional_care"],
+  "allowed_claims": ["可以询问学业、人际、家庭和生活变化的影响", "可以建议核实学校或当地专业支持资源"],
+  "forbidden_claims": ["学校一定能立即提供心理治疗", "只要找辅导员就能解决", "系统可以代替校园危机转介"],
+  "product_use": ["issue_explanation", "self_help_boundary", "product_disclaimer"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

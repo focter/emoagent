@@ -1,0 +1,65 @@
+{
+  "id": "intervention_sleep_wind_down",
+  "type": "intervention",
+  "name": "睡前卸载",
+  "description": "在睡前把待办和担忧暂存下来，并减少持续刺激，为休息留出过渡。",
+  "match": {
+    "keywords": [
+      "睡前想很多",
+      "放不下待办",
+      "一直刷手机",
+      "睡不着"
+    ],
+    "signals": [
+      "睡前认知负荷高",
+      "作息不稳",
+      "担忧反复出现"
+    ],
+    "exclude": [
+      "急性医疗睡眠问题",
+      "高风险危机"
+    ]
+  },
+  "evidence_refs": [
+    "ev_self_help_self_care_scope_002",
+    "ev_self_help_stress_practice_004"
+  ],
+  "applies_to": [
+    "sleep_problem",
+    "stress",
+    "rumination"
+  ],
+  "not_applies_to": [
+    "medical_emergency",
+    "imminent_danger"
+  ],
+  "response_goals": [
+    "减少睡前任务负荷",
+    "形成可重复过渡",
+    "避免承诺立即入睡"
+  ],
+  "allowed_actions": [
+    "记录待办并约定明天处理",
+    "减少屏幕刺激",
+    "保持步骤简短"
+  ],
+  "forbidden_actions": [
+    "不用于高风险危机场景的唯一回应",
+    "不承诺治疗效果"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "steps": [
+    "写下明天再处理的最多三件事",
+    "记录当前最主要的一项担忧",
+    "选择一项低刺激活动作为睡前过渡"
+  ],
+  "max_duration_minutes": 15,
+  "unsuitable_when": [
+    "持续严重失眠需要专业评估",
+    "存在紧急身体症状",
+    "高风险危机尚未处理"
+  ]
+}

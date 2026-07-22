@@ -1,0 +1,18 @@
+{
+  "id": "ev_common_grief_help_boundary_008",
+  "title": "哀伤相关支持的求助与安全边界",
+  "claim": "哀伤长期明显影响日常活动或伴随自杀想法时，需要进一步专业支持或安全分流。",
+  "summary": "NHS 资料把长期强烈困扰、难以恢复日常活动和自杀想法列为需要进一步帮助的重要信号。产品不能据此诊断，但必须保留功能与安全询问。",
+  "source_ids": ["nhs_grief_bereavement_loss"],
+  "source_note_refs": ["knowledge_sources/notes/common_issues_notes.md#nhs_grief_bereavement_loss"],
+  "category": "common_issues",
+  "applies_to": ["persistent_grief_distress", "functional_impairment", "help_seeking_boundary"],
+  "not_applies_to": ["diagnosis", "routine_self_help_during_crisis", "replacement_for_emergency_support"],
+  "allowed_claims": ["可以询问日常功能和现实支持", "出现自伤或自杀想法时应优先进入安全分流"],
+  "forbidden_claims": ["可以根据持续时长直接诊断", "危机情况下只提供普通哀伤建议", "系统可以替代专业评估"],
+  "product_use": ["help_seeking_boundary", "safety_boundary", "product_disclaimer"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

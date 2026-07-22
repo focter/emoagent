@@ -1,0 +1,64 @@
+{
+  "id": "issue_self_doubt",
+  "type": "issue_type",
+  "name": "自我怀疑",
+  "description": "对能力、价值或判断持续否定，常把局部挫折概括为整体失败。",
+  "match": {
+    "keywords": [
+      "我不行",
+      "我很差",
+      "都是我的错",
+      "没能力"
+    ],
+    "signals": [
+      "负面自我评价",
+      "忽略已有努力",
+      "把结果等同于价值",
+      "害怕尝试"
+    ],
+    "exclude": [
+      "需要临床诊断的固定妄想判断"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_common_psychoeducation_limit_005"
+  ],
+  "applies_to": [
+    "self_doubt",
+    "self_criticism",
+    "low_mood"
+  ],
+  "not_applies_to": [
+    "diagnosis",
+    "forced_positive_reframing"
+  ],
+  "response_goals": [
+    "区分表现与整体价值",
+    "减少绝对化评价",
+    "寻找可验证事实"
+  ],
+  "allowed_actions": [
+    "复述具体事实而非标签",
+    "邀请用户观察例外",
+    "肯定努力但不空泛保证"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_self_criticism",
+    "mechanism_all_or_nothing_thinking",
+    "mechanism_emotional_reasoning"
+  ],
+  "recommended_interventions": [
+    "intervention_emotion_labeling",
+    "intervention_thought_defusion",
+    "intervention_tiny_next_step"
+  ]
+}

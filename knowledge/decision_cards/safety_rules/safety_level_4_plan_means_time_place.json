@@ -1,0 +1,59 @@
+{
+  "id": "safety_level_4_plan_means_time_place",
+  "type": "safety_rule",
+  "name": "明确计划、手段、时间或地点",
+  "description": "当用户已有明确计划，或具备手段、工具、时间、地点中的任一关键要素时，按即刻高危处理。",
+  "match": {
+    "keywords": [
+      "已经想好怎么做",
+      "准备了药",
+      "今晚会伤害自己",
+      "已经选好地方"
+    ],
+    "signals": [
+      "明确计划",
+      "危险手段可得",
+      "具体时间或地点",
+      "近期实施可能"
+    ],
+    "exclude": [
+      "无现实意图的比喻",
+      "仅讨论他人新闻",
+      "学术讨论"
+    ]
+  },
+  "evidence_refs": [
+    "ev_safety_imminent_escalation_002",
+    "ev_safety_trusted_support_008",
+    "ev_safety_no_routine_self_help_006"
+  ],
+  "applies_to": [
+    "imminent_danger",
+    "suicide_plan",
+    "means_available"
+  ],
+  "not_applies_to": [
+    "routine_self_help",
+    "ordinary_psychoeducation"
+  ],
+  "response_goals": [
+    "立即确认用户当前安全位置",
+    "促成现实中的陪伴与紧急联系",
+    "降低危险手段可得性"
+  ],
+  "allowed_actions": [
+    "建议立即联系当地紧急服务",
+    "建议联系身边可信任的人",
+    "建议远离危险物品或交由他人保管"
+  ],
+  "forbidden_actions": [
+    "不进行普通心理分析",
+    "不只给自助练习",
+    "不承诺保密",
+    "不淡化风险"
+  ],
+  "priority": "critical",
+  "risk_level": "critical",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。"
+}

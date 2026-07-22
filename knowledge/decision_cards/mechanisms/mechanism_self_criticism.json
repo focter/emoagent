@@ -1,0 +1,64 @@
+{
+  "id": "mechanism_self_criticism",
+  "type": "mechanism",
+  "name": "自我批评循环",
+  "description": "用整体负面标签解释挫折，使羞耻、自责和行动困难相互强化。",
+  "match": {
+    "keywords": [
+      "我太差了",
+      "都是我的错",
+      "我没用"
+    ],
+    "signals": [
+      "整体化自我否定",
+      "忽略情境因素",
+      "自责后更难行动"
+    ],
+    "exclude": [
+      "承担具体责任并制定修复行动"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_common_low_mood_boundary_001"
+  ],
+  "applies_to": [
+    "self_doubt",
+    "low_mood",
+    "procrastination"
+  ],
+  "not_applies_to": [
+    "avoidance_of_accountability",
+    "diagnosis"
+  ],
+  "response_goals": [
+    "区分行为与人格标签",
+    "保留责任同时减少羞辱"
+  ],
+  "allowed_actions": [
+    "回到具体事实",
+    "承认可以修复的部分",
+    "寻找已有努力"
+  ],
+  "forbidden_actions": [
+    "不空泛反驳用户感受",
+    "不把减少自责等同于逃避责任"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "explain_to_user": "这可能像是一次挫折被扩展成了对整个自己的否定，自我批评又让下一步更难。",
+  "linked_issue_types": [
+    "issue_self_doubt",
+    "issue_low_mood",
+    "issue_procrastination",
+    "issue_loneliness",
+    "issue_burnout"
+  ],
+  "suitable_interventions": [
+    "intervention_emotion_labeling",
+    "intervention_thought_defusion",
+    "intervention_tiny_next_step"
+  ]
+}

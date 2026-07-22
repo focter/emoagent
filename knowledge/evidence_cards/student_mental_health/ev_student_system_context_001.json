@@ -1,0 +1,18 @@
+{
+  "id": "ev_student_system_context_001",
+  "title": "学生心理健康需要系统协同支持",
+  "claim": "学生心理健康支持应连接教育、监测预警、咨询服务和干预处置。",
+  "summary": "教育部等十七部门行动计划提出“四位一体”体系，并强调学校、家庭、社会及多部门协同。学生困扰不能只被归因于个人意志或单一学习问题。",
+  "source_ids": ["moe_student_mental_health_2023_2025"],
+  "source_note_refs": ["knowledge_sources/notes/student_notes.md#moe_student_mental_health_2023_2025"],
+  "category": "student_mental_health",
+  "applies_to": ["student_mental_health", "academic_stress", "school_support"],
+  "not_applies_to": ["diagnosis", "guaranteed_school_service", "treatment_claim"],
+  "allowed_claims": ["可以鼓励连接学校、家庭和专业支持", "学生困扰可能涉及多类处境因素"],
+  "forbidden_claims": ["学生问题只是意志力不足", "所有学校都具备同样资源", "政策目标等同于个体治疗方案"],
+  "product_use": ["issue_explanation", "product_disclaimer"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

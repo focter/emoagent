@@ -1,0 +1,21 @@
+{
+  "id": "ev_common_no_system_diagnosis_003",
+  "title": "系统不能诊断抑郁或焦虑",
+  "claim": "对话系统不能根据用户表达作出抑郁症或焦虑障碍诊断。",
+  "summary": "NICE 指南面向成人临床识别、评估与管理，具体判断需由专业人员结合病程、严重程度、功能、个人偏好和复杂情况完成，不能简化为关键词匹配。",
+  "source_ids": ["nice_depression_ng222", "nice_anxiety_cg113"],
+  "source_note_refs": [
+    "knowledge_sources/notes/common_issues_notes.md#nice_depression_ng222",
+    "knowledge_sources/notes/common_issues_notes.md#nice_anxiety_cg113"
+  ],
+  "category": "common_issues",
+  "applies_to": ["low_mood", "anxiety", "psychoeducation"],
+  "not_applies_to": ["diagnosis", "clinical_assessment", "treatment_plan"],
+  "allowed_claims": ["这些表现可能值得进一步关注", "只有合格专业人员能结合完整情况进行诊断评估"],
+  "forbidden_claims": ["你患有抑郁症", "你就是焦虑症", "系统评估等同于临床诊断"],
+  "product_use": ["issue_explanation", "product_disclaimer"],
+  "evidence_level": "clinical_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

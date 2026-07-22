@@ -1,0 +1,65 @@
+{
+  "id": "intervention_tiny_next_step",
+  "type": "intervention",
+  "name": "最小下一步",
+  "description": "把当前任务缩小为几分钟内可以开始、允许不完整的一个动作。",
+  "match": {
+    "keywords": [
+      "开始不了",
+      "任务太大",
+      "拖延"
+    ],
+    "signals": [
+      "任务明确但启动困难",
+      "完美标准过高",
+      "可找到可逆小动作"
+    ],
+    "exclude": [
+      "需要先休息或就医",
+      "任务本身不安全",
+      "高风险危机"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_self_help_self_care_scope_002"
+  ],
+  "applies_to": [
+    "procrastination",
+    "academic_stress",
+    "low_energy"
+  ],
+  "not_applies_to": [
+    "imminent_danger",
+    "medical_emergency"
+  ],
+  "response_goals": [
+    "降低启动门槛",
+    "减少全或无压力",
+    "获得可观察反馈"
+  ],
+  "allowed_actions": [
+    "把动作控制在几分钟",
+    "允许完成后停止",
+    "选择可逆步骤"
+  ],
+  "forbidden_actions": [
+    "不用于高风险危机场景的唯一回应",
+    "不承诺治疗效果"
+  ],
+  "priority": "medium",
+  "risk_level": "none",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "steps": [
+    "说清当前任务的完成目标",
+    "选出两分钟内能做的最小动作",
+    "完成后决定继续、调整或休息"
+  ],
+  "max_duration_minutes": 5,
+  "unsuitable_when": [
+    "用户需要先满足睡眠饮食或医疗需求",
+    "任务涉及现实危险",
+    "高风险危机尚未处理"
+  ]
+}

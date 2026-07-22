@@ -1,0 +1,12 @@
+{
+  "id": "thought_record_light", "name": "轻量想法记录",
+  "keywords": ["反复", "自责", "最坏", "肯定", "想法", "停不下来"],
+  "suitable_for": ["重复想法和情绪之间关系较清楚", "用户愿意做简短书写"],
+  "not_suitable_for": ["书写会加剧创伤重现或失控", "当前有即时危险"],
+  "instruction": ["只写情境、自动想法、情绪强度三项", "补一条支持和一条不支持该想法的证据", "不要求得出正确答案"],
+  "natural_prompt": "可以只记三行：发生了什么、脑子立刻说了什么、情绪0到10有多强。",
+  "example": "情境：汇报出错；想法：我什么都做不好；情绪：羞耻8分。",
+  "avoid": ["写成长篇反刍", "把记录当作诊断量表"],
+  "safety_notes": ["仅用于自我观察，不是治疗作业，也不保证效果", "明显痛苦上升时停止并寻求现实支持"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

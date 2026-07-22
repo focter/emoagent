@@ -1,0 +1,66 @@
+{
+  "id": "issue_burnout",
+  "type": "issue_type",
+  "name": "耗竭与过载",
+  "description": "长期压力后出现精力耗竭、效率下降、疏离或难以恢复。",
+  "match": {
+    "keywords": [
+      "耗尽了",
+      "累到不想动",
+      "倦怠",
+      "一直在硬撑"
+    ],
+    "signals": [
+      "长期压力",
+      "休息后仍疲惫",
+      "任务过载",
+      "功能下降"
+    ],
+    "exclude": [
+      "明确身体急症",
+      "自杀风险需先安全分流"
+    ]
+  },
+  "evidence_refs": [
+    "ev_self_help_self_care_scope_002",
+    "ev_common_professional_help_004"
+  ],
+  "applies_to": [
+    "burnout",
+    "work_stress",
+    "academic_stress",
+    "low_energy"
+  ],
+  "not_applies_to": [
+    "diagnosis",
+    "medical_assessment"
+  ],
+  "response_goals": [
+    "了解压力持续时间和负荷",
+    "区分恢复与继续加码",
+    "识别求助时机"
+  ],
+  "allowed_actions": [
+    "帮助调整优先级",
+    "建议基础照护和现实支持",
+    "功能持续受损时建议专业评估"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_perfectionism",
+    "mechanism_avoidance",
+    "mechanism_self_criticism"
+  ],
+  "recommended_interventions": [
+    "intervention_problem_split",
+    "intervention_tiny_next_step",
+    "intervention_seek_support"
+  ]
+}

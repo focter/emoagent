@@ -1,0 +1,61 @@
+{
+  "id": "mechanism_emotional_reasoning",
+  "type": "mechanism",
+  "name": "情绪化推断",
+  "description": "因为感到害怕、内疚或无力，就把这种感受当作外部事实的证明。",
+  "match": {
+    "keywords": [
+      "我感觉这样所以一定是",
+      "我害怕就说明会发生",
+      "我内疚所以都是我的错"
+    ],
+    "signals": [
+      "情绪直接替代事实判断",
+      "忽略其他证据",
+      "冲动结论"
+    ],
+    "exclude": [
+      "情绪作为重要但非唯一的信息"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_common_psychoeducation_limit_005"
+  ],
+  "applies_to": [
+    "emotion_overload",
+    "self_doubt",
+    "relationship_conflict"
+  ],
+  "not_applies_to": [
+    "dismissal_of_emotion",
+    "diagnosis"
+  ],
+  "response_goals": [
+    "承认情绪信息",
+    "同时区分感受与事实结论"
+  ],
+  "allowed_actions": [
+    "先命名感受",
+    "再询问支持结论的事实"
+  ],
+  "forbidden_actions": [
+    "不说情绪不重要",
+    "不把所有直觉都判为错误"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "explain_to_user": "这种强烈感受可能正在影响判断；感受很真实，但看起来像还不能单独证明外部结论。",
+  "linked_issue_types": [
+    "issue_emotion_overload",
+    "issue_self_doubt",
+    "issue_relationship_conflict"
+  ],
+  "suitable_interventions": [
+    "intervention_emotion_labeling",
+    "intervention_grounding_54321",
+    "intervention_problem_split"
+  ]
+}

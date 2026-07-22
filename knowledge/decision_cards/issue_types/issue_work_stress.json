@@ -1,0 +1,23 @@
+{
+  "id": "issue_work_stress",
+  "type": "issue_type",
+  "name": "工作与职场压力",
+  "description": "工作负荷、角色要求、支持条件或工作环境带来的持续压力和恢复困难。",
+  "match": {
+    "keywords": ["工作压力", "职场", "加班", "绩效", "工作量", "上班很累", "实习压力", "裁员"],
+    "signals": ["工作要求持续过载", "缺少管理或同事支持", "工作影响睡眠和恢复", "担心工作表现或稳定性"],
+    "exclude": ["现实暴力或即时人身危险", "需要劳动或法律判断的纠纷", "明确医疗急症"]
+  },
+  "evidence_refs": ["ev_common_work_context_006", "ev_common_professional_help_004"],
+  "applies_to": ["work_stress", "workplace_distress", "internship_stress", "burnout_context"],
+  "not_applies_to": ["diagnosis", "employment_decision", "legal_advice"],
+  "response_goals": ["区分个人负荷与工作环境因素", "了解压力对功能和恢复的影响", "识别现实支持和求助时机"],
+  "allowed_actions": ["询问工作负荷和支持条件", "帮助区分可控与暂不可控部分", "持续功能受损时建议专业或现实支持"],
+  "forbidden_actions": ["不做诊断", "不承诺疗效", "不把组织问题全部归因于个人能力"],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": ["mechanism_perfectionism", "mechanism_avoidance", "mechanism_self_criticism"],
+  "recommended_interventions": ["intervention_problem_split", "intervention_seek_support", "intervention_tiny_next_step"]
+}

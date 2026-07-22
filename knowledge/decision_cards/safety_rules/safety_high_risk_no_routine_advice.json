@@ -1,0 +1,51 @@
+{
+  "id": "safety_high_risk_no_routine_advice",
+  "type": "safety_rule",
+  "name": "高风险场景禁止普通建议主导",
+  "description": "高风险状态下，普通心理分析、生活建议和微干预只能在安全行动之后作为补充。",
+  "match": {
+    "keywords": [
+      "高风险",
+      "自伤计划",
+      "自杀想法",
+      "无法保证安全"
+    ],
+    "signals": [
+      "已命中 high 或 critical 安全规则",
+      "安全需求优先于普通对话"
+    ],
+    "exclude": [
+      "已明确排除风险的普通困扰"
+    ]
+  },
+  "evidence_refs": [
+    "ev_safety_no_routine_self_help_006",
+    "ev_methods_avoid_crisis_006"
+  ],
+  "applies_to": [
+    "high_risk_response",
+    "crisis_response"
+  ],
+  "not_applies_to": [
+    "mild_distress",
+    "routine_self_help"
+  ],
+  "response_goals": [
+    "保持安全优先级",
+    "防止微干预替代现实支持"
+  ],
+  "allowed_actions": [
+    "先执行适用风险等级的安全行动",
+    "安全确认后才考虑简短稳定支持"
+  ],
+  "forbidden_actions": [
+    "不进行普通心理分析",
+    "不只给自助练习",
+    "不承诺保密",
+    "不淡化风险"
+  ],
+  "priority": "critical",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。"
+}

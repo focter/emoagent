@@ -1,0 +1,21 @@
+{
+  "id": "ev_methods_no_effect_promise_005",
+  "title": "微干预不能承诺疗效",
+  "claim": "轻量练习只能作为尝试性支持，不能承诺必然改善或治愈。",
+  "summary": "NHS 和 NIMH 都强调方法需要按问题和个体需要选择，并监测进展、必要时调整。将单次练习表述为保证有效，会超出来源证据和产品能力。",
+  "source_ids": ["nhs_cbt", "nimh_psychotherapies"],
+  "source_note_refs": [
+    "knowledge_sources/notes/methods_notes.md#nhs_cbt",
+    "knowledge_sources/notes/methods_notes.md#nimh_psychotherapies"
+  ],
+  "category": "methods",
+  "applies_to": ["micro_intervention", "psychoeducation", "self_help"],
+  "not_applies_to": ["treatment_claim", "guaranteed_outcome", "diagnosis"],
+  "allowed_claims": ["如果愿意，可以把这个方法作为一次小尝试", "效果因人和情境而异"],
+  "forbidden_claims": ["做完这个方法就会好", "该练习保证有效", "这能治愈你的心理问题"],
+  "product_use": ["intervention_design", "product_disclaimer"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

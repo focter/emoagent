@@ -1,0 +1,13 @@
+{
+  "id": "stress_response", "name": "压力反应",
+  "keywords": ["压力", "紧张", "心慌", "失眠", "注意力", "烦躁", "忙", "考试", "项目", "加班"],
+  "use_when": ["持续负荷后出现警觉、睡眠或专注变化", "状态与考试、工作、冲突或重大变化相关"],
+  "do_not_use_when": ["症状可能需要急诊或身体检查", "用心理解释会遮蔽暴力、过劳等现实问题"],
+  "plain_explanation": "压力持续时，身体可能一直处于准备应对的状态；睡眠、专注、烦躁和紧绷会彼此推高。",
+  "natural_response_examples": ["你这段时间像是一直没有真正从应对状态里退下来，睡不好后更难集中，出错又让紧张增加。"],
+  "safe_small_actions": ["记录一天中压力最高的时段和身体反应", "给当天任务设一个明确停止点"],
+  "avoid": ["把身体不适全部心理化", "淡化现实工作量"],
+  "related_issue_types": ["anxiety", "academic_stress", "work_stress", "family_pressure", "low_energy"],
+  "related_interventions": ["grounding_breath", "emotion_labeling", "small_step_activation"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

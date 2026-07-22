@@ -1,0 +1,13 @@
+{
+  "id": "social_comparison_self_worth", "name": "比较与自我价值",
+  "keywords": ["不如别人", "别人都", "同学", "朋友圈", "比较", "落后", "被落下", "没价值"],
+  "use_when": ["他人进展被用作整体自我价值证据", "比较引发退缩、羞耻或过度证明"],
+  "do_not_use_when": ["用户正在讨论客观资源不平等", "比较用于具体技能校准而非自我否定"],
+  "plain_explanation": "比较能提供参照，但只看到他人的结果、再拿它评价自己的全部价值，会忽略背景、过程和不同目标。",
+  "natural_response_examples": ["你看到的是对方展示出来的进展，却用它给自己的整体价值打了分，这两者并不对等。"],
+  "safe_small_actions": ["把比较内容改成一个具体维度", "写下自己的目标和下一项可控行动"],
+  "avoid": ["贬低被比较的人", "用你也很优秀做空泛反驳"],
+  "related_issue_types": ["self_blame", "academic_stress", "work_stress", "loneliness", "interpersonal"],
+  "related_interventions": ["fact_vs_interpretation", "thought_record_light", "small_step_activation"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

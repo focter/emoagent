@@ -1,0 +1,66 @@
+{
+  "id": "mechanism_uncertainty_intolerance",
+  "type": "mechanism",
+  "name": "难以容忍不确定性",
+  "description": "为了获得绝对确定而持续检查、担忧或回避决定，反而扩大焦虑。",
+  "match": {
+    "keywords": [
+      "必须确定",
+      "万一呢",
+      "不能有一点风险",
+      "一直确认"
+    ],
+    "signals": [
+      "反复寻求保证",
+      "难以停止检查",
+      "拖延决定",
+      "担忧无法结束"
+    ],
+    "exclude": [
+      "合理收集关键安全信息",
+      "高风险决策的必要核验"
+    ]
+  },
+  "evidence_refs": [
+    "ev_common_anxiety_boundary_002",
+    "ev_methods_no_effect_promise_005"
+  ],
+  "applies_to": [
+    "anxiety",
+    "rumination",
+    "sleep_problem",
+    "relationship_conflict"
+  ],
+  "not_applies_to": [
+    "safety_verification",
+    "diagnosis"
+  ],
+  "response_goals": [
+    "区分必要信息与绝对保证",
+    "支持在有限信息下做小决定"
+  ],
+  "allowed_actions": [
+    "定义足够信息标准",
+    "选择可逆的小步骤"
+  ],
+  "forbidden_actions": [
+    "不提供无法兑现的保证",
+    "不催促不可逆决定"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "explain_to_user": "这可能像是在等待百分之百确定后才行动，但绝对保证很难得到，担忧也因此继续扩大。",
+  "linked_issue_types": [
+    "issue_anxiety",
+    "issue_rumination",
+    "issue_sleep_problem",
+    "issue_relationship_conflict"
+  ],
+  "suitable_interventions": [
+    "intervention_problem_split",
+    "intervention_breathing_60s",
+    "intervention_tiny_next_step"
+  ]
+}

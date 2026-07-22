@@ -1,0 +1,18 @@
+{
+  "id": "ev_safety_plan_boundary_003",
+  "title": "安全计划的用途与证据边界",
+  "claim": "安全计划可用于近期自伤风险支持，但不能替代紧急服务或专业评估。",
+  "summary": "WHO 将安全计划列为可考虑的条件性干预，适用于近期自伤想法、计划或行为，并建议结合随访或支持；其证据确定性很低，不能把单一计划描述为足以消除风险。",
+  "source_ids": ["who_safety_planning"],
+  "source_note_refs": ["knowledge_sources/notes/safety_notes.md#who_safety_planning"],
+  "category": "safety",
+  "applies_to": ["self_harm_risk", "safety_planning", "follow_up_support"],
+  "not_applies_to": ["active_suicide_attempt", "imminent_danger", "replacement_for_professional_care"],
+  "allowed_claims": ["安全计划可以作为风险支持的一部分", "安全计划宜与随访或支持结合"],
+  "forbidden_claims": ["完成安全计划就不会发生危险", "安全计划可以替代紧急服务", "该方法保证有效"],
+  "product_use": ["safety_response", "self_help_boundary"],
+  "evidence_level": "official_guideline",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

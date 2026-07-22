@@ -1,0 +1,14 @@
+{
+  "id": "rumination", "name": "反刍 / 停不下来的想法",
+  "description": "同一事件、问题或自我评价被反复回放，却没有形成新信息或可执行下一步。",
+  "keywords": ["反复想", "一直想", "停不下来", "想来想去", "脑子里重放", "纠结", "后悔", "如果当时", "越想越"],
+  "user_expressions": ["脑子一直停不下来", "那段对话反复在脑子里重放", "我想了很多遍还是更难受"],
+  "key_dimensions": ["反复内容", "触发时段", "是否产生新信息", "睡眠专注与情绪影响"],
+  "first_followups": ["这些想法通常在什么情境下最容易开始？", "反复想之后，你得到新线索了，还是主要更难受？"],
+  "enough_information_signals": ["说明反复内容", "说明频率或触发", "说明睡眠专注影响"],
+  "common_mechanisms": ["rumination", "cognitive_appraisal", "self_blame_loop"],
+  "possible_interventions": ["worry_time_limit", "thought_record_light", "grounding_breath"],
+  "do_not_say": ["别想了", "你就是想太多", "把它彻底想明白就好"],
+  "escalation_signals": ["连续严重失眠", "反复内容包含自伤、自杀或伤人计划"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

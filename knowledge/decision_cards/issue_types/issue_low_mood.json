@@ -1,0 +1,66 @@
+{
+  "id": "issue_low_mood",
+  "type": "issue_type",
+  "name": "情绪低落",
+  "description": "持续低落、兴趣下降、精力不足或日常功能受影响的体验。",
+  "match": {
+    "keywords": [
+      "心情低落",
+      "没兴趣",
+      "提不起劲",
+      "什么都不想做"
+    ],
+    "signals": [
+      "兴趣减少",
+      "精力下降",
+      "任务功能受损",
+      "持续多日"
+    ],
+    "exclude": [
+      "明确自伤或自杀风险",
+      "短暂情绪波动且无困扰"
+    ]
+  },
+  "evidence_refs": [
+    "ev_common_low_mood_boundary_001",
+    "ev_common_professional_help_004"
+  ],
+  "applies_to": [
+    "low_mood",
+    "loss_of_interest",
+    "low_energy"
+  ],
+  "not_applies_to": [
+    "diagnosis",
+    "psychotic_depression",
+    "crisis_response_only"
+  ],
+  "response_goals": [
+    "理解持续时间和影响",
+    "减少自我责备",
+    "判断是否需要专业帮助"
+  ],
+  "allowed_actions": [
+    "询问睡眠、兴趣和日常任务变化",
+    "提供一个低压力小步骤",
+    "持续或严重时建议求助"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_avoidance",
+    "mechanism_self_criticism",
+    "mechanism_all_or_nothing_thinking"
+  ],
+  "recommended_interventions": [
+    "intervention_tiny_next_step",
+    "intervention_emotion_labeling",
+    "intervention_seek_support"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "all_or_nothing_thinking", "name": "全或无思维",
+  "keywords": ["要么", "彻底", "一无是处", "什么都", "从来没有", "必须完美", "全失败"],
+  "use_when": ["结果只被分为成功或失败", "局部失误被扩大为全部否定"],
+  "do_not_use_when": ["情境确实有明确二元安全边界", "用户尚未表现极端化评价"],
+  "plain_explanation": "当标准只剩完美或失败，中间已经完成、可调整的部分会被忽略，开始和复盘都会更困难。",
+  "natural_response_examples": ["这次没有达到目标，不等于所有努力都归零；我们可以具体看哪一部分完成、哪一部分受阻。"],
+  "safe_small_actions": ["用百分比描述完成程度", "写出失败以外的两个中间状态"],
+  "avoid": ["否认真实失败", "要求用户强行乐观"],
+  "related_issue_types": ["self_blame", "procrastination", "academic_stress", "work_stress"],
+  "related_interventions": ["fact_vs_interpretation", "thought_record_light"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "behavioral_activation", "name": "行为激活",
+  "keywords": ["没动力", "不想动", "躺着", "起不来", "什么都不想做", "活动变少"],
+  "use_when": ["低能量伴随活动减少和反馈减少", "基本安全和生活尚可，适合极低门槛行动"],
+  "do_not_use_when": ["用户正在耗竭且首先需要休息或医疗评估", "用户有即刻危险或无法维持基本生活"],
+  "plain_explanation": "低能量会让活动减少，生活里的节奏、反馈和掌控感也随之变少；有时可先做很小一步，再观察能量变化。",
+  "natural_response_examples": ["活动和连接变少后，生活里的反馈可能也会减少；现在不用要求自己恢复正常，只观察一个很小动作是否带来一点变化。"],
+  "safe_small_actions": ["选择两到十分钟能结束的动作", "把完成标准改成只接触五分钟"],
+  "avoid": ["承诺行动必然改善情绪", "给出密集任务清单"],
+  "related_issue_types": ["low_energy", "procrastination", "loneliness"],
+  "related_interventions": ["small_step_activation"],
+  "source_level": "L2_guideline_informed", "review_status": "pending_clinical_review"
+}

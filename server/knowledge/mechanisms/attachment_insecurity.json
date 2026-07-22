@@ -1,0 +1,13 @@
+{
+  "id": "attachment_insecurity", "name": "依恋不安全感",
+  "keywords": ["不回消息", "不爱我", "会离开", "被抛弃", "反复确认", "冷战", "没有安全感"],
+  "use_when": ["关系不确定触发强烈被抛下担忧", "用户反复确认或回避亲密并描述重复模式"],
+  "do_not_use_when": ["仅凭一次关系冲突", "存在欺骗、控制或暴力等明确现实风险"],
+  "plain_explanation": "关系里的不确定可能把警觉迅速拉高，让人更想确认或先退开；这是一种暂时理解，不是给人贴固定类型标签。",
+  "natural_response_examples": ["消息没有得到回应时，你的警觉很快跳到了关系会失去，这种不确定对你似乎很难承受。"],
+  "safe_small_actions": ["区分当下事实与被抛下预测", "用具体观察和需要发起一次澄清"],
+  "avoid": ["诊断依恋类型", "用机制替对方行为开脱"],
+  "related_issue_types": ["romantic_relationship", "interpersonal", "loneliness"],
+  "related_interventions": ["fact_vs_interpretation", "relationship_clarification"],
+  "source_level": "L4_conceptual", "review_status": "pending_clinical_review"
+}

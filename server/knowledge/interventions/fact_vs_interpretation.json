@@ -1,0 +1,12 @@
+{
+  "id": "fact_vs_interpretation", "name": "事实-解释区分",
+  "keywords": ["肯定", "意味着", "都是", "一定", "说明", "不爱我", "失败"],
+  "suitable_for": ["把推测当成事实", "灾难化、自责或关系不确定"],
+  "not_suitable_for": ["存在明确即时危险", "用户需要先被倾听而非练习"],
+  "instruction": ["写下一句可被观察或核实的事实", "再写下脑中对它的解释", "标记还缺哪些信息"],
+  "natural_prompt": "如果你愿意，我们可以只分两行写：已经确认的事实是什么，你脑子里最强的解释是什么。",
+  "example": "事实：对方两天没回复；解释：他不再在意我。解释可以理解，但还不是已确认事实。",
+  "avoid": ["用练习否定情绪", "强迫写积极解释"],
+  "safety_notes": ["仅作心理教育和自助整理，不是治疗方案", "若涉及暴力或即时危险，应优先采取现实安全行动"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

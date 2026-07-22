@@ -1,0 +1,17 @@
+{
+  "source_id": "example_official_source",
+  "title": "示例官方心理健康资料",
+  "organization": "Example Public Health Organization",
+  "year": "2026",
+  "language": "zh-CN",
+  "type": "public_health_guidance",
+  "topic_tags": ["self_help", "stress_management"],
+  "priority": "P1",
+  "used_for": ["self_help"],
+  "limitations": "仅用于资料整理示例；正式使用前需要核实版本并由专业人员复核。",
+  "url": "https://example.org/official-source",
+  "file_path": "knowledge_sources/raw/self_help/example_official_source.pdf",
+  "status": "todo",
+  "access_date": "",
+  "notes_done": "no"
+}

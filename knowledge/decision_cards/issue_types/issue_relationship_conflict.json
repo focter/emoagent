@@ -1,0 +1,67 @@
+{
+  "id": "issue_relationship_conflict",
+  "type": "issue_type",
+  "name": "关系冲突",
+  "description": "亲密关系、朋友或家庭互动中的误解、冲突、失望和沟通困难。",
+  "match": {
+    "keywords": [
+      "吵架",
+      "关系",
+      "冷战",
+      "被忽视",
+      "沟通不了"
+    ],
+    "signals": [
+      "互动反复升级",
+      "担心被拒绝",
+      "难以表达需要",
+      "关系影响情绪"
+    ],
+    "exclude": [
+      "现实暴力或即时人身危险",
+      "需要法律判断的纠纷"
+    ]
+  },
+  "evidence_refs": [
+    "ev_student_scenarios_support_002",
+    "ev_methods_therapy_vs_self_help_004"
+  ],
+  "applies_to": [
+    "relationship_conflict",
+    "interpersonal",
+    "family_pressure"
+  ],
+  "not_applies_to": [
+    "domestic_violence_safety_plan",
+    "legal_advice",
+    "diagnosis"
+  ],
+  "response_goals": [
+    "区分事实、感受和需要",
+    "减少过早站队",
+    "识别安全与边界"
+  ],
+  "allowed_actions": [
+    "帮助澄清冲突事件",
+    "鼓励非指责表达",
+    "关系不安全时建议现实支持"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_emotional_reasoning",
+    "mechanism_catastrophizing",
+    "mechanism_uncertainty_intolerance"
+  ],
+  "recommended_interventions": [
+    "intervention_emotion_labeling",
+    "intervention_problem_split",
+    "intervention_seek_support"
+  ]
+}

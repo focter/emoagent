@@ -1,0 +1,21 @@
+{
+  "id": "ev_common_psychoeducation_limit_005",
+  "title": "普通心理教育的表达限制",
+  "claim": "心理教育可以解释常见体验，但不能给出个体诊断、药物建议或治疗决策。",
+  "summary": "成人抑郁与焦虑临床指南可用于理解评估维度和分级支持原则，但其建议依赖临床判断、个人情况和当地服务体系，不能直接改写成面向个体的处方。",
+  "source_ids": ["nice_depression_ng222", "nice_anxiety_cg113"],
+  "source_note_refs": [
+    "knowledge_sources/notes/common_issues_notes.md#nice_depression_ng222",
+    "knowledge_sources/notes/common_issues_notes.md#nice_anxiety_cg113"
+  ],
+  "category": "common_issues",
+  "applies_to": ["psychoeducation", "low_mood", "anxiety"],
+  "not_applies_to": ["diagnosis", "medication_advice", "treatment_claim"],
+  "allowed_claims": ["可以介绍常见体验和需要关注的维度", "可以说明何时考虑专业求助"],
+  "forbidden_claims": ["可以开具治疗方案", "可以推荐药物剂量", "指南内容对每个人都同样适用"],
+  "product_use": ["issue_explanation", "product_disclaimer"],
+  "evidence_level": "clinical_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

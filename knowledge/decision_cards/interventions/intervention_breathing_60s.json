@@ -1,0 +1,65 @@
+{
+  "id": "intervention_breathing_60s",
+  "type": "intervention",
+  "name": "60 秒自然呼吸稳定",
+  "description": "用一分钟观察并轻缓呼吸，不要求固定节奏或达到特定效果。",
+  "match": {
+    "keywords": [
+      "紧张",
+      "心慌",
+      "想先缓一下"
+    ],
+    "signals": [
+      "轻中度唤醒",
+      "用户愿意尝试呼吸",
+      "能安全停留一分钟"
+    ],
+    "exclude": [
+      "呼吸练习引发不适",
+      "正在实施伤害行为",
+      "明显呼吸急症"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_relaxation_boundary_003",
+    "ev_self_help_stress_practice_004"
+  ],
+  "applies_to": [
+    "mild_distress",
+    "anxiety",
+    "emotion_overload"
+  ],
+  "not_applies_to": [
+    "medical_emergency",
+    "imminent_danger"
+  ],
+  "response_goals": [
+    "提供短暂停顿",
+    "观察身体状态",
+    "避免过度用力控制呼吸"
+  ],
+  "allowed_actions": [
+    "说明随时可以停止",
+    "建议自然呼吸而非憋气",
+    "不舒服时改用其他落地方式"
+  ],
+  "forbidden_actions": [
+    "不用于高风险危机场景的唯一回应",
+    "不承诺治疗效果"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "steps": [
+    "确认当前坐姿或站姿安全",
+    "用自然节奏呼吸并把呼气稍微放慢",
+    "一分钟后观察紧张是否有任何变化"
+  ],
+  "max_duration_minutes": 2,
+  "unsuitable_when": [
+    "存在呼吸或胸痛等医疗急症",
+    "呼吸聚焦会引发明显恐慌",
+    "正在实施自伤或无法保证安全"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ev_self_help_low_intensity_boundary_001",
+  "title": "低强度自助支持的边界",
+  "claim": "心理自助可作为低强度支持，但仍需要适用性判断、质量保障和服务衔接。",
+  "summary": "WHO 将心理自助区分为无引导和有简短支持的形式，并强调规划、适配、人员培训、督导与质量控制。规模化可及性不等于对所有人都适用。",
+  "source_ids": ["who_self_help_interventions"],
+  "source_note_refs": ["knowledge_sources/notes/self_help_notes.md#who_self_help_interventions"],
+  "category": "self_help",
+  "applies_to": ["mild_distress", "stress", "low_intensity_support"],
+  "not_applies_to": ["imminent_danger", "active_suicide_attempt", "treatment_claim"],
+  "allowed_claims": ["可以作为低强度自助支持", "需要根据个人情况判断是否适合"],
+  "forbidden_claims": ["低强度自助适合所有人", "自助材料等同于专业治疗", "可以保证改善"],
+  "product_use": ["self_help_boundary", "intervention_design"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

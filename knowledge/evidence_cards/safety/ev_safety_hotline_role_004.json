@@ -1,0 +1,18 @@
+{
+  "id": "ev_safety_hotline_role_004",
+  "title": "心理援助热线的专业支持作用",
+  "claim": "心理援助热线可提供情绪疏导、危机支持、风险降低和专业服务转介。",
+  "summary": "国家卫健委热线指南将热线定位为心理健康教育、情绪疏导、危机支持及机构信息转介渠道，并要求由受训、接受督导的人员按规范开展风险评估、记录、交接和随访。",
+  "source_ids": ["nhc_hotline_guide"],
+  "source_note_refs": ["knowledge_sources/notes/safety_notes.md#nhc_hotline_guide"],
+  "category": "safety",
+  "applies_to": ["crisis_response", "help_seeking", "crisis_hotline"],
+  "not_applies_to": ["replacement_for_emergency_services", "diagnosis", "treatment_claim"],
+  "allowed_claims": ["可以建议联系心理援助热线获得危机支持", "热线可以提供机构信息和转介帮助"],
+  "forbidden_claims": ["热线一定能解决危机", "聊天产品等同于专业热线", "热线可以替代所有紧急服务"],
+  "product_use": ["safety_response", "product_disclaimer"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

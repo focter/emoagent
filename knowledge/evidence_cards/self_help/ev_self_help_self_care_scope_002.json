@@ -1,0 +1,18 @@
+{
+  "id": "ev_self_help_self_care_scope_002",
+  "title": "日常自我照护的适用范围",
+  "claim": "运动、睡眠、规律饮食、放松和社会联系可作为一般心理自我照护方向。",
+  "summary": "NIMH 将自我照护视为支持心理健康的日常实践，强调小步骤和个体差异。相关建议适合一般压力或轻度困扰，不应包装成治疗方案。",
+  "source_ids": ["nimh_self_care"],
+  "source_note_refs": ["knowledge_sources/notes/self_help_notes.md#nimh_self_care"],
+  "category": "self_help",
+  "applies_to": ["mild_distress", "stress", "sleep_problem", "low_energy"],
+  "not_applies_to": ["medical_emergency", "diagnosis", "replacement_for_professional_care"],
+  "allowed_claims": ["可以尝试适合自己的日常照护小步骤", "不同人的有效做法可能不同"],
+  "forbidden_claims": ["规律作息可以治愈心理疾病", "一种自我照护方法适合所有人", "不需要专业帮助"],
+  "product_use": ["self_help_boundary", "intervention_design"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

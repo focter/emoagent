@@ -1,0 +1,21 @@
+{
+  "id": "ev_methods_avoid_crisis_006",
+  "title": "普通方法建议应避开危机主流程",
+  "claim": "存在自伤、自杀或伤人即时危险时，普通方法练习不能占据回应主流程。",
+  "summary": "心理治疗概览中的呼吸、记录、问题解决等元素属于方法支持；危机资料则要求优先确认安全、动员现实支持和转介紧急服务，两者不能混用优先级。",
+  "source_ids": ["nimh_psychotherapies", "nhc_hotline_guide"],
+  "source_note_refs": [
+    "knowledge_sources/notes/methods_notes.md#nimh_psychotherapies",
+    "knowledge_sources/notes/safety_notes.md#nhc_hotline_guide"
+  ],
+  "category": "methods",
+  "applies_to": ["intervention_design", "crisis_response", "self_harm_risk"],
+  "not_applies_to": ["active_suicide_attempt", "imminent_danger", "medical_emergency"],
+  "allowed_claims": ["高风险时应暂停普通练习并转入安全回应", "稳定练习只能在安全措施之外作为补充"],
+  "forbidden_claims": ["先完成想法记录再考虑求助", "危机可以靠微干预解决", "方法建议优先于紧急支持"],
+  "product_use": ["intervention_design", "safety_response"],
+  "evidence_level": "clinical_guidance",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

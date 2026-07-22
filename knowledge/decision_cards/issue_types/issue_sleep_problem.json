@@ -1,0 +1,64 @@
+{
+  "id": "issue_sleep_problem",
+  "type": "issue_type",
+  "name": "睡眠困扰",
+  "description": "入睡困难、睡眠不规律、夜间反复思考或白天精力受影响。",
+  "match": {
+    "keywords": [
+      "睡不着",
+      "失眠",
+      "熬夜",
+      "早醒",
+      "睡眠很浅"
+    ],
+    "signals": [
+      "入睡或维持睡眠困难",
+      "作息紊乱",
+      "白天疲惫",
+      "睡前担忧"
+    ],
+    "exclude": [
+      "需要立即处理的身体急症",
+      "短期偶发且无影响"
+    ]
+  },
+  "evidence_refs": [
+    "ev_self_help_self_care_scope_002",
+    "ev_common_professional_help_004"
+  ],
+  "applies_to": [
+    "sleep_problem",
+    "stress",
+    "daily_function"
+  ],
+  "not_applies_to": [
+    "medical_diagnosis",
+    "medication_advice"
+  ],
+  "response_goals": [
+    "了解睡眠模式和影响",
+    "减少睡前任务负荷",
+    "识别专业求助时机"
+  ],
+  "allowed_actions": [
+    "询问作息和睡前活动",
+    "提供简短睡前卸载步骤",
+    "持续影响功能时建议专业帮助"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_rumination_loop",
+    "mechanism_uncertainty_intolerance"
+  ],
+  "recommended_interventions": [
+    "intervention_sleep_wind_down",
+    "intervention_breathing_60s"
+  ]
+}

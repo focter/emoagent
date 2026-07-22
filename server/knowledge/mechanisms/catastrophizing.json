@@ -1,0 +1,13 @@
+{
+  "id": "catastrophizing", "name": "灾难化思维",
+  "keywords": ["最坏", "完了", "肯定失败", "一切都毁了", "没救", "一定会", "怎么办"],
+  "use_when": ["用户直接跳到最坏结果", "低概率后果被体验为必然且难以应对"],
+  "do_not_use_when": ["危险现实且需要立即行动", "用户描述的是已有严重后果"],
+  "plain_explanation": "压力会把最坏可能推到眼前，像它已经确定发生；可以同时检查发生概率和即使发生时可用的应对资源。",
+  "natural_response_examples": ["你的脑子现在先跳到了最坏结果，但‘可能发生’和‘已经确定’之间还有一段需要核实的信息。"],
+  "safe_small_actions": ["列出已确认事实和最坏预测", "写下一个更常见结果及可做的第一步"],
+  "avoid": ["保证坏事不会发生", "嘲笑担心不理性"],
+  "related_issue_types": ["anxiety", "academic_stress", "work_stress", "romantic_relationship"],
+  "related_interventions": ["fact_vs_interpretation", "thought_record_light"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

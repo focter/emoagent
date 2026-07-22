@@ -1,0 +1,21 @@
+{
+  "id": "ev_safety_imminent_escalation_002",
+  "title": "明确计划或正在实施需要紧急升级",
+  "claim": "存在明确方式、工具、时间或正在实施时，应优先确认即时安全并连接现实紧急支持。",
+  "summary": "当风险信息显示明确计划、危险手段可得、即刻可能发生或行为正在实施时，普通对话不再是主要支持方式，应尽快联系可信任的人、医疗急救或当地紧急服务。",
+  "source_ids": ["who_mhgap_self_harm_suicide", "nhc_hotline_guide"],
+  "source_note_refs": [
+    "knowledge_sources/notes/safety_notes.md#who_mhgap_self_harm_suicide",
+    "knowledge_sources/notes/safety_notes.md#nhc_hotline_guide"
+  ],
+  "category": "safety",
+  "applies_to": ["imminent_danger", "active_suicide_attempt", "medical_emergency"],
+  "not_applies_to": ["mild_distress", "routine_self_help"],
+  "allowed_claims": ["可以优先确认用户是否正处于立即危险", "可以建议立即联系可信任的人和紧急服务"],
+  "forbidden_claims": ["可以继续只做情绪分析", "等一等通常就会自行安全", "不需要现实世界支持"],
+  "product_use": ["safety_response", "risk_classification"],
+  "evidence_level": "clinical_guidance",
+  "risk_level": "critical",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

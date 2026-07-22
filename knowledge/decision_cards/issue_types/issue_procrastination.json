@@ -1,0 +1,64 @@
+{
+  "id": "issue_procrastination",
+  "type": "issue_type",
+  "name": "拖延与启动困难",
+  "description": "任务重要但难以开始，常伴回避、担忧、完美要求或自责。",
+  "match": {
+    "keywords": [
+      "拖延",
+      "开始不了",
+      "一直逃避",
+      "任务堆着"
+    ],
+    "signals": [
+      "任务启动困难",
+      "短期回避带来缓解",
+      "截止期压力增加",
+      "事后自责"
+    ],
+    "exclude": [
+      "单纯缺少任务信息",
+      "明确身体疾病导致无法行动"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_self_help_self_care_scope_002"
+  ],
+  "applies_to": [
+    "procrastination",
+    "task_avoidance",
+    "academic_stress"
+  ],
+  "not_applies_to": [
+    "diagnosis",
+    "moral_judgment"
+  ],
+  "response_goals": [
+    "识别卡住的环节",
+    "降低启动门槛",
+    "避免强化自责"
+  ],
+  "allowed_actions": [
+    "帮助定义最小下一步",
+    "询问任务是否过大或标准过高",
+    "允许先做不完整版本"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "none",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_avoidance",
+    "mechanism_perfectionism",
+    "mechanism_all_or_nothing_thinking"
+  ],
+  "recommended_interventions": [
+    "intervention_tiny_next_step",
+    "intervention_problem_split"
+  ]
+}

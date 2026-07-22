@@ -1,0 +1,62 @@
+{
+  "id": "issue_loneliness",
+  "type": "issue_type",
+  "name": "孤独与缺少连接",
+  "description": "感到缺乏理解、陪伴或可求助对象，可能伴空虚和退缩。",
+  "match": {
+    "keywords": [
+      "孤独",
+      "没人理解",
+      "没有人可以说",
+      "很空虚"
+    ],
+    "signals": [
+      "社会连接减少",
+      "不愿打扰他人",
+      "缺少现实支持",
+      "长期独处"
+    ],
+    "exclude": [
+      "明确自杀风险需先安全分流"
+    ]
+  },
+  "evidence_refs": [
+    "ev_self_help_self_care_scope_002",
+    "ev_self_help_not_replacement_005"
+  ],
+  "applies_to": [
+    "loneliness",
+    "social_disconnection",
+    "help_seeking"
+  ],
+  "not_applies_to": [
+    "crisis_response_only",
+    "diagnosis"
+  ],
+  "response_goals": [
+    "确认孤独体验",
+    "识别可接受的连接方式",
+    "避免强迫社交"
+  ],
+  "allowed_actions": [
+    "询问过去相对安全的联系对象",
+    "设计低门槛求助表达",
+    "持续痛苦时建议专业支持"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_avoidance",
+    "mechanism_self_criticism"
+  ],
+  "recommended_interventions": [
+    "intervention_seek_support",
+    "intervention_emotion_labeling"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "issue_academic_stress",
+  "type": "issue_type",
+  "name": "学业压力",
+  "description": "与作业、考试、成绩、升学、实习或就业准备有关的压力和功能影响。",
+  "match": {
+    "keywords": [
+      "考试",
+      "作业",
+      "成绩",
+      "论文",
+      "升学",
+      "实习"
+    ],
+    "signals": [
+      "担心表现",
+      "任务堆积",
+      "学习回避",
+      "睡眠受影响"
+    ],
+    "exclude": [
+      "明确自伤风险",
+      "纯工作场景且与学生身份无关"
+    ]
+  },
+  "evidence_refs": [
+    "ev_student_scenarios_support_002",
+    "ev_student_system_context_001"
+  ],
+  "applies_to": [
+    "academic_stress",
+    "student_mental_health"
+  ],
+  "not_applies_to": [
+    "diagnosis",
+    "crisis_response_only"
+  ],
+  "response_goals": [
+    "理解具体压力源",
+    "区分可控任务与外部要求",
+    "连接校园或现实支持"
+  ],
+  "allowed_actions": [
+    "询问当前最紧迫的任务",
+    "帮助拆分下一步",
+    "建议核实学校支持资源"
+  ],
+  "forbidden_actions": [
+    "不做诊断",
+    "不承诺疗效"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "possible_mechanisms": [
+    "mechanism_catastrophizing",
+    "mechanism_perfectionism",
+    "mechanism_avoidance"
+  ],
+  "recommended_interventions": [
+    "intervention_tiny_next_step",
+    "intervention_problem_split",
+    "intervention_seek_support"
+  ]
+}

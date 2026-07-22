@@ -1,0 +1,12 @@
+{
+  "id": "worry_time_limit", "name": "担忧限时",
+  "keywords": ["一直想", "停不下来", "反复担心", "睡前想", "重放"],
+  "suitable_for": ["重复担忧没有新信息", "担忧挤占睡眠或当前活动"],
+  "not_suitable_for": ["问题需要立即实际处理", "担忧涉及即时安全风险"],
+  "instruction": ["设置今天一个10分钟担忧时段", "其他时间只记下关键词", "到时区分可行动问题和重复想法"],
+  "natural_prompt": "可以把它记成一句话，约定今天一个十分钟时段再看；这不是压住想法，而是暂时把注意力还给眼前。",
+  "example": "晚上7:30看担忧清单十分钟，只为可处理项写下一步。",
+  "avoid": ["要求彻底停止思考", "把紧急问题推迟"],
+  "safety_notes": ["仅作注意力管理的自助尝试，不是治疗方案", "自伤、自杀或伤人想法不能延期处理"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

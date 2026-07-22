@@ -1,0 +1,18 @@
+{
+  "id": "ev_ai_health_risk_001",
+  "title": "健康 AI 的收益不能掩盖风险",
+  "claim": "健康 AI 的设计、部署和使用必须把伦理、人权与风险治理置于核心。",
+  "summary": "WHO 指南肯定 AI 在健康领域的潜在价值，同时强调伦理挑战、风险和问责。产品不能仅以便利或创新为由忽略对个体和社区的潜在影响。",
+  "source_ids": ["who_ai_health_ethics"],
+  "source_note_refs": ["knowledge_sources/notes/ai_ethics_notes.md#who_ai_health_ethics"],
+  "category": "ai_ethics_privacy",
+  "applies_to": ["digital_mental_health", "health_ai", "product_governance"],
+  "not_applies_to": ["legal_compliance_conclusion", "clinical_safety_approval", "diagnosis"],
+  "allowed_claims": ["产品需要持续评估伦理和人权风险", "潜在收益不等于风险已经可接受"],
+  "forbidden_claims": ["使用 AI 天然安全", "技术收益可以抵消所有风险", "遵循原则就等同于完成合规"],
+  "product_use": ["product_disclaimer", "privacy_notice"],
+  "evidence_level": "product_ethics_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

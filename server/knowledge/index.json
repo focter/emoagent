@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "AI 心理健康觉察 Demo 本地知识库",
+  "collections": {
+    "issueTypes": { "directory": "issue_types", "expected_minimum": 13 },
+    "mechanisms": { "directory": "mechanisms", "expected_minimum": 16 },
+    "interventions": { "directory": "interventions", "expected_minimum": 10 },
+    "safetyLevels": { "file": "safety/risk_levels.json", "expected_minimum": 5 },
+    "crisisResponse": { "file": "safety/crisis_response.json" },
+    "sourceRegistry": { "file": "source_registry.json", "expected_minimum": 7 }
+  },
+  "legacy_support": {
+    "questionStrategy": "question_strategy.json",
+    "responseRules": "response_rules.json",
+    "fallbackSafetyRules": "safety_rules.json"
+  },
+  "audit_note": "source_level 表示内容依据层级，review_status 表示审校状态；pending 状态不得被解释为已完成临床审核。"
+}

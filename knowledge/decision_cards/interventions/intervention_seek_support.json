@@ -1,0 +1,66 @@
+{
+  "id": "intervention_seek_support",
+  "type": "intervention",
+  "name": "联系现实支持",
+  "description": "帮助用户确定一个可信任的人或专业资源，并形成清楚、可发送的求助表达。",
+  "match": {
+    "keywords": [
+      "不知道找谁",
+      "不想麻烦别人",
+      "需要帮助"
+    ],
+    "signals": [
+      "缺少连接",
+      "问题持续影响功能",
+      "需要现实协助"
+    ],
+    "exclude": [
+      "联系对象本身不安全",
+      "紧急状态下只发送消息而不联系急救"
+    ]
+  },
+  "evidence_refs": [
+    "ev_self_help_not_replacement_005",
+    "ev_safety_trusted_support_008",
+    "ev_student_scenarios_support_002"
+  ],
+  "applies_to": [
+    "help_seeking",
+    "loneliness",
+    "student_mental_health",
+    "crisis_support"
+  ],
+  "not_applies_to": [
+    "unsafe_contact",
+    "replacement_for_emergency_services"
+  ],
+  "response_goals": [
+    "降低求助表达门槛",
+    "连接现实支持",
+    "按风险选择资源"
+  ],
+  "allowed_actions": [
+    "共同拟定简短求助句",
+    "提供专业和校园资源类别",
+    "危急时明确升级紧急服务"
+  ],
+  "forbidden_actions": [
+    "不用于高风险危机场景的唯一回应",
+    "不承诺治疗效果"
+  ],
+  "priority": "high",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "steps": [
+    "选一个相对可信任且可联系的人或机构",
+    "说明“我现在的状态”和“我希望你做什么”",
+    "约定联系失败时的第二个资源"
+  ],
+  "max_duration_minutes": 10,
+  "unsuitable_when": [
+    "拟联系的人可能带来伤害",
+    "正在实施伤害行为却只准备异步留言",
+    "用户所在地资源尚未核实"
+  ]
+}

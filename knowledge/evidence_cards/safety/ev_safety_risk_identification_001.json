@@ -1,0 +1,21 @@
+{
+  "id": "ev_safety_risk_identification_001",
+  "title": "自伤与自杀风险需要直接识别",
+  "claim": "出现自伤或自杀表达时，应直接询问想法并评估计划、即时性、手段可得性和既往行为。",
+  "summary": "WHO mhGAP 与国家卫健委热线指南均表明，风险识别不能只停留在笼统情绪，应进一步了解是否有计划、时间、地点、危险手段及既往行为，以判断是否需要紧急升级。",
+  "source_ids": ["who_mhgap_self_harm_suicide", "nhc_hotline_guide"],
+  "source_note_refs": [
+    "knowledge_sources/notes/safety_notes.md#who_mhgap_self_harm_suicide",
+    "knowledge_sources/notes/safety_notes.md#nhc_hotline_guide"
+  ],
+  "category": "safety",
+  "applies_to": ["self_harm_risk", "suicide_risk", "crisis_response"],
+  "not_applies_to": ["diagnosis", "routine_wellbeing_advice"],
+  "allowed_claims": ["可以直接、清楚地确认是否存在自伤或自杀想法", "可以继续确认计划、即时性和危险手段"],
+  "forbidden_claims": ["只凭一句话就能完成风险判断", "回避直接询问会更安全"],
+  "product_use": ["risk_classification", "safety_response"],
+  "evidence_level": "official_guideline",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

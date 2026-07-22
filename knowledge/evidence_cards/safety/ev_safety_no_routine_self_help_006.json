@@ -1,0 +1,21 @@
+{
+  "id": "ev_safety_no_routine_self_help_006",
+  "title": "高风险场景不能只给普通自助建议",
+  "claim": "自伤或自杀高风险场景必须优先安全回应，不能只提供呼吸、记录或生活调整。",
+  "summary": "危机资料强调先评估即时危险、限制危险手段、联系现实支持并转介专业或紧急服务。普通自助练习可在安全得到保障后作为补充，不能成为高风险回应的主体。",
+  "source_ids": ["who_mhgap_self_harm_suicide", "nhc_hotline_guide"],
+  "source_note_refs": [
+    "knowledge_sources/notes/safety_notes.md#who_mhgap_self_harm_suicide",
+    "knowledge_sources/notes/safety_notes.md#nhc_hotline_guide"
+  ],
+  "category": "safety",
+  "applies_to": ["self_harm_risk", "suicide_risk", "crisis_response"],
+  "not_applies_to": ["mild_distress_only", "routine_self_help"],
+  "allowed_claims": ["高风险时应先处理即时安全", "普通自助只能在安全回应之外作为补充"],
+  "forbidden_claims": ["做一次呼吸练习就足够安全", "用想法记录替代紧急转介", "先完成普通自助再联系他人"],
+  "product_use": ["safety_response", "intervention_design", "self_help_boundary"],
+  "evidence_level": "clinical_guidance",
+  "risk_level": "critical",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

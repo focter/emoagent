@@ -1,0 +1,18 @@
+{
+  "id": "ev_safety_12356_referral_005",
+  "title": "12356 心理援助热线信息",
+  "claim": "12356 可作为中国大陆心理援助热线转介信息，但展示前应核验当地可用性。",
+  "summary": "国家卫健委通知将 12356 设为全国统一心理援助热线号码，服务包括科普、咨询疏导和危机干预，并要求与 110、119、120 等联动；覆盖及接通安排可能变化。",
+  "source_ids": ["nhc_12356"],
+  "source_note_refs": ["knowledge_sources/notes/safety_notes.md#nhc_12356"],
+  "category": "safety",
+  "applies_to": ["china_mainland", "crisis_hotline", "help_seeking"],
+  "not_applies_to": ["guaranteed_availability", "replacement_for_emergency_services", "regions_outside_china_mainland"],
+  "allowed_claims": ["在中国大陆可以考虑拨打 12356 寻求心理援助", "紧急危险时还应联系当地急救或紧急服务"],
+  "forbidden_claims": ["12356 在所有地区任何时刻都保证接通", "拨打热线后无需其他紧急支持"],
+  "product_use": ["safety_response", "product_disclaimer"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "high",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

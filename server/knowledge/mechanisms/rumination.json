@@ -1,0 +1,13 @@
+{
+  "id": "rumination", "name": "反刍思维",
+  "keywords": ["反复想", "一直想", "停不下来", "重放", "想来想去", "后悔", "如果当时"],
+  "use_when": ["过去事件或担心被反复回放", "思考没有新信息却持续放大情绪"],
+  "do_not_use_when": ["用户正在进行有明确新信息的现实规划", "当前需要紧急决策或安全行动"],
+  "plain_explanation": "脑子不断回放，像是在努力找答案；当它不再产生新信息时，重复会让人再次经历难受，而不是解决问题。",
+  "natural_response_examples": ["这种反复回放没有让事情更清楚，反而每次都把当时的难受重新带回来。"],
+  "safe_small_actions": ["标记哪些想法有新信息、哪些只是重复", "把为什么换成现在能确认什么"],
+  "avoid": ["命令用户别想", "暗示只要想通就能解决"],
+  "related_issue_types": ["rumination", "anxiety", "self_blame", "sleep_disturbance", "romantic_relationship"],
+  "related_interventions": ["worry_time_limit", "thought_record_light", "grounding_breath"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}

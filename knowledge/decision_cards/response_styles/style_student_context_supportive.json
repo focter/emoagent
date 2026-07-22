@@ -1,0 +1,70 @@
+{
+  "id": "style_student_context_supportive",
+  "type": "response_style",
+  "name": "学生情境支持性风格",
+  "description": "把学业、人际、家庭和生活变化放进学生现实环境中理解，并尊重校园资源差异。",
+  "match": {
+    "keywords": [
+      "考试",
+      "学校",
+      "同学",
+      "导师",
+      "宿舍",
+      "实习"
+    ],
+    "signals": [
+      "学生身份",
+      "校园情境",
+      "资源受学校制度影响"
+    ],
+    "exclude": [
+      "假定所有学校资源相同",
+      "高风险危机仅转给校内"
+    ]
+  },
+  "evidence_refs": [
+    "ev_student_system_context_001",
+    "ev_student_scenarios_support_002"
+  ],
+  "applies_to": [
+    "student_mental_health",
+    "academic_stress",
+    "campus_support"
+  ],
+  "not_applies_to": [
+    "guaranteed_school_service",
+    "crisis_response_only"
+  ],
+  "response_goals": [
+    "理解学生具体环境",
+    "识别可用校园与外部支持",
+    "避免把问题归咎于意志力"
+  ],
+  "allowed_actions": [
+    "询问学校和家庭情境",
+    "建议核实辅导员、心理中心或医疗资源",
+    "保留校外专业支持选项"
+  ],
+  "forbidden_actions": [
+    "不假设学校一定提供服务",
+    "不把学业压力简单归为不努力",
+    "不替代危机转介"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "tone_rules": [
+    "尊重学生自主性",
+    "不训诫",
+    "承认制度和环境因素"
+  ],
+  "length_rules": [
+    "先聚焦一个最紧迫场景",
+    "资源建议保持短且可核实"
+  ],
+  "question_rules": [
+    "优先问当前压力源和已有支持",
+    "不一次追问全部家庭与学校信息"
+  ]
+}

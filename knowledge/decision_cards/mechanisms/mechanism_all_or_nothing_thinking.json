@@ -1,0 +1,61 @@
+{
+  "id": "mechanism_all_or_nothing_thinking",
+  "type": "mechanism",
+  "name": "全或无思维",
+  "description": "只保留成功或失败两个极端，忽略程度、过程和中间选项。",
+  "match": {
+    "keywords": [
+      "要么完美要么失败",
+      "全都白费",
+      "一次不行就永远不行"
+    ],
+    "signals": [
+      "二分评价",
+      "忽略部分进展",
+      "单次结果推广到长期"
+    ],
+    "exclude": [
+      "确实只有两个结果的客观规则"
+    ]
+  },
+  "evidence_refs": [
+    "ev_methods_thought_emotion_behavior_002",
+    "ev_common_psychoeducation_limit_005"
+  ],
+  "applies_to": [
+    "self_doubt",
+    "procrastination",
+    "low_mood"
+  ],
+  "not_applies_to": [
+    "binary_factual_condition",
+    "diagnosis"
+  ],
+  "response_goals": [
+    "找回程度和中间选项",
+    "识别部分完成的价值"
+  ],
+  "allowed_actions": [
+    "使用比例或范围提问",
+    "寻找第三种选择"
+  ],
+  "forbidden_actions": [
+    "不否认真实失败或损失",
+    "不强行正向改写"
+  ],
+  "priority": "medium",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于 machine_draft evidence_cards 生成，尚未经过专业人员复核。",
+  "explain_to_user": "看起来像是现在只剩“完全成功”或“彻底失败”两个选项，但中间可能还有可接受的程度。",
+  "linked_issue_types": [
+    "issue_self_doubt",
+    "issue_procrastination",
+    "issue_low_mood"
+  ],
+  "suitable_interventions": [
+    "intervention_problem_split",
+    "intervention_tiny_next_step",
+    "intervention_thought_defusion"
+  ]
+}

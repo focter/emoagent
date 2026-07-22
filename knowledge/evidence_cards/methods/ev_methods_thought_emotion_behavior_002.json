@@ -1,0 +1,18 @@
+{
+  "id": "ev_methods_thought_emotion_behavior_002",
+  "title": "思维、情绪与行为相互关联",
+  "claim": "CBT 心理教育可用于梳理情境中的想法、情绪、身体感受和行为之间的联系。",
+  "summary": "NHS 资料描述 CBT 会讨论困难情境如何影响思考、感受和行动，并探索其他看法或行为。产品可借用这一关系框架做轻量梳理，但不能宣称完成治疗。",
+  "source_ids": ["nhs_cbt"],
+  "source_note_refs": ["knowledge_sources/notes/methods_notes.md#nhs_cbt"],
+  "category": "methods",
+  "applies_to": ["psychoeducation", "thought_reflection", "behavior_pattern"],
+  "not_applies_to": ["diagnosis", "formal_cbt_treatment", "imminent_danger"],
+  "allowed_claims": ["可以一起梳理情境、想法、感受和行为", "可以考虑是否存在另一种看法或小行动"],
+  "forbidden_claims": ["梳理一次就能改变症状", "这是完整的 CBT 治疗", "所有想法都应被纠正"],
+  "product_use": ["issue_explanation", "intervention_design"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "low",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

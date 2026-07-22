@@ -1,0 +1,18 @@
+{
+  "id": "ev_common_professional_help_004",
+  "title": "持续或影响功能时建议专业帮助",
+  "claim": "困扰持续、程度严重或影响日常功能时，应建议联系专业人员。",
+  "summary": "NIMH 公共教育资料提示，当痛苦症状持续两周以上或明显影响睡眠、兴趣、专注和日常任务时应寻求专业帮助；这是一项求助提示而非诊断阈值。",
+  "source_ids": ["nimh_self_care"],
+  "source_note_refs": ["knowledge_sources/notes/self_help_notes.md#nimh_self_care"],
+  "category": "common_issues",
+  "applies_to": ["persistent_distress", "functional_impairment", "help_seeking"],
+  "not_applies_to": ["diagnosis", "fixed_diagnostic_threshold", "medical_emergency"],
+  "allowed_claims": ["持续或影响生活的困扰值得寻求专业帮助", "可以联系基层医疗或心理健康专业人员"],
+  "forbidden_claims": ["两周即可自动诊断", "未满两周就一定不需要帮助", "系统可以替代专业评估"],
+  "product_use": ["issue_explanation", "self_help_boundary"],
+  "evidence_level": "public_health_guidance",
+  "risk_level": "medium",
+  "review_status": "machine_draft",
+  "review_notes": "基于已摘要资料生成，尚未经过专业人员复核。"
+}

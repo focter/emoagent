@@ -1,0 +1,13 @@
+{
+  "id": "self_blame_loop", "name": "自责循环",
+  "keywords": ["自责", "怪自己", "都是我的错", "废物", "没用", "做不好", "讨厌自己"],
+  "use_when": ["一次结果被扩大为整个人不行", "自责导致僵住回避并制造更多困难"],
+  "do_not_use_when": ["用户正在讨论需要承担的具体责任且未自我贬低", "需要优先处理安全或现实补救"],
+  "plain_explanation": "具体失误被解释成‘我这个人不行’，会消耗行动需要的力气；事情更难推进后，又像在证明原来的评价。",
+  "natural_response_examples": ["你说的是一件没做好的事，但脑子里的结论已经变成了对整个人的否定；这种自责可能让你更难具体处理那次失误。"],
+  "safe_small_actions": ["把自我评价改写成只描述事件和结果的句子", "分开可控责任、外部条件和不可控部分"],
+  "avoid": ["免除所有责任", "用空泛鼓励反驳用户"],
+  "related_issue_types": ["self_blame", "procrastination", "rumination", "work_stress"],
+  "related_interventions": ["fact_vs_interpretation", "thought_record_light"],
+  "source_level": "L3_psychoeducation", "review_status": "pending_clinical_review"
+}
